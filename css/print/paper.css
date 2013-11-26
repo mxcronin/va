@@ -1,0 +1,167 @@
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+/* SECTION 1: Set default width, margin, float, and
+   background. This prevents elements from extending
+   beyond the edge of the printed page, and prevents
+   unnecessary background images from printing */
+body {
+	background: #fff;
+	font-size: 13pt;
+	width: 1024px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+html {
+	background: #fff;
+	width: auto;
+	height: auto;
+	overflow: visible;
+}
+
+@page {
+	size: auto;   /* auto is the initial value */
+	margin: 5% 0 0 5%;  /* this affects the margin in the printer settings */
+}
+
+/* SECTION 2: Remove any elements not needed in print.
+   This would include navigation, ads, sidebars, etc. */
+.nestedarrow,
+.controls,
+.reveal .progress,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background,
+.timeline,
+.slideSelector,
+.background,
+.noteblock,
+#data,
+.print {
+	display: none !important;
+}
+
+.reveal .slides {
+	position: static;
+	width: auto;
+	height: auto !important;
+
+	left: auto;
+	top: auto;
+	margin-left: auto;
+	margin-top: auto;
+	padding: auto;
+
+	overflow: visible;
+	display: block;
+
+	text-align: center;
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+.reveal .slides>section,
+.reveal .slides>section>section {
+
+	visibility: visible !important;
+	position: static !important;
+	width: 100% !important;
+	height: 700px !important;
+	display: block !important;
+	overflow: visible !important;
+
+	left: 0% !important;
+	top: 0% !important;
+	margin-left: 0px !important;
+	margin-top: 0px !important;
+	padding: 0px 0px !important;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+.reveal section {
+	clear:both !important;
+	page-break-after: always !important;
+	display: block !important;
+}
+.reveal section .fragment {
+	opacity: 1 !important;
+	visibility: visible !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+.reveal section:last-of-type {
+	page-break-after: avoid !important;
+}
+
+.reveal .rightFiller,
+.reveal .leftFiller {
+	width: 430px !important;
+}
+
+.reveal .leftFiller {
+	width: 400px !important;
+}
+
+.reveal .rightColumn {
+	width: 540px !important;
+}
+
+.reveal .leftColumn {
+	width: 500px !important;
+}
+
+.reveal .external h2, 
+.reveal .external a, 
+.reveal .end p,
+.reveal .welcome p,
+.reveal .end h1,
+.reveal .welcome h1,
+.reveal .end h3,
+.reveal .welcome h3 {
+	color: black !important;
+}
+
+
+.reveal .summaryList,
+.reveal .agendaList{
+	background-color: #bbb !important;
+}
+
+
+.reveal .summaryList .arrow,
+.reveal .agendaList .arrow {
+	border-right-color: #bbb !important;
+}
+
+.reveal .finalNotes,
+.reveal .actionPoints {
+	overflow: visible;
+}

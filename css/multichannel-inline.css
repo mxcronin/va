@@ -1,0 +1,503 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/latohairline.eot);
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(../fonts/latohairline.eot) format('embedded-opentype'), url(../fonts/latohairline.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/latolight.eot);
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/latolight.eot) format('embedded-opentype'), url(../fonts/latolight.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/lato.eot);
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato.eot) format('embedded-opentype'), url(../fonts/lato.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/latoblack.eot);
+  src: local('Lato Black'), local('Lato-Black'), url(../fonts/latoblack.eot) format('embedded-opentype'), url(../fonts/latoblack.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/abrilfatface.eot);
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(../fonts/abrilfatface.eot) format('embedded-opentype'),url(../fonts/abrilfatface.woff) format('woff');
+}
+.clearfix:after {
+   content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; 
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.vertical-center {
+  margin: auto;
+  position: absolute;
+  height: 150px;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.margintop{
+	margin-top: 80px !important;
+}
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+
+}
+article.intro{
+	height: 100%;
+}
+.multichannel-app{
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 90%;
+	/*background: url('../img/multi-bg.png') no-repeat center center fixed;*/
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.multichannel ul.info{
+	display: none;
+	font-size: 1.6rem;
+	list-style: none;
+	text-align: left;
+}
+.multichannel ul.info-billede{
+	font-size: 1rem;
+	list-style: none;
+	text-align: left;
+}
+.multichannel ul.info li{
+	margin-top: 10px;
+}
+.choice-container{
+	width: 100%;
+}
+.choice-list{
+	margin: 0 auto;
+	position: relative;
+}	
+.choice-list li{
+	float: left;
+	margin-left: 200px;
+	text-align: center;
+	}
+.choice-list li.mobile{
+	margin-left: 0px;
+}	
+
+ul.show-bullets{
+	display: block;
+}
+.txt-white{
+	color: #fff;
+}
+.txt-center{
+	text-align: center;
+}
+.txt-bg{
+	background: #fff;
+	height: 400px;
+	width: 800px;
+	opacity: 0.5;
+	margin: 0 auto;
+}
+
+.yellow{
+	background: #EF9500;
+}
+.darkblue{
+	background: #005AA0;
+}
+.blue{
+	background: #0083E9;
+}
+.green{
+	background: #999933;
+}
+.choice-list{
+	list-style: none;
+
+}
+.choice-list p{
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Lato', 'Segoe UI';
+	max-width: 115px;
+	text-align: center;
+	text-shadow: 1px 1px #000;
+	margin: 0px;
+}
+.icon-holder.round{
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: 6px solid #fff;
+	border-radius: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+.icon-holder.round i{
+	font-size: 80px;
+	color: #fff;
+	margin-top: 10px;
+}
+.close-btn{
+	float: right;
+	color: #ccc;
+	cursor: pointer;
+	font-size: 60px;
+	margin-right: 20px;
+}
+.card-close-btn{
+	cursor: pointer;
+	font-size: 60px;
+	margin-right: 20px;
+}
+.center-container {
+  margin: auto;
+  position: absolute;
+  height: 550px;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+h1.p-text{
+	color: #fff;
+	text-transform: none;
+}
+p.intro{
+	color: #fff;
+}
+.multichannel-container{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;	
+}
+.non .multichannel-container{
+	-webkit-transform: translate(100%, 0px);
+	-webkit-transition: 0.6s;
+	-moz-transform: translate(100%, 0px);
+	-moz-transition: 0.6s;
+	-o-transform: translate(100%, 0px);
+	-o-transition: 0.6s;
+	-ms-transform: translate(100%, 0px);
+	-ms-transition: 0.6s;
+	transform: translate(100%, 0px);
+	transition: 0.6s;
+}	
+.multichannel-container.active{
+	position: absolute;
+	top: 0px;
+}
+.non .multichannel-container.active{
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+/*IE 9*/
+.lt-ie9 .multichannel-container {
+		left: 100%;
+}
+/**/
+.multichannel-container.bank{
+	color: #000;
+}
+.multichannel-container.bank .p-text{
+	text-align: center;
+	font-size: 2rem;
+}
+.multichannel-container.bank ul.info{
+	display: block;
+	font-size: 1.2rem;
+}
+.multichannel-container.bank p.intro{
+	font-size: 2rem;
+	color: #000;
+}
+.multichannel-container.bank .foto-container{
+	width: 540px;
+	margin-top: 50px;
+}
+.multichannel-container.active .multichannel.scaled.margintop{
+	margin-top: 0px !important;
+}
+.multichannel{
+	position: relative;
+	width: 100%;
+	height: 120px;
+	margin-top: 30px;
+	z-index: 0;
+	
+	font-family: 'Lato', 'Segoe UI';
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+  	-webkit-tap-highlight-color: transparent; /* For some Androids */
+  	-webkit-user-select: none; /* Webkit */
+	-moz-user-select: none;    /* Firefox */
+	-ms-user-select: none;     /* IE 10  */
+}
+.scaled{
+	height: 100%;
+	position: absolute;
+	z-index: 200;
+	margin-top: 0px;
+	top: 0px;
+	left: 0px;
+	z-index: 200;
+
+}
+.card-container{
+	width: 300px;
+	height: 120px;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
+	perspective: 1000;
+	float: left;	
+	margin-left: 50px;
+	position: absolute;
+	text-align: center;
+	z-index: 2;
+	-webkit-transition: width 0.6s, height 0.6s;
+	-moz-transition: width 0.6s, height 0.6s;
+	-o-transition: width 0.6s, height 0.6s;
+	-ms-transition: width 0.6s, height 0.6s;
+	transition: width 0.6s, height 0.6s;
+}
+.card-front i{
+	font-size: 75px;
+	color: #fff;
+	margin-top: 30px;
+}
+.scaled .card-front i{
+	font-size: 175px;
+}
+.inner-card{
+		-webkit-transition: 1s;
+		-webkit-transform-style: preserve-3d;
+		transition: 1s;
+		-moz-transform-style: preserve-3d;
+		-moz-transition: 1s;
+		-o-transform-style: preserve-3d;
+		-o-transition: 1s;
+		transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		-ms-transition: 1s;
+		position: relative;
+}
+.flipped{
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
+
+}
+
+.scaled .card-front, .scaled .card-back, .scaled .card-container, .scaled .multichannel{
+		width: 100%;
+		height: 100%;
+		margin-left: 0px;
+}
+.card-back i{
+	font-size: 25px;
+}
+
+.card-back .foto-container{
+	width: 420px;
+	display: none;
+	padding-right: 20px;
+}
+.card-back .foto-container video{
+	width: 450px; margin-right: 10px;
+}
+.card-back .intro{
+	font-size: 2rem;
+	text-align: left;
+	margin-top: 0px;
+}
+.bullets{
+	padding-left: 50px;
+	margin-top: 0px;
+	max-width: 40%;
+	list-style: none;
+}
+.full-img{
+	width: 100%;
+}
+.card-back .content-container{
+	width: 100%;
+	min-width: 980px;
+	margin: 0 auto;
+}
+.card-container .app-stores{
+	display: none;
+	margin-top: 15px;
+	text-align: left;
+}
+.app-stor-img{
+	float: left;
+	
+}
+.card-front {
+	z-index: 2;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+   	width: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card-back {
+	-webkit-transform: rotateY(180deg);
+	-webkit-backface-visibility: hidden;
+	-moz-transform: rotateY(180deg);
+	-moz-backface-visibility: hidden;
+	-o-transform: rotateY(180deg);
+	-o-backface-visibility: hidden;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	-ms-transform: rotateY(180deg);
+	-ms-backface-visibility: hidden;
+	width: 300px;
+	height: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+}
+/*IE 9*/
+.lt-ie9 .card-back {
+	display: none;
+}
+.lt-ie9 .multichannel.scaled .card-back{
+	display: block;
+}
+.lt-ie9 .multichannel.scaled .card-front{
+	display: none;
+}
+/**/
+.text-container{
+	z-index: 0;
+	margin-left: 200px;
+}
+
+.arrow{
+	position: relative;
+	-webkit-transform: translate(-200px, 0px);
+	-webkit-transition: 0.6s;
+	-moz-transform: translate(-200px, 0px);
+	-moz-transition: 0.6s;
+	-o-transform: translate(-200px, 0px);
+	-o-transition: 0.6s;
+	transform: translate(-200px, 0px);
+	transition: 0.6s;
+	-ms-transform: translate(-200px, 0px);
+	-ms-transition: 0.6s;
+}
+.arrow i{
+	color: #000;
+	float: left;
+	font-size: 45px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.text{
+	position: relative;
+	font-size: 45px;
+	font-family: 'Lato', 'Segoe UI';
+	float: left;
+	margin-left: 30px;
+	margin-top: 40px;
+	-webkit-transform: translate(-250px, 0px);
+	-webkit-transition: 0.6s;
+	-moz-transform: translate(-250px, 0px);
+	-moz-transition: 0.6s;
+	-o-transform: translate(-250px, 0px);
+	-o-transition: 0.6s;
+	-ms-transform: translate(-250px, 0px);
+	-ms-transition: 0.6s;
+	transform: translate(-250px, 0px);
+	transition: 0.6s;
+}
+/*.p-text{
+	font-size: 45px;
+	font-family: 'Lato', 'Segoe UI';
+}*/
+.multichannel-app .logo img{
+	width: 300px;
+	margin-left: 45px;
+	margin-bottom: 10%;
+	display: none;
+}
+.non .slide-out{
+	-webkit-transform: translate(200px, 0px);
+	-moz-transform: translate(200px, 0px);
+	-o-transform: translate(200px, 0px);
+	-ms-transform: translate(200px, 0px);
+	transform: translate(200px, 0px);
+}
+@media only screen and (max-device-width : 1024px)  {
+	.multichannel ul.info{
+		font-size: 1.6rem
+	}
+	.card-back .foto-container video{
+		height: 300px;
+		width: 400px
+	}
+	.card-back .foto-container{
+		width: 50%;
+		padding-right: 0px;
+	}
+	.card-container .app-stores{
+		text-align: center;
+	}
+	.margintop{
+		margin-top: 140px !important;
+	}
+	.multichannel-container.bank .foto-container{
+		width: 540px;
+		padding-right: 0px;
+		margin-top: 50px;
+	}
+}

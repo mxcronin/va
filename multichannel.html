@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="css/multichannel.css" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+	<script type="text/javascript" src="lib/js/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/js/knockout-3.0.0.js"></script>
+	<script type="text/javascript" src="lib/js/globalize.js"></script>
+	<script type="text/javascript" src="lib/js/modernizr.js"></script>
+	<script type="text/javascript" src="lib/js/jquery.doubletap.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+
+	<script type="text/javascript" src="lang/multi-da.js"></script>
+</head>
+<!--[if IE 7]><body class="lt-ie9"><![endif]-->
+<!--[if IE 8]><body class="lt-ie9"><![endif]-->
+<!--[if IE 9]><body class="lt-ie9"><![endif]-->
+<!--[if gt IE 9]><!--><body class="non"><!--<![endif]-->
+	<div class="multichannel-app">
+		<section class="intro">
+			<div class="logo"><img src="img/nordea_logo.png"></div>
+			<div class="choice-container vertical-center">
+				<ul class="choice-list clearfix">
+					<li class="mobile" data-id="mobile">
+						<span class="icon-holder round">
+							<i class="fa fa-mobile-phone"></i>
+						</span>
+						<p data-bind="text: mobile"></p>
+					</li>
+					<li data-id="home">
+						<span class="icon-holder round">
+							<i class="fa fa-home"></i>
+						</span>
+						<p data-bind="text: home"></p>
+					</li>
+					<li data-id="bank">	
+						<span class="icon-holder round">
+							<i class="fa fa-building-o"></i>
+						</span>
+						<p data-bind="text: bank"></p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="multichannel-container mobile vertical-center">
+			<div class="close-btn"><i class="fa fa-times-circle-o"></i></div>
+			<div class="multichannel mobilebank clearfix margintop">
+				<div class="card-container darkblue">
+					<div class="inner-card">
+						<div class="card-front">
+							<i class="fa fa-tablet"></i>
+						</div>
+						<div class="card-back">
+							<div class="title-container clearfix">
+								<h1 class="p-text pull-left" data-bind="text: mobiletitle"></h1>
+							</div>
+							<div class="content-container clearfix">
+								<div class="bullets pull-left">	
+									<p class="intro" data-bind="text: mobileintro"></p>
+									<ul class="info">
+										<li data-bind="text: mobilebullet1"></li>
+										<li data-bind="text: mobilebullet2"></li>
+										<li data-bind="text: mobilebullet3"></li>
+									</ul>
+								</div>
+								<div class="foto-container easyhtml5video pull-right">
+									<video title="640" controls="controls" poster="video/nordea_app.jpg" preload="none">
+										<source src="video/nordea_app.mp4" type="video/mp4">
+											<source src="video/nordea_app.ogg" type="video/ogg">
+												<img src="img/mobilevideo.png" class="full-img">
+											</video>
+
+											<div class="app-stores clearfix">
+												<img src="img/google-store.png" class="app-store-img">
+												<img src="img/iOS-store.png" class="app-store-img">
+												<img src="img/wp-store.png" class="app-store-img">
+											</div>
+										</div>	   	  		
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text" data-bind="text: mobiletitle"></div>
+						</div>
+					</div>
+					<div class="multichannel swipp clearfix">
+						<div class="card-container yellow">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-share"></i>
+								</div>
+								<div class="card-back">
+									<h1 class="p-text" data-bind="text: swipptitle"></h1>
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text: swippintro"></p>
+											<ul class="info">
+												<li data-bind="text: swippbullet1"></li>
+												<li data-bind="text: swippbullet2"></li>
+												<li data-bind="text: swippbullet3"></li>
+											</ul>
+										</div>
+										<div class="foto-container pull-right">
+											<img src="img/swipp-img.jpg" class="full-img"> 
+										</div>	   	  		
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text" data-bind="text: swipptitle"></div>
+						</div>
+					</div>
+					<div class="multichannel momoney clearfix">
+						<div class="card-container blue">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-money"></i>
+								</div>
+								<div class="card-back">
+									<h1 class="p-text" data-bind="text: momoneytitle"></h1>
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text: momoneyintro"></p>
+											<ul class="info">
+												<li data-bind="text: momoneybullet1"></li>
+												<li data-bind="text: momoneybullet2"></li>
+												<li data-bind="text: momoneybullet3"></li>
+											</ul>
+										</div>
+										<div class="foto-container pull-right">
+											<img src="img/woman-mobile.png" class="full-img"> 
+										</div>	   	  		
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text" data-bind="text: momoneytitle"></div>
+						</div>
+					</div>
+				</section>
+
+				<section class="multichannel-container home">
+					<div class="close-btn"><i class="fa fa-times-circle-o"></i></div>
+					<div class="multichannel tlfbank clearfix margintop">
+						<div class="card-container darkblue">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="card-back">
+									<h1 class="p-text" data-bind="text: tlfbanktitle"></h1>
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text: tlfbankintro"></p>
+											<ul class="info">
+												<li data-bind="text: tlfbankbullet1"></li>
+												<li data-bind="text: tlfbankbullet2"></li>
+												<li data-bind="text: tlfbankbullet3"></li>
+											</ul>
+										</div>
+										<div class="foto-container pull-right">
+											<img src="img/telefonbank.jpg" class="full-img"> 
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text" data-bind="text: tlfbanktitle"></div>
+						</div>
+					</div>
+
+					<div class="multichannel netbank clearfix">
+						<div class="card-container blue">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-desktop"></i>
+								</div>
+								<div class="card-back">
+									<h1 class="p-text" data-bind="text: netbanktitle"></h1>
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<ul class="info">
+												<p class="intro" data-bind="text: netbankintro"></p>
+												<li data-bind="text: netbankbullet1"></li>
+												<li data-bind="text: netbankbullet2"></li>
+												<li data-bind="text: netbankbullet3"></li>
+											</ul>										
+										</div>
+											<div class="foto-container pull-right">
+												<img src="img/netbank-two.jpg" class="full-img"> 
+											</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text">netbank</div>
+						</div>
+					</div>
+
+
+					<div class="multichannel ipad clearfix">
+						<div class="card-container green">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-tablet"></i>
+								</div>
+								<div class="card-back">
+									<h1 class="p-text" data-bind="text: ipadbanktitle"></h1>
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<ul class="info">
+												<p class="intro" data-bind="text: ipadbankintro"></p>
+												<li data-bind="text: ipadbankbullet1"></li>
+												<li data-bind="text: ipadbankbullet2"></li>
+												<li data-bind="text: ipadbankbullet3"></li>
+											</ul>										
+										</div>
+										<div class="foto-container pull-right">
+												<img src="img/ipad.jpg" class="full-img"> 
+											</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text">ipad</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="multichannel-container bank">
+					<div class="close-btn"><i class="fa fa-times-circle-o"></i></div>
+					<div class="multichannel advice clearfix">
+						<div class="">
+							<h1 class="p-text" data-bind="text: advicetitle"></h1>
+							<div class="content-container clearfix">
+								<div class="bullets pull-left">	
+									<p class="intro" data-bind="text: adviceintro"></p>
+									<ul class="info">
+										<li data-bind="text: advicebullet1"></li>
+										<li data-bind="text: advicebullet2"></li>
+										<li data-bind="text: advicebullet3"></li>
+									</ul>
+								</div>
+								<div class="foto-container pull-right">
+									<img src="img/bank-one.jpg" class="full-img"> 
+								</div>	
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<script type="text/javascript" src="js/animator.js"></script>
+
+			</body>
+			</html>

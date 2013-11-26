@@ -1,0 +1,2192 @@
+section@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/latohairline.eot);
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(../fonts/latohairline.eot) format('embedded-opentype'), url(../fonts/latohairline.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/latolight.eot);
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/latolight.eot) format('embedded-opentype'), url(../fonts/latolight.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/lato.eot);
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato.eot) format('embedded-opentype'), url(../fonts/lato.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/latoblack.eot);
+  src: local('Lato Black'), local('Lato-Black'), url(../fonts/latoblack.eot) format('embedded-opentype'), url(../fonts/latoblack.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/abrilfatface.eot);
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(../fonts/abrilfatface.eot) format('embedded-opentype'),url(../fonts/abrilfatface.woff) format('woff');
+}
+
+
+* {
+	-ms-scroll-chaining: none;
+	-ms-touch-action: none;
+}
+
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family: 'Lato', 'Segoe UI';
+	background: #f3f3f3;
+	background-color: #f3f3f3;
+	/*-webkit-text-stroke: 1px rgba(0,0,0,0.2);*/
+}
+
+button {
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+
+a, a:link, a:hover, a:visited {
+	color: #7a7a7a;
+	text-decoration: none;
+}
+
+iframe {
+	overflow-x:hidden;
+}
+
+#loadingOverlay {
+	width: 100%;
+	height: 100%;
+	background-size:cover;
+	background-color: #f3f3f3;
+	position:relative;
+	top: 0;
+	color: black;
+	z-index:999;
+	opacity: 0.98;
+	text-align: center;
+}
+
+#loadingOverlay .loadingWrapper {
+	display:inline-block;
+}
+
+#loadingOverlay h1 {
+	text-align:center;
+	font-family: 'Lato','Segoe UI';
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 3em;
+	margin-top: 200px;
+}
+
+#loadingOverlay .loadingBar {
+	height: 3px;
+	background-color: #191919;
+}
+
+#loadingOverlay .loadingBar .bgr {
+	width: 0px;
+	height: 3px;
+	background-color: #409FFF;
+}
+
+#errorSign {
+	position: absolute;
+	background: black;
+	opacity: 0.9;
+	color:white;
+	padding: 20px;
+}
+
+
+/* *********************************
+** START SCREEN
+************************************
+*/
+
+.splashBackground { 
+	background: url(../img/welcome_HD.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	min-width: 1024px;
+	height: 100%;
+}
+
+.splashWrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.splashBox { 
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.splashBackground .content {
+	width: 360px;
+	margin: 0 auto;
+	padding: 30px; 
+	/*background: rgba(0,0,0,0.35);*/
+}	
+
+ .splashBackground .logo {
+	display: block;
+	text-align: center;
+	vertical-align: bottom;
+	background-color: #0d6cac;
+	padding-top: 0;
+}
+
+.splashBackground .logoTitle {
+
+	min-height: 60px;
+	text-align: center;
+	vertical-align: bottom;
+	font-family: 'Lato','Segoe UI';
+	font-weight: 300;
+	font-size: 1.9em;
+	letter-spacing: 2px;
+	color: white;
+	background-color: #c5bc89;
+	margin: 0;
+	padding-top: 8%;
+	text-transform: uppercase;
+}
+
+.splashBackground .buttonStart {
+	font-family: 'Lato','Segoe UI';
+	background: #339936;
+	cursor: pointer;
+	width: 200px;
+	margin: 50px auto 0 auto;
+	display:block;
+	height: 40px;
+	font-size: 1.4em;
+	font-weight: 300;
+	color: white;
+	text-transform: uppercase;
+}
+
+
+.splashBackground .buttonStart:hover {
+	background: #51c654;
+}
+
+.splashBackground .buttonLanguage {
+	font-family: 'Lato','Segoe UI';
+	background: black;
+	opacity: 0.8;
+	margin: 10px 0 0 0;
+	display:block;
+	width: 100%;
+	height: 60px;
+	font-size: 1.8em;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	padding: 10px 0 0 0;
+	line-height: 1.5em;
+	cursor:pointer;
+}
+
+
+.splashBackground .buttonLanguage:hover {
+	background: #121212;
+}
+
+.splashBackground .prevLanguage,
+.splashBackground .nextLanguage {
+    display: block;
+    height: 50px;
+	-webkit-transform: scale(0.5);
+	-ms-transform: scale(0.5);
+	-o-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+    transform: scale(0.5);
+    width: 50px;
+}
+.splashBackground .nextLanguage {
+	background: url("../img/arrow_small_white_no_box_next.png") no-repeat;
+	float:right;
+}
+
+.splashBackground .prevLanguage {
+	background: url("../img/arrow_small_white_no_box.png") no-repeat;
+	float: left;
+}
+
+
+.splashBackground .fullscreenInfo {
+	margin: 0;
+	padding-top: 10px;
+	text-align: center;
+	vertical-align: bottom;
+	font-family: 'Lato','Segoe UI';
+	font-weight: 300;
+	font-size: 0.95em;
+	line-height: 1.4em;
+	color: #999;
+}
+
+.splashBackground a.downloadBox {
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 400px;
+	margin: auto;
+	bottom: 20px;
+
+	display: block;
+	padding: 20px 0px 20px 0px;
+	
+	text-align: center;
+	font-weight: 400;
+	line-height: 1;
+	font-size: 0.9em;
+	color: #c3c3c3;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;	
+}
+
+.splashBackground a.downloadBox:hover {
+	
+	color: #fff;
+	background: rgba(0,0,0,0.35);
+}
+
+/* *********************************
+** CONFIG HEADER & FOOTER
+************************************
+*/
+
+
+.smallLogo {
+	width: 125px;
+	height: 27px;
+}
+
+.slideSelector header,
+.config header {
+	background:white;
+	height: 75px;
+	padding: 20px 0 0 0;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.slideSelector header h1,
+.config header h1 {
+	text-align: center;
+	color: #333;
+	font-weight: 300;
+	margin: 16px 0 0 0;
+	font-size: 1.8em;
+}
+
+.slideSelector header p,
+.config header p {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #c9c9c9;
+	margin: 20px 0 0 0;
+}
+
+.slideSelector header img,
+.config header img {
+	position: absolute;
+	top: 35px;
+	left: 50px;
+}
+
+.slideSelector footer,
+.config footer {
+	position: absolute;
+	bottom: 0;
+	height: 90px;
+	padding: 0 0 0 0;
+	width: 100%;
+	border-top: 1px solid #c9c9c9;
+	background: white;
+}
+
+.slideSelector footer .next,
+.slideSelector footer .back,
+.config footer .next,
+.config footer .back {
+	width: 100px;
+	height: 90px;
+	top: 0;
+	position: absolute;
+}
+
+.slideSelector footer .next,
+.config footer .next {
+	right: 50px;
+	background: url('../img/config_next.jpg') no-repeat 100% 50%;
+}
+
+.slideSelector footer .next.enabled,
+.config footer .next.enabled {
+	cursor: pointer;
+	background: url('../img/config_next_green.jpg') no-repeat 100% 50%;
+}
+
+.slideSelector footer .next.enabled:hover,
+.config footer .next.enabled:hover {
+	background: url('../img/config_next_green_hover.jpg') no-repeat 100% 50%;
+}
+
+.slideSelector footer .back,
+.config footer .back {
+	left: 50px;
+	background: url('../img/config_back.jpg') no-repeat 0 50%;
+}
+
+.slideSelector footer .back:hover,
+.config footer .back:hover {
+	background: url('../img/config_back_hover.jpg') no-repeat 0 50%;
+}
+
+.slideSelector footer .progress,
+.config footer .progress {
+	width: 100px;
+	margin: 30px auto;
+}
+
+.slideSelector footer .progress span,
+.slideSelector footer .progress span.complete,
+.config footer .progress span,
+.config footer .progress span.complete {
+	width: 10px;
+	height: 10px;
+	display:block;
+	float:left;
+	margin: 10px 0 0 10px;
+}
+
+.slideSelector footer .progress span,
+.config footer .progress span {
+	background: url('../img/config_progress.jpg');
+}
+
+.slideSelector footer .progress span.complete,
+.config footer .progress span.complete {
+	background: url('../img/config_progress_complete.jpg');
+}
+
+
+/* *********************************
+** CONFIG SCREEN
+************************************
+*/ 
+
+#templateConfigArea {
+	height: 100%;
+}
+
+.configNames {
+	background: #f3f3f3;
+}
+
+.config .customerName {	
+	background: #0e6cac;
+	color: #419FDF;
+	font-weight: 400;
+}
+
+.config .PBAName {
+	background: #f3f3f3;
+	color: #C0C0C0;
+	font-weight: 300;
+}
+
+.config .customerId {
+	background: #c6bc89;
+	color: #E0D6A3;
+	font-weight: 300;
+}
+
+.config .customerId,
+.config .PBAName, 
+.config .customerName {
+    border-style: none; 
+    border-color: Transparent; 
+	cursor: text;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	overflow: auto;
+	font-family: 'Lato','Segoe UI';
+	font-size: 1.8em;
+	
+}
+
+.config .customerId.touched,
+.config .customerName.touched {
+	color: white;
+	font-size: 2.3em;
+}
+.config .PBAName.touched {
+	color: #8D8D8D;
+	font-size: 2.3em;
+}
+
+.config .customerIdBox,
+.config .PBANameBox,
+.config .customerNameBox {
+	height: 33%;
+}
+
+.config table {
+	width: 100%;
+	border-collapse:collapse;
+}
+
+th, td {
+	padding:0;
+}
+
+.config td {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	height: 140px;
+	font-size: 1.8em;
+}
+
+.config .type, 
+.config .subtype{
+	background-color: #f3f3f3;
+	cursor: pointer;
+	width: 50%;
+}
+
+.config .type:hover,
+.config .subtype:hover,{
+	background-color: #ffffff;
+	color:black;
+}
+
+.config .type {
+	color: #0d6cac;
+}
+.config .type.selected {
+	background-color: #0d6cac;
+	font-weight: 400;
+	color:white;
+}
+
+.config .subtype {
+	color: #0d6cac;
+	border-right: 1px solid #c9c9c9;
+}
+.config .subtype.selected {
+	font-weight: 900;
+}
+
+
+.slideSelector .info:hover,
+.config .info:hover {
+	color: black;
+}
+
+.slideSelector .info,
+.config .info {
+	cursor:pointer;
+	text-transform: uppercase;
+	font-weight:900;
+	padding: 20px 0 20px 100px;
+	text-align: center;
+	font-size: 3em;
+	color: #b1b1b1;
+	background:white;
+	position: absolute;
+	top: 5px;
+	margin: 0;
+}
+
+.slideSelector .info a,
+.config .info a{
+	display:none;
+}
+
+.config .customerSelection {
+	font-weight: 300;
+	background: #c5bc89;
+	color: white;
+	position:relative;
+	cursor: pointer;
+}
+
+.config .customerSelection .customerType {
+	margin: 50px;
+	font-weight: 400;
+}
+
+.config .customerSelection .nextCustomerType,
+.config .customerSelection .previousCustomerType {
+	margin: 30px 50px;
+	width: 31px;
+	height: 60px;
+}
+
+.config .customerSelection .nextCustomerType {
+	float: right;
+	background: url('../img/config_next_meeting_type.png') no-repeat;
+}
+
+.config .customerSelection .previousCustomerType {
+	float: left;
+	background: url('../img/config_prev_meeting_type.png') no-repeat;
+}
+
+.disabled {
+	color:grey;
+}
+
+/* *********************************
+** REFINEMENT SCREEN
+************************************
+*/
+
+.slideSelector {
+
+	height:100%;
+}
+
+.allSlides {
+	overflow: auto;
+	width: 100%;
+}
+
+.slideSelector .sorting {
+	margin: 20px 20px 0px 20px;
+
+	clear: both;
+}
+
+.slideSelector .sorting button {
+	background-color: none;
+	margin: 0px 20px 10px 0px;
+	border: 1px solid #d6d6d6;
+	color: #bcbcbc;
+	padding: 10px;
+	min-width: 130px;
+	font-size: 0.5em;
+	text-transform: uppercase;
+}
+
+.slideSelector .sorting button:hover {
+	border: 1px solid #999999;
+	color: #666666;
+}
+
+.slideSelector .sorting button.selected {
+	border: 1px solid #000;
+	color: #000;
+}
+
+.slideSelector .sorting button.selected:hover {
+	border: 1px solid #999999;
+	color: #666666;
+}
+
+.allSlides section {
+	margin: 20px 0 0 20px;
+	width: 100px;
+	height: 60px;
+	border:1px solid black;
+	float: left;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.selectedSlides section {
+	height: 100px;
+	width: 100px;
+	float: left;
+	cursor: pointer;
+	overflow: hidden;
+	border-bottom: 1px solid black;
+	background-color: #252525;
+}
+
+.selectedSlides section p {
+	height: 50px;
+	margin-top:20px;
+	border-left:1px solid black;
+}
+
+.allSlides section p, .selectedSlides section p{
+	padding: 5px;
+	border-top:1px solid black;
+	color: white;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.allSlides section h1, .selectedSlides section h1{
+	padding: 5px;
+	margin: 0;
+	width:100%;
+	display:block;
+	height:10px;
+	color:white;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.slideSelector section .icon-lock {
+	float:right;
+	margin: 0 5px 0 0;
+	color: white;
+	font-size: 1.2em;
+	opacity: 0.2;
+}
+
+.slideSelector .selectedSlides {
+	background-color: #d5d5d5;
+}
+
+.slideSelector .allSlidesTitle h2 {
+	color: grey;
+	margin: 30px 0 0 20px;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: 300;
+	text-align: center;
+}
+
+.slideSelector .titleHeader {
+	position:relative;
+}
+
+.slideSelector .titleHeader h2{
+	text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 1.4em;
+}
+
+.slideSelector .titleHeader h2 span{
+	font-weight: 400;
+}
+
+.slideSelector .clearData {
+    border: 0 none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: -8px;
+	font-family: 'Lato','Segoe UI';
+	border: 1px solid #aaa;
+	color: #999;
+}
+
+.slideSelector .clearData:hover {
+	border: 1px solid #666;
+	color: #666;
+}
+
+.slideSelector .clearData:active {
+	border: 1px solid #000;
+	color: #000;
+}
+
+.slideSelector .allSlidesTitle p {
+	margin: 5px 0px 0px 20px;
+	font-weight: 100;
+	color: grey;
+	text-align: center;
+}
+
+.slideSelector section.locked{
+	cursor: default;
+}
+
+.slideSelector section.locked p{
+	background: #063163;
+}
+
+/* ALL Slides - IN TIMELINE */
+
+.selectedSlides section p{
+	position: relative;
+	background: #0d6cac;
+	font-size: 0.9em;
+}
+
+.selectedSlides section h1{
+	font-size: 0.6em;
+	background: #131313;
+}
+
+/* ALL Slides - NOT in TIMELINE */
+
+.allSlides section p{
+	background: #ADA370;
+	font-size: 0.8em;
+		color:#605623;
+	position:relative;
+	height: 30px;
+	margin-top: 0;
+	
+}
+
+.allSlides section h1{
+	font-size: 0.5em;
+	background: #191919;
+	color:#ccc;
+}
+
+/* Solution Slides - IN TIMELINE */
+
+.selectedSlides section[data-key-area='Solutions'] p{
+	background: #409FDF;
+
+}
+
+.selectedSlides section[data-key-area='Solutions'] h1{
+	background: #131313;
+}
+
+/* Solution Slides - NOT in TIMELINE */
+
+.allSlides section[data-key-area='Solutions'] p{
+	background: #C6BC89;
+
+}
+
+.allSlides section[data-key-area='Solutions'] h1{
+	background: #131313;
+}
+
+/* Drag Slides - ALL */
+
+.allSlides section.ui-sortable-helper p, 
+.selectedSlides section.ui-sortable-helper p{
+	background:#0d6cac;
+	border: none;
+	color:white;
+}
+
+.allSlides section.ui-sortable-helper h1, 
+.selectedSlides section.ui-sortable-helper h1 {
+	background: #131313;
+	color:white;
+}
+
+.allSlides section.ui-sortable-helper, .selectedSlides section.ui-sortable-helper {
+	border: 1px solid black;
+	max-width: 100px;
+}
+
+.allSlides section.ui-sortable-helper, .selectedSlides section.ui-sortable-helper {
+	width: 20px;
+}
+
+/* Drag Slides - SOLUTIONS */
+
+.selectedSlides section[data-key-area='Solutions'].ui-sortable-helper p,
+.allSlides section[data-key-area='Solutions'].ui-sortable-helper p{
+	background:#409FDF;
+}
+
+.selectedSlides section h1.first {
+	border-left:1px solid black;
+}
+
+
+.reveal.preview {
+	-webkit-transform: scale(0.25, 0.25);
+	-ms-transform: scale(0.25, 0.25);
+	-o-transform: scale(0.25, 0.25);
+	-moz-transform: scale(0.25, 0.25);
+	transform: scale(0.25, 0.25);
+	width: 1024px;
+	height: 700px;
+	background: white;
+	overflow: hidden;
+	position:absolute;
+	padding: 20px;
+	border: 4px solid darkgray;
+}
+
+.reveal.preview .external h2{
+	color:black;
+}
+
+p:hover .eye {
+	display:block;
+}
+
+p .eye {
+	display:none;
+	width: 10px;
+	height: 10px;
+	position:absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 1000;
+}
+
+
+/* *********************************
+** SLIDE CONTENT
+************************************
+*/
+
+
+.reveal {
+	font-family: 'Lato','Segoe UI';
+	font-size: 36px;
+	font-weight: 200;
+	letter-spacing: -0.02em;
+	color: #000; 
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.reveal .backgrounds,
+.reveal .backgrounds div {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal p {
+	color: #1f1f1f;
+	line-height: 0.8em;
+	letter-spacing: 0.02em;
+	text-align: left;
+	word-wrap: normal;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal p {
+	margin: 0 0 40px 0;
+}
+
+.reveal h1 {
+		text-transform: uppercase;
+}
+
+.reveal h1,
+.reveal h2 {
+	font-family: 'Abril Fatface','Britannic Bold';
+	font-size: 1.5em;
+	text-align:left;
+	line-height: 1.1em;
+	margin: 20px 0 40px 40px;
+}
+
+.reveal h2.high {
+	margin-bottom: 60px;
+}
+
+.reveal h3 {
+	font-weight: 400;
+	font-size: 0.9em;
+	margin: 60px 0 30px 40px;
+}
+
+.reveal .byline {
+    font-family: 'Lato','Segoe UI';
+    font-size: 0.7em;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin: -30px 0 50px 40px;
+}
+
+
+.reveal ul li,
+.reveal ul li,
+.reveal ol li,
+.reveal ol li,
+.reveal p{
+	font-weight: 300;
+	font-size: 0.75em;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	line-height: 1.2em;
+	
+}
+
+.reveal ul ul li,
+.reveal ul ul li,
+.reveal ol ol li,
+.reveal ol ol li {
+	font-weight: 100;
+}
+
+.reveal .san-serif {
+	font-family: 'Lato','Segoe UI';
+	font-weight: 900;
+}
+
+.reveal .large {
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+.reveal p,
+.reveal li {
+	margin: 0 0 20px 40px;
+}
+
+.reveal .large {
+	margin-left: 40px;
+	font-weight: 300;
+	font-size:0.9em;
+
+}
+
+.reveal .large li{
+	font-weight: 300;
+	font-size:0.9em;
+}
+
+.reveal .small {
+	margin-left: 20px;
+	font-weight: 300;
+	font-size:0.5em;
+}
+
+.reveal .small li{
+	font-weight: 300;
+	font-size:0.5em;
+	line-height: 1.1;
+	margin-bottom: 0.6em;
+}
+
+.reveal ul,
+.reveal ol,
+.reveal ul ul,
+.reveal ol ol{
+	text-align: left;
+	display:block;
+	margin: 0 0 20px 0;
+	list-style: none;
+}	
+
+.reveal ul ul,
+.reveal ol ol {
+	margin: 20px 0 20px 0;
+	font-weight:100;
+}
+
+.reveal img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.reveal .leftAlign {
+	text-align:left;
+}
+
+.reveal .centerAlign {
+	text-align:center;
+}
+
+.reveal em{
+	font-weight: 400;
+	font-style: normal
+	
+}
+
+/* TEMPLATE: Left IMAGE Right TEXT*/
+
+.reveal .leftFiller {
+	float:left;
+	margin: 20px 40px 0 40px;
+}
+
+.reveal .rightColumn {
+	float: left;
+	width: 540px;
+}
+
+
+/* TEMPLATE: Left IMAGE Right TEXT*/
+
+
+.reveal .rightFiller {
+	float:right;
+	margin: 20px 40px 0 0;
+}
+
+.reveal .leftColumn {
+	float: left;
+	width: 540px;
+}
+
+.reveal .leftColumn ul{
+	font-size: 1.2em;
+	margin-left: 40px;
+}
+
+
+/* Agenda screen */
+.reveal .summaryList,
+.reveal .agendaList {
+  	background: none repeat scroll 0 0 white;
+    padding: 40px 20px 20px 0;
+    float: right;
+    min-height: 300px;
+    min-width: 250px;
+    position: relative;
+    margin-right: 40px;
+}
+
+.reveal .toggleNestedList ul {
+	display:none;
+}
+
+.reveal .agendaOpener,
+.reveal .toggleNestedList {
+	cursor: pointer;
+}
+
+.reveal .toggleNestedList:hover,
+.reveal .agendaOpener:hover{
+	color: #0274BE;
+}
+
+.reveal .summaryList .arrow,
+.reveal .agendaList .arrow {	
+  	border-bottom: 30px solid transparent;
+    border-right: 20px solid white;
+    border-top: 30px solid transparent;
+    top: 185px;
+    height: 0;
+    left: -19px;
+    position: absolute;
+    width: 0;
+}
+
+.reveal .summaryList ul li,
+.reveal .agendaList ul li{
+	font-size:0.7em;
+	line-height: 1em;
+}
+
+.reveal .summaryList ul li {
+	color: #ccc;
+}
+
+.reveal .summaryList ul li.touched {
+	color: #0d6cac;
+	font-weight: 400;
+}
+
+.reveal .welcome p.blueish {
+	color: #0d6cac;
+}
+
+.icon-2x {
+	padding: 10px;
+	background-color: transparent;
+}
+
+.reveal .disclaimer{
+	font-size:0.3em;
+	color: grey;
+	text-align: left;
+	margin: 20px 0 0 -10px;
+}
+
+
+/* MEDIUM BOX Template */
+
+.reveal .mediumBoxTemplate {
+	margin: 0 0 0 40px;
+}
+
+.reveal .mediumBox {
+	position: relative;
+	float: left;
+	width: 260px;
+	text-align: left;
+	margin: 20px 20px 30px 0;
+	cursor:pointer;
+}
+
+.reveal .mediumBox img {
+	border: 4px solid #f3f3f3;
+}
+
+.reveal .mediumBox ul {
+	padding: 10px;
+	background: transparent url('../img/transparent_blue.png') repeat;
+	position:absolute;
+	display:none;
+	font-size: 0.6em;
+	font-weight: bold;
+	width: 248px;
+	height: 162px;
+	color:white;
+}
+
+.reveal .customImages {
+	cursor: pointer;
+}
+
+.reveal .mediumBox ul li {
+	margin-left: 10px;
+}
+
+.reveal .mediumBox:hover img {
+	border: 4px solid #0274BE;
+}
+
+.reveal .mediumBox p {
+	margin: 0 0 0 10px;
+	font-size: 0.4em;
+	font-weight: 900;
+}
+
+.reveal .mediumBox.clicked p,
+.reveal .mediumBox:hover p {
+	color: #0274BE;
+	text-transform: uppercase;
+}
+
+/* SMALL BOX Template */
+
+.reveal .smallBoxTemplate {
+	margin: 0 0 0 40px;
+	width: 80%;
+}
+
+.reveal .smallBox {
+	float: left;
+	width: 225px;
+	text-align: left;
+	margin: 20px 20px 20px 0;
+}
+
+.reveal .smallBox p {
+	margin: 0 0 0 0;
+	font-size: 0.4em;
+	font-weight: 900;
+}
+
+.reveal .smallBox .question {
+	color: #bbb;
+    font-size: 3em;
+    line-height: 0.8em;
+    margin: 20px 0 0 60px
+}
+
+.reveal .smallBox .white {
+ 	background-color: white;
+    border: 1px solid #DDDDDD;
+    height: 93px;
+    margin-bottom: 5px;
+    width: 157px;
+}
+
+/**
+* Yearline
+*/
+
+.reveal .yearline p{
+	color: #bbb;
+	float: left;    
+	margin: 0 80px 0 0;
+    padding: 20px 0 0;
+	text-transform: uppercase;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.reveal .yearline p:hover {
+	color: #0274BE;
+}
+
+.reveal .yearline .arrow {
+	font-size: 3em;
+    font-weight: 400;
+    line-height: 0.9em;
+    margin: -20px 0 0 60px;
+    padding: 0;
+}
+
+.reveal .yearline .blueish {
+	color: #0274BE;
+}
+
+.reveal .yearline div{
+	background-color: #0274BE;
+	height:4px;
+	width:60px;
+	margin-top:30px;
+}
+
+/* BOX Template */
+
+.reveal .boxTemplate{
+	margin: 0 0 0 40px;
+}
+
+
+.reveal .box {
+	float: left;
+	width: 393px;
+	height: 263px;
+	position: relative;
+	cursor: pointer;
+}
+
+.reveal .box .info {
+	position: absolute;
+	z-index: 10;
+	/*background: rgba(2, 2, 2, 0.9);*/
+	background: white;
+	opacity:0.8;
+	width: 300px;
+	height: 50px;
+	overflow: hidden;
+}
+
+.reveal .box .info:hover, 
+.reveal .box .clicked {
+	background: #0d6cac;
+	opacity:0.9;
+}
+
+.reveal .box .info:hover h3,
+.reveal .box .info.clicked h3,
+.reveal .box .info.clicked li{
+	color: white;
+}
+
+.reveal .boxNr0 .info {	
+	bottom:0;
+	right:0;
+}
+
+.reveal .boxNr1 .info {	
+	bottom:0;
+	left:0;
+}
+
+.reveal .boxNr2 .info {	
+	top:0;
+	right:0;
+}
+
+.reveal .boxNr3 .info {	
+	top:0;
+	left:0;
+}
+
+.reveal .box .info h3 {
+	font-size: 0.7em;
+	line-height: 1em;
+	margin: 10px;
+	font-weight: 400;
+	color: #1f1f1f;
+}
+
+.reveal .box .info ul {
+	float:left;
+}
+
+.reveal .box .info .header {
+	text-transform: uppercase;
+	font-size: 0.4em;
+	font-weight: 900;
+}
+
+.reveal .box .info li {
+	font-size: 0.42em;
+	line-height: 0.8em;
+	margin: 10px;
+	font-weight: 400;
+	color:white;
+}
+
+.reveal .box img {
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+/* Welcome Screen */
+
+.reveal .end,
+.reveal .welcome {
+	min-height: 650px;
+	text-align: center;
+	padding-top: 0;
+	position:relative;
+}
+
+.reveal .end img,
+.reveal .welcome img {
+	display: block;
+	margin: auto;
+	width: 300px;
+}
+
+.reveal .end img {
+	margin-bottom: 60px;
+}
+
+.reveal .end p,
+.reveal .welcome p{
+	font-weight: 300;
+	text-align: center;
+	color: #c6bc89;
+	font-size: 1.5em;
+	margin: 80px 0 10px 0;
+	text-transform: uppercase;	
+}
+
+.reveal .external h2,
+.reveal .end h1,
+.reveal .welcome h1 {
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	text-transform: capitalize;
+	margin: 20px 0px 0px 0px;
+	padding: 0;
+}
+
+.reveal .end h1 {
+	margin: 40px 0 0 0;
+}
+
+.reveal .external p {
+	font-weight: 400;
+	font-size: 1.2em;
+	text-align: center;
+	color: white;
+	font-family: 'Lato','Segoe UI';
+}
+
+.reveal .welcome h2 {
+	font-weight: 400;
+	font-size: 1.2em;
+	text-align: center;
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	color: white;
+	margin: 0;
+	font-family: 'Lato','Segoe UI';
+	color: #f3f3f3;
+}
+
+.reveal .welcome h3 {
+	font-weight: 300;
+	font-size: 1.2em;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	margin: 0;
+}
+
+
+/* Household Support */
+
+
+.reveal .householdSupport li{
+	font-size: 0.7em;
+} 
+
+.reveal .householdSupport p{
+	font-size: 0.5em;
+	margin-top: 80px;
+	font-weight: 400;
+	color: #363636;
+} 
+
+.reveal .householdSupport table{
+	margin: 0 40px 0 40px;
+	line-height: 1;
+} 
+
+.reveal .householdSupport th{
+	text-transform: uppercase;
+	font-size: 0.5em;
+	padding: 20px 20px 0 0;
+	font-weight: 400;
+	color: #0274be;
+} 
+
+.reveal .householdSupport td{
+	padding: 20px 20px 0 0;
+	font-size: 0.35em;
+	line-height: 1.4;
+	width: 20%;
+	color: #363636;
+} 
+
+.reveal .householdSupport td img{
+	width: 100%;
+}
+
+/* Household Daily Economy */
+
+.reveal .householdEconomy h2 {
+	text-align: center;
+	margin-left: 0;
+}
+
+/* Household - Buying a House */
+
+.reveal .householdHousing h2{
+	font-size: 1.2em;
+	margin: 20px 20px 0 20px;
+	padding: 50px 0 0 0;
+	min-height: 75px;
+	text-align: center;
+	position: relative;
+	z-index: 0;
+} 
+
+.reveal .householdHousing h2 span{
+	display: block;
+	position: absolute;
+	width: 0; 
+	height: 0; 
+	border-left: 480px solid transparent;
+	border-right: 480px solid transparent;
+	border-bottom: 120px solid #dcd6bf; /* #0274be; #c5bc89;*/
+	top: 0;
+	z-index: -1;
+}
+
+.reveal .householdHousing table{
+	margin: 0 20px 0 40px;
+	line-height: 1;
+} 
+
+.reveal .householdHousing img{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+} 
+
+.reveal .householdHousing th{
+	text-transform: uppercase;
+	font-size: 0.4em;
+	padding: 20px 0 10px 0;
+	font-weight: 900;
+	width: 25%;
+} 
+
+.reveal .householdHousing li{
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1;
+	margin: 10px 10px 0 0;
+	text-transform: none;
+} 
+
+.reveal .householdHousing td img{
+	width: 100%;
+}
+
+/* Pyramid */
+
+.reveal .pyramid {
+	width: 392px;
+	height: 630px;
+	background: url('../img/corporate_pyramid.png') no-repeat;
+	position: relative;
+}
+
+.reveal .pyramid div {
+	color: white;
+	font-size: 0.6em;
+	position: absolute;
+	line-height: 1em;
+	text-align: center;
+	width: 392px;
+}
+
+.reveal .pyramid div:nth-child(1) {
+	top: 20px;
+	left: 220px;
+	font-size: 0.3em;
+	color: #0274be;
+	width: auto;
+}
+.reveal .pyramid div:nth-child(2) {
+	top: 125px;
+	font-size: 0.3em;
+}
+.reveal .pyramid div:nth-child(3) {
+	top: 210px;
+	font-size: 0.4em;
+}
+.reveal .pyramid div:nth-child(4) {
+	top: 290px;
+	font-size: 0.4em;
+}
+.reveal .pyramid div:nth-child(5) {
+	top: 380px;
+	font-size: 0.5em;
+}
+.reveal .pyramid div:nth-child(6) {
+	top: 470px;
+	font-size: 0.6em;
+}
+.reveal .pyramid div:nth-child(7) {
+	top: 560px;
+	font-size: 0.7em;
+}
+
+/* Household - Motivator Title */
+
+.reveal .motivatorTitle {
+	font-size: 1.2em;
+	margin-bottom: 40px;
+}
+
+/* print - survey */
+
+.reveal .externalLink,
+.reveal .survey,
+.reveal .print {
+	text-align: center;
+	font-size: 0.8em;
+	width: 380px;
+	margin: 220px 20px;
+	display: inline-table;
+	padding: 3%;
+	font-family: 'Lato','Segoe UI';
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: white;
+	border-color: white;
+	opacity: 0.3;
+	border-style:solid;
+	border-width:5px;
+	background: transparent;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.reveal .externalLink:hover, 
+.reveal .survey:hover,
+.reveal .print:hover{
+	color: white;
+	border-color: white;
+	opacity: 1;
+}
+
+/* *********************************
+** MOTIVATORS
+************************************
+*/
+
+.reveal .sliderBox {
+	float: left;
+	width:200px;
+}
+
+.reveal .slider {
+	float: left;
+}
+
+.reveal .loanMotivator {
+	margin: 10px 0 0 40px;
+	width: 960px;
+}
+
+.reveal .loanMotivator  h1,
+.reveal .loanMotivator  h2,
+.reveal .loanMotivator  h3 {
+	font-family: 'Lato','Segoe UI';
+	margin: 0 0 20px 0;
+}
+
+.reveal .scenarioBox h1 {
+	font-size: 28px;
+	text-align: left;
+	color: #666666;
+	margin: 0 0 10px 0;
+}
+
+.reveal .scenarioBox h2 {
+	font-size:0.3em;
+	text-align: left;
+	color: #666666;
+}
+
+.reveal .scenarioBox .name {
+	font-family: 'Abril Fatface','Britannic Bold';
+	font-size: 0.6em;
+	text-transform: uppercase;
+}
+
+.reveal .scenarioBox .perMonth {
+	margin-top:30px;
+}
+
+.reveal .scenarioBox.selected h1,
+.reveal .scenarioBox.selected h2,
+.reveal .scenarioBox.selected .name {
+	color:black;
+}
+
+.reveal .loanMotivator .main button {
+	background: url("../img/add.png") no-repeat scroll 50% 50% transparent;
+	border: 0 none;
+	cursor: pointer;
+	height: 51px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+}
+
+.reveal .scenarioBox.selected h1 {
+	font-size: 28px;
+}
+
+.reveal .loanMotivator .year {
+	width: 300px;
+	text-align:left;
+	float:left;
+}
+
+.reveal .sliderBox h1, .reveal .loanMotivator .year h1 {
+	font-size: 0.8em;
+	text-align: left;
+	color: #353535;
+	font-weight:400;
+	margin-bottom: 10px;
+}
+
+.reveal .sliderBox h1 {
+	margin: 0 0 10px 40px;
+}
+
+.reveal .sliderBox h2, .reveal .loanMotivator .year h2 {
+	font-size: 0.3em;
+	text-align: left;
+	color: #353535;
+	font-weight:400;
+}
+
+.reveal .sliderBox h2 {
+	margin: 0 0 0 40px;
+}
+
+.reveal .loanMotivator .main {
+	height: 340px;
+	background-color: #dcd6bf;
+	position: relative;
+}
+
+.reveal .loanMotivator header {
+	height: 80px;
+	background: transparent;
+}
+
+.reveal .loanMotivator .config {
+	padding: 20px 0 40px 40px;
+}
+
+.reveal .scenarioBox {
+	width:50%;
+	height: 300px;
+	float: left;
+	position: relative;
+}
+
+.reveal .loanMotivator .config .scenario {
+	position: relative;
+}
+
+.reveal .scenarioBox aside{
+	margin: 40px 0 0 250px;
+}
+
+.reveal .dividerSlider {
+	margin: 30px 0 0 40px;
+	position: absolute;
+	bottom: 0;
+}
+
+.reveal .scenarioBox[data-scenario="1"] .dividerSlider, .reveal .scenario[data-scenario="1"] .slider .bgr {
+	background-color: #009dfe;
+}
+
+.reveal .scenarioBox[data-scenario="2"] .dividerSlider, .reveal .scenario[data-scenario="2"] .slider .bgr {
+	background-color: #f8bf00;
+}
+
+.reveal .loanMotivator .arrow {
+	background: url("../img/motivator_arrow.png") no-repeat scroll 0 0 transparent;
+    height: 30px;
+    position: absolute;
+    width: 80px;
+    z-index: 99;
+	top: -50px;
+}
+
+.reveal .scenario[data-scenario="1"] .arrow {
+	left: 40px;
+}
+
+.reveal .scenario[data-scenario="2"] .arrow {
+	left: 520px;
+}
+
+.reveal .scenario button {
+	background-color: white;
+    border: 0 none;
+    border: 1px solid grey;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    cursor: pointer;
+    color: #353535;
+    font-weight: 900;
+    margin: 0 10px 0 0;
+}
+
+.reveal .scenario[data-scenario="2"] .selected {
+	background-color:#f8bf00;
+	color:white;
+}
+
+.reveal .scenario[data-scenario="1"] .selected {
+	background-color:#009dfe;
+	color:white;
+}
+
+.reveal .dividerSlider .arrowDown,
+.reveal .dividerSlider .arrowUp {
+    height: 26px;
+    opacity: 0.5;
+    width: 30px;
+    margin:0 0 0 65px;
+    position: absolute;
+}
+
+.reveal .dividerSlider .arrowUp {
+  	background: url("../img/arrowUp.png") no-repeat scroll 0 0 transparent;
+    top:-25px;
+}
+
+.reveal .dividerSlider .arrowDown {
+  	background: url("../img/arrowDown.png") no-repeat scroll 0 0 transparent;
+    top:15px;
+}
+
+.reveal .dividerSlider .infoBottom,
+.reveal .dividerSlider .infoTop {
+    color: white;
+    line-height: 1;
+    margin: 5px;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.3em;
+
+}
+
+.reveal .dividerSlider .infoTop {
+    top: 0;
+}
+
+.reveal .dividerSlider .infoBottom {
+    bottom: 0;
+}
+
+.reveal .loanMotivator header h1 {
+	font-size: 0.8em;
+	padding:20px 0 0 40px;
+	text-align: left;
+	font-family: 'abrilfatface';
+}
+
+.reveal .loanMotivator .placeHolderImage {
+   	/*background: url('../img/asset-machinery.png') 50% 50% no-repeat;*/
+    float: left;
+    height: 200px;
+    margin: 40px;
+    padding: 20px;
+    width: 360px;
+}
+
+/* IFRAME STUFF */
+
+.reveal .frameWrapper {
+	height: 330px;
+	width: 666px;
+	margin: 0 0 0 40px;
+}
+
+.reveal .frameWrapperVertical {
+	height: 630px;
+	width: 420px;
+}
+
+.reveal .frameWrapperVertical,
+.reveal .frameWrapper {
+	position:relative;
+	text-align: left;
+}
+
+.reveal .frameWrapperVertical:hover .overlay,
+.reveal .frameWrapper:hover .overlay {
+	display:block;
+} 
+
+.reveal .frameWrapperVertical .overlay,
+.reveal .frameWrapper .overlay {
+	width: 100%;
+	height: 100%;
+	display:none;
+	background: transparent url('../img/transparent_dark.png') repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.reveal .frameWrapperVertical .overlay a, 
+.reveal .frameWrapper .overlay a {
+	position: absolute;
+	display: block;
+	height: 100%;
+	padding-top: 20%;
+	text-align: center;
+	width: 100%;
+	color:white;
+}
+
+
+/* *********************************
+** SLIDERS
+************************************
+*/
+
+.reveal .slider {
+	background-color: white;
+    height: 10px;
+    width: 10px;
+    position:relative;
+    border: 1px solid #c8c8c8;
+}
+
+.slider .ui-draggable {
+	-webkit-transform: translate(-45%,-40%);
+	-ms-transform: translate(-45%,-40%);
+	-moz-transform: translate(-45%,-40%);
+	-o-transform: translate(-45%,-40%);
+	transform: translate(-45%,-40%);
+	background: url('../img/slider_handle.png') 50% 50% no-repeat;
+    height: 102px;
+    width: 102px;
+	cursor: pointer;
+	z-index:99;
+}
+
+.slider .bgr {
+	background-color: #f8bf00;
+	width: 10px;
+	height: 10px;
+	position:absolute;
+	bottom:0;
+}
+
+.dividerSlider {
+	background-color: #f8bf00;
+    height: 10px;
+    width: 160px;
+    position:relative;
+}
+
+.dividerSlider .ui-draggable {
+	background-color: transparent;
+    height: 10px;
+    width: 160px;
+	cursor: pointer;
+}
+
+.dividerSlider .bgr {
+	background-color: #334049;
+	width: 160px;
+	height: 20px;
+	position:absolute;
+	bottom:0;
+}
+
+/* *********************************
+** TIMELINE
+************************************
+*/
+
+.timeline {
+	position:fixed;
+	bottom:-76px;
+	z-index:10;
+	height: 100px;
+	width: 100%;
+	background-color:#161616;
+}
+
+.dragArea {
+	position:relative;
+	left:120px;
+}
+
+.timeline section {
+	height: 100px;
+	width: 80px;
+	font-size: 9px;
+	background-color: #252525;
+	cursor: pointer;
+	overflow: hidden;
+	position:absolute;
+}
+
+.timeline section:hover .subsection h1 {
+	color:white;
+}
+
+.clear {
+	clear: both;
+}
+
+.subsection {    
+	position:absolute;
+}
+
+.top .subsection {
+    height: 24px;
+	background-color: #161616;
+}
+
+.top .subsection h1{
+    text-transform: uppercase;
+    font-size: 10px;
+	margin: 8px 0 0 10px;
+	padding: 0;
+	color: #7a7a7a;
+	height: 10px;
+	overflow:hidden;
+}
+
+.selected .top  .subsection h1{
+	color: #fff;
+}
+
+.bottom .subsection {
+	bottom:-38px;
+    height: 68px;
+    color: #7a7a7a;
+	background-color: #363636;
+}
+
+.bottom .subsection p {
+	margin: 5px 0 0 5px;
+	padding:0;
+}
+
+.selected .bottom .subsection {
+	bottom:-10px;
+}
+
+.top {
+	height: 24px;
+	background-color:#7a7a7a;
+}
+
+.bottom .subsection.touched {
+	background-color: #003366;
+}
+
+.selected .subsection.selected{   
+	background-color: #0274be;
+    color: #fff;
+}
+
+button.toggle, button.exit {
+	background:#161616;
+	border: 0;
+	width:120px;
+	position: absolute;
+	z-index:12;
+	color:#fff;
+	cursor:pointer;
+}
+
+button.toggle:hover, button.exit:hover {
+	color: white;
+	opacity: 1;
+}
+
+button.exit {
+	height: 76px;
+	bottom:0;
+	opacity: 0.4;
+	background: url("../img/arrow_small_white_no_box.png") no-repeat scroll 50% 50% #161616;
+}
+
+button.toggle {
+	height: 24px;
+    text-transform: uppercase;
+    font-size: 10px;
+	color: #7a7a7a;
+}
+
+/* *********************************
+** NOTES
+************************************
+*/
+
+.noteblock {
+	position: fixed;
+	width:510px;
+	right:-490px;
+	top:20px;
+	z-index:10;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.noteblock button {
+	width:50px;
+	height:50px;
+	display:block;
+	left: -40px;
+    position: absolute;
+    opacity:0.6;
+	background: transparent url('../img/notes_open.png') 50% 50%  no-repeat;
+	cursor:pointer;
+}
+
+.noteblock button:hover,
+.noteblock button.close:hover {
+	opacity:1;
+}
+
+.noteblock button.close {
+    opacity: 1;
+	background: transparent url('../img/notes_close.png')  50% 50%  no-repeat;
+}
+
+.reveal .actionPoints,
+.noteblock .notes,
+.reveal .finalNotes {
+	width: 360px;
+	padding:20px;
+	font-family: 'Lato','Segoe UI';
+	border: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.noteblock .notes {
+	width: 450px;
+	font-weight: 300;
+	margin-left: 20px;
+	height: 450px;
+	font-size: 0.9em;
+}
+
+.reveal .finalNotes {
+	margin: 0 40px 0 20px;
+	width: 500px;
+}
+
+.reveal .actionPoints {	
+	background-color: transparent;
+	border: 1px solid #ebebeb;
+	font-size: 0.4em;
+	color: grey;
+}
+
+.reveal .actionPoints.touched {
+	border: 0;
+	color: black;
+	font-style: normal;
+}
+
+.reveal .actionPoints,
+.reveal .finalNotes {
+	height: 440px;
+	text-align: left;
+	float: left;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.reveal .finalNotes {
+	background-color: #efece1;
+}
+
+.reveal .finalNotes p,
+.reveal .finalNotes h2{
+	margin: 0 0 10px 0;
+	font-size: 0.4em;
+	color: #5D5740;
+}
+
+.reveal .finalNotes h2{
+	font-style:normal;
+	margin-bottom: 10px;
+}
