@@ -480,7 +480,7 @@ Globalize.addCultureInfo("sv", {
         "coLeasing2Bullet2": "Nordea äger objektet, belastar inte företagets balansräkning",
         "coLeasing2Bullet3": "Säkerhet i objektet, ingen ytterligare kostnad för säkerheten",  
         "coLeasing2Bullet4": "",
-        "coLeasing2Link": "link",
+        "coLeasing2IframeLink": "Link",
       
         "coAvbetalningLocalName": "Avbetalning",
         "coAvbetalningTitle": "Avbetalning",
@@ -490,6 +490,7 @@ Globalize.addCultureInfo("sv", {
     	"coAvbetalningBullet2": "Möjlighet till extraamortering och förtidsinlösen",
 	    "coAvbetalningBullet3": "Säkerhet i objektet, ingen ytterligare kostnad för säkerheten",
 	    "coAvbetalningBullet4": "",
+	    "coAvbetalningIframeLink": "Link",
 
 
         "cofakturalaanLocalName": "Fakturabelåning",
@@ -499,6 +500,7 @@ Globalize.addCultureInfo("sv", {
     	"cofakturalaanBullet2": "Frigör tid",
     	"cofakturalaanBullet3": "Använder kundfodringar som säkerhet",
     	"cofakturalaanBullet4": "Nyttjas efter behov",
+    	"cofakturalaanIframeLink": "Link",
 
         "cobilleasingLocalName": "Billeasing ",
         "cobilleasingTitle": "Billeasing ",

@@ -7,7 +7,7 @@ var Agenda = (function() {
 	var $agendaList, $summaryList, $print, $boxes, $yearline, $agenda;
 
 	var touched = [];
-
+    window.onbeforeunload = function(){};
 	//init the agenda
 	function init() {
 		$agendaList = $('.reveal .agendaList');

@@ -2643,30 +2643,6 @@ var Templates = (function() {
 				image: "handlerisk.jpg"
 			},
 			{
-				id: 335,
-				template: "templateLeftColumn",
-				keyName: "Leasing2",
-				keyArea: "Solutions",
-				tags: "sv,corporate,nordeaFinance,medium,small,large",
-				backgroundImage: "",
-				hideNotes: false,
-				locked: false,
-				localName: localize("coLeasing2LocalName"),
-				localArea: localize("coSolutionsLocalArea"),
-				title: localize("coLeasing2Title"),
-				byline: localize("coLeasing2Byline"),
-				nestedLists: [
-					{text: localize("coLeasing2Bullet1")},
-					{text: localize("coLeasing2Bullet2")},
-					{text: localize("coLeasing2Bullet3")},
-					{text: localize("coLeasing2Bullet4")}
-				],
-				iframe: "true",
-				image: "leasing2.jpg",
-				url: "https://intservices.sed1.root4.net/pccalc/",
-			    linkText: localize("coLeasing2Link")
-			},
-				{
 				id: 128,
 				template: "templateLeftColumn",
 				keyName: "Car Leasing",
@@ -2686,15 +2662,15 @@ var Templates = (function() {
 					{text: localize("coLeasing2Bullet3")},
 					{text: localize("coLeasing2Bullet4")}
 				],
-				image: "leasing2",
+				image: "leasing2.jpg",
 				iframe: true,
 				url: "https://intservices.sed1.root4.net/pccalc/",
 				linkText: localize("coLeasing2IframeLink")
 			},
-			{
-				id: 336,
+		   	{
+				id: 128,
 				template: "templateLeftColumn",
-				keyName: "Avbetalning",
+				keyName: "Avbetaling",
 				keyArea: "Solutions",
 				tags: "sv,corporate,nordeaFinance,medium,small,large",
 				backgroundImage: "",
@@ -2704,22 +2680,24 @@ var Templates = (function() {
 				localArea: localize("coSolutionsLocalArea"),
 				title: localize("coAvbetalningTitle"),
 				byline: localize("coAvbetalningByline"),
-				nestedLists: [
+				subTitle1: localize("coAvbetalningSubTitle1"),
+				nestedLists: [	
 					{text: localize("coAvbetalningBullet1")},
 					{text: localize("coAvbetalningBullet2")},
 					{text: localize("coAvbetalningBullet3")},
 					{text: localize("coAvbetalningBullet4")}
 				],
-				iframe: "false",
+				image: "avbetalning.jpg",
+				iframe: true,
 				url: "https://intservices.sed1.root4.net/pccalc/",
-				image: "Avbetalning.jpg"
+				linkText: localize("coAvbetalningIframeLink")
 			},
 			{
-				id: 337,
+				id: 128,
 				template: "templateLeftColumn",
 				keyName: "Fakturabelåning",
 				keyArea: "Solutions",
-				tags: "sv,corporate,NordeaFinance,medium,small,large",
+				tags: "sv,corporate,nordeaFinance,medium,small,large",
 				backgroundImage: "",
 				hideNotes: false,
 				locked: false,
@@ -2727,13 +2705,17 @@ var Templates = (function() {
 				localArea: localize("coSolutionsLocalArea"),
 				title: localize("cofakturalaanTitle"),
 				byline: localize("cofakturalaanByline"),
-				nestedLists: [
+				subTitle1: localize("cofakturalaanSubTitle1"),
+				nestedLists: [	
 					{text: localize("cofakturalaanBullet1")},
 					{text: localize("cofakturalaanBullet2")},
 					{text: localize("cofakturalaanBullet3")},
 					{text: localize("cofakturalaanBullet4")}
 				],
-				image: "fakturalaan.jpg"
+				image: "fakturalaan.jpg",
+				iframe: true,
+				url: "https://intservices.sed1.root4.net/pccalc/",
+				linkText: localize("cofakturalaanIframeLink")
 			},
 			{
 				id: 338,

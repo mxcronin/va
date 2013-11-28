@@ -1,4 +1,4 @@
-﻿Globalize.addCultureInfo("da", {
+Globalize.addCultureInfo("da", {
     messages: {
        //splash
         "splashLogoTitle": "Visual Agenda",
@@ -463,7 +463,7 @@
         "motivator2Duration": "Løbetid, år",
         "motivator2PerMonth": "Ydelse",
         //Multichannel Name
-        "multiLocalName": "Multichannel",
+        "multiLocalName": "Brug af banken",
         //notes
         "notes": "Notater fra mødet",
         "actionNotes": "Actions",

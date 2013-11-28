@@ -77,6 +77,9 @@ body {
 article.intro{
 	height: 100%;
 }
+.multichannel-app p {
+    margin: 0 0 0 0;
+}
 .multichannel-app{
 	overflow: hidden;
 	position: absolute;
@@ -89,6 +92,14 @@ article.intro{
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+}
+.multichannel  ul li{
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    line-height: 1.6em;
 }
 .multichannel ul.info{
 	display: none;
@@ -197,6 +208,10 @@ ul.show-bullets{
 h1.p-text{
 	color: #fff;
 	text-transform: none;
+	font-size: 30px;
+}
+.scaled h1.p-text{
+    display: none;
 }
 p.intro{
 	color: #fff;
@@ -253,7 +268,7 @@ p.intro{
 }
 .multichannel-container.bank .foto-container{
 	width: 540px;
-	margin-top: 50px;
+	height: 340px;
 }
 .multichannel-container.active .multichannel.scaled.margintop{
 	margin-top: 0px !important;
@@ -308,6 +323,9 @@ p.intro{
 .scaled .card-front i{
 	font-size: 175px;
 }
+.scaled .title-container{
+    height: 100px;
+}
 .inner-card{
 		-webkit-transition: 1s;
 		-webkit-transform-style: preserve-3d;
@@ -336,9 +354,12 @@ p.intro{
 		margin-left: 0px;
 }
 .card-back i{
-	font-size: 25px;
+	display: none;
+	margin-top: 10px;
 }
-
+.scaled .card-back i{
+	display: block;
+}
 .card-back .foto-container{
 	width: 420px;
 	display: none;
@@ -358,8 +379,10 @@ p.intro{
 	max-width: 40%;
 	list-style: none;
 }
-.full-img{
-	width: 100%;
+img.full-img{
+	width: 540px;
+	max-width: 100%;
+	max-height: 100%;
 }
 .card-back .content-container{
 	width: 100%;
