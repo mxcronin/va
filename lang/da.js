@@ -160,6 +160,11 @@
         "hhSavingsPensionTitle":"Opsparing & pension",
         "hhSavingsPensionString1":"Dine muligheder og finansielle løsninger.",
         "hhSavingsPensionIframeLink":"Vis din økonomi!",
+        
+        "hhSavingsPensiondkLocalName":"Din økonomi",
+        "hhSavingsPensiondkTitle":"Opsparing & pension",
+        "hhSavingsPensiondkString1":"Dine muligheder og finansielle løsninger.",
+        "hhSavingsPensiondkIframeLink":"Vis din økonomi!",
 
         "hhTrygInsuranceLocalName":"Tryg Forsikringer",
         "hhTrygInsuranceTitle":"Forsikringer",

@@ -417,7 +417,7 @@ Globalize.addCultureInfo("no", {
         "coInterestExposureBullet4": "Kontrakter med rentebetingelser",
         "coInterestExposureBullet4Dropdown1": "Avtaler der kontantstrømmer justeres ift utvikling i en referanserente",
         
-         "conlpNO1LocalName": "Innskuddspensjon",
+        "conlpNO1LocalName": "Innskuddspensjon",
         "conlpNO1Title": "Hva inneholder innskuddspensjon?",
         "conlpNO1Byline": "",
         "conlpNO1Bullet1": "Lov om obligatorisk tjenestepensjon",
