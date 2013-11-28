@@ -1,4 +1,4 @@
-﻿var Templates = (function() {
+var Templates = (function() {
 	'use strict';
 
 	var BACKGROUND_TYPE_FULL = "backgroundTypeFull";
@@ -157,7 +157,8 @@
 				},
 				{
 					bullets: [
-						localize("hhAdvantageProgramBox5Bullet1")
+						localize("hhAdvantageProgramBox5Bullet1"),
+						localize("hhAdvantageProgramBox5Bullet2")
 					],
 					image: "premium.jpg",
 					caption: localize("hhAdvantageProgramBox5Caption")
@@ -986,7 +987,7 @@
 						localize("hhPremiumNOBullet5Dropdown3"),
 						localize("hhPremiumNOBullet5Dropdown4")]},
 				],
-				image: "boat.jpg",							
+				image: "boat5.jpg",							
 			},
 			{
 				id: 15,
@@ -1099,6 +1100,23 @@
 				links: [ 	
 				{url:"https://www.surveyportal.dk/wq8/surveys/19503-90516/survey.html",text: localize("surveyLinkCustomer")},
 				{url:"https://www.surveyportal.dk/wq8/surveys/84513-90516/survey.html",text: localize("surveyLinkAdvisor")}
+				]
+			},
+				{
+				id: 20,
+				template: "templateSurvey",
+				keyName: "Survey",
+				keyArea: "End",
+				tags: "fi,household,360,theme,introduction,premium,gold",
+				backgroundImage: "welcome_hh_"+Config.countryCode+".jpg",
+				hideNotes: true,
+				locked: true,
+				localName: localize("surveyLocalName"),
+				localArea: localize("hhSurveyLocalArea"),
+				title: localize("surveyTitle"),
+				links: [ 	
+				{url:"https://www.surveyportal.dk/wq8/surveys/72413-90516/survey.html",text: localize("surveyLinkCustomer")},
+				{url:"https://www.surveyportal.dk/wq8/surveys/15213-90516/survey.html",text: localize("surveyLinkAdvisor")}
 				]
 			},
 			
@@ -1445,6 +1463,50 @@
 				{
 				id: 124,
 				template: "templateBox",
+				keyName: "nlpNO",
+				keyArea: "Solutions",
+				tags: "no,corporate,cashManagement,medium,small",
+				backgroundImage: "",
+				hideNotes: false,
+				locked: false,
+				localName: localize("conlpNOLocalName"),
+				localArea: localize("conlpNOLocalArea"),
+				title: localize("conlpNOTitle"),
+				boxes: [{
+					title: localize("conlpNOBox1Title"),
+					lists: [{
+						bullets: [localize("conlpNOBox1Bullet1"), localize("conlpNOBox1Bullet2"), localize("conlpNOBox1Bullet3"), localize("conlpNOBox1Bullet4"), localize("conlpNOBox1Bullet5")]
+					}],
+					image: "savings.jpg"
+				},
+				{
+					title: localize("conlpNOBox2Title"),
+					lists: [{
+						bullets: [localize("conlpNOBox2Bullet1"), localize("conlpNOBox2Bullet2"), localize("conlpNOBox2Bullet3"),localize("conlpNOBox2Bullet4"), localize("conlpNOBox2Bullet5"),localize("conlpNOBox2Bullet6"),localize("conlpNOBox2Bullet7")]
+					}],
+					image: "tryck.jpg"
+				},
+				{
+					title: localize("conlpNOBox3Title"),
+					lists: [{
+						bullets: [localize("conlpNOBox3Bullet1"), localize("conlpNOBox3Bullet2"), localize("conlpNOBox3Bullet3"), localize("conlpNOBox3Bullet4")]
+					}],
+					image: "woman-mobile.png"
+				},
+				{
+					title: localize("conlpNOBox4Title"),
+					lists: [{
+						bullets: [localize("conlpNOBox4Bullet1"), localize("conlpNOBox4Bullet2"), localize("conlpNOBox4Bullet3")]
+					},
+					{
+						bullets: [localize("conlpNOBox4Bullet4"), localize("conlpNOBox4Bullet5"), localize("conlpNOBox4Bullet6")]
+					}],
+					image: "buy.jpg"
+				}]
+				},
+				{
+				id: 124,
+				template: "templateBox",
 				keyName: "Muligheder",
 				keyArea: "Solutions",
 				tags: "da,corporate,360,aboutNordea,medium,small",
@@ -1740,6 +1802,53 @@
 						localize("coInterestExposureBullet5Dropdown4")]},
 				],
 				image: "ice_skating1.jpg",
+			},
+			{
+				id: 29,
+				template: "templateLeftColumn",
+				keyName: "NLP NO 1",
+				keyArea: "Solutions",
+				tags: "no,sv,corporate,markets,medium,small",
+				backgroundImage: "",
+				hideNotes: false,
+				locked: false,
+				localName: localize("conlpNO1LocalName"),
+				localArea: localize("coSolutionsLocalArea"),
+				title: localize("conlpNO1Title"),
+				byline: localize("conlpNO1Byline"),
+				nestedLists: [	
+					{text: localize("conlpNO1Bullet1"),
+					bullets: [
+						localize("conlpNO1Bullet1Dropdown1"),
+						localize("conlpNO1Bullet1Dropdown2"),
+						localize("conlpNO1Bullet1Dropdown3"),
+						localize("conlpNO1Bullet1Dropdown4")]},
+					{text: localize("conlpNO1Bullet2"),
+					bullets: [
+						localize("conlpNO1Bullet2Dropdown1"),
+						localize("conlpNO1Bullet2Dropdown2"),
+						localize("conlpNO1Bullet2Dropdown3"),
+						localize("conlpNO1Bullet2Dropdown4")]},
+					{text: localize("conlpNO1Bullet3"),
+					bullets: [
+						localize("conlpNO1Bullet3Dropdown1"),
+						localize("conlpNO1Bullet3Dropdown2"),
+						localize("conlpNO1Bullet3Dropdown3"),
+						localize("conlpNO1Bullet3Dropdown4")]},
+					{text: localize("conlpNO1Bullet4"),
+					bullets: [
+						localize("conlpNO1Bullet4Dropdown1"),
+						localize("conlpNO1Bullet4Dropdown2"),
+						localize("conlpNO1Bullet4Dropdown3"),
+						localize("conlpNO1Bullet4Dropdown4")]},
+					{text: localize("conlpNO1Bullet5"),
+					bullets: [
+						localize("conlpNO1Bullet5Dropdown1"),
+						localize("conlpNO1Bullet5Dropdown2"),
+						localize("conlpNO1Bullet5Dropdown3"),
+						localize("conlpNO1Bullet5Dropdown4")]},
+				],
+				image: "coffee.jpg",
 			},
 			{
 				id: 29,
@@ -2488,7 +2597,10 @@
 					{text: localize("coLeasing2Bullet3")},
 					{text: localize("coLeasing2Bullet4")}
 				],
-				image: "leasing2.jpg"
+				iframe: "false",
+				url: "https://intservices.sed1.root4.net/pccalc/",
+				image: "leasing2.jpg",
+			    linkText: localize("coLeasing2IframeLink")
 			},
 			{
 				id: 336,
@@ -2728,8 +2840,8 @@
 				localArea: localize("coSurveyLocalArea"),
 				title: localize("surveyTitle"),
 				links: [
-				{url:"https://www.surveyportal."+Config.countryCode+"/wq8/surveys/38192-90516/survey.html",text: localize("surveyLinkCustomer")},
-				{url:"https://www.surveyportal."+Config.countryCode+"/wq8/surveys/49192-90516/survey.html",text: localize("surveyLinkAdvisor")}
+				{url:"https://www.surveyportal.dk/wq8/surveys/63613-90516/survey.html",text: localize("surveyLinkCustomer")},
+				{url:"https://www.surveyportal.dk/wq8/surveys/74613-90516/survey.html",text: localize("surveyLinkAdvisor")}
 				]
 			},
 			{
@@ -2800,7 +2912,7 @@
 				bullet: localize("customBullet"),
 				image: "custom1.jpg"
 			},
-{
+            {
 				id: 299,
 				template: "templateMultichannel",
 				keyName: "Custom12",
@@ -2811,6 +2923,32 @@
 				locked: false,
 				localName: localize("multiLocalName"),
 				localArea: localize("hhSolutionsLocalArea")
+			},
+				{
+				id: 300,
+				template: "templateLeftColumn",
+				keyName: "CM",
+				keyArea: "Solutions",
+				tags: "sv,corporate,finance,medium,small,large",
+				backgroundImage: "",
+				hideNotes: false,
+				locked: false,
+				localName: localize("cocmSELocalName"),
+				localArea: localize("cocmSELocalArea"),
+				title: localize("cocmSETitle"),
+				byline: localize("cocmSEByline"),
+				nestedLists: [	
+					{text: localize("cocmSEBullet1"),
+					bullets: [
+						localize("cocmSEBullet1Dropdown1"),
+						localize("cocmSEBullet1Dropdown2"),
+						localize("cocmSEBullet1Dropdown3"),
+						localize("cocmSEBullet1Dropdown4")]},
+					{text: localize("cocmSEBullet2")},
+					{text: localize("cocmSEBullet3")},
+					{text: localize("cocmSEBullet4")}
+				],
+				image: "cash-management.jpg",
 			}
 			]
 		};

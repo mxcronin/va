@@ -1,4 +1,4 @@
-﻿Globalize.addCultureInfo("sv", {
+Globalize.addCultureInfo("sv", {
     messages: {
     	  //splash
         "splashLogoTitle": "Visual Agenda",
@@ -362,7 +362,7 @@
         "coSolutionsBox4Bullet5": "",
         "coSolutionsBox4Bullet6": "",
 
-	"cofinansSELocalName": "Finansiering",
+    	"cofinansSELocalName": "Finansiering",
         "cofinansSETitle": "Ska företaget investera?",
         "cofinansSEByline": "Egna pengar eller lånade?",
         "cofinansSEBullet1": "Vad ska företaget investera i?",
@@ -374,14 +374,14 @@
         "cofinansSEBullet2Dropdown2": "Prognoser",
         "cofinansSEBullet3": "Hur viktig är investeringen för företagets utveckling?",
 
-	"coSolutionsLocalArea": "Behov",
+	    "coSolutionsLocalArea": "Behov",
         "copbSELocalName": "PB Du och ditt företag",
         "copbSETitle": "Du och ditt företag",
-	"copbSEByline": "Äger du ditt företag eller är det tvärtom?",
+    	"copbSEByline": "Äger du ditt företag eller är det tvärtom?",
         "copbSEBullet1": "Din och familjens ekonomi",
-	"copbSEBullet2": "Din roll som ägare",
-	"copbSEBullet3": "Företagets överskott",
-	"copbSEBullet4": "Företagets löpande verksamhet",
+    	"copbSEBullet2": "Din roll som ägare",
+    	"copbSEBullet3": "Företagets överskott",
+    	"copbSEBullet4": "Företagets löpande verksamhet",
         
         "copb3SELocalName": "PB samarbete ",
         "copb3SETitle": "Hur vill du att vi arbetar?",
@@ -395,7 +395,7 @@
         "copb3SEBullet3": "Våra resurser hjälper dig",
         "copb3SEBullet3Dropdown1": "45 portföljanalytiker och strateger i Norden",
 	
-	"copb2SELocalName": "PB behov & lösningar",
+    	"copb2SELocalName": "PB behov & lösningar",
         "copb2SETitle": "Private Banking",
         "copb2SEByline": "Tillsammans utvecklar vi ditt företag",
         "copb2SEBullet1": "Företagets behov",
@@ -475,33 +475,34 @@
 
         "coLeasing2LocalName": "Leasing",
         "coLeasing2Title": "Leasing",
-	"coLeasing2Byline": "När företaget hyr lös egendom på lång sikt",
+    	"coLeasing2Byline": "När företaget hyr lös egendom på lång sikt",
         "coLeasing2Bullet1": "Förbättrar företagets likviditet",
         "coLeasing2Bullet2": "Nordea äger objektet, belastar inte företagets balansräkning",
         "coLeasing2Bullet3": "Säkerhet i objektet, ingen ytterligare kostnad för säkerheten",  
         "coLeasing2Bullet4": "",
+        "coLeasing2IframeLink": "link",
       
         "coAvbetalningLocalName": "Avbetalning",
         "coAvbetalningTitle": "Avbetalning",
-	"coAvbetalningByline": "Kredit med objektet som säkerhet",
+    	"coAvbetalningByline": "Kredit med objektet som säkerhet",
         "coAvbetalningBullet1": "Förbättrar företagets likviditet",
-	"coAvbetalningBullet1": "Företaget kan reglera avskrivningen",
-	"coAvbetalningBullet2": "Möjlighet till extraamortering och förtidsinlösen",
-	"coAvbetalningBullet3": "Säkerhet i objektet, ingen ytterligare kostnad för säkerheten",
-	"coAvbetalningBullet4": "",
+    	"coAvbetalningBullet1": "Företaget kan reglera avskrivningen",
+    	"coAvbetalningBullet2": "Möjlighet till extraamortering och förtidsinlösen",
+	    "coAvbetalningBullet3": "Säkerhet i objektet, ingen ytterligare kostnad för säkerheten",
+	    "coAvbetalningBullet4": "",
 
 
         "cofakturalaanLocalName": "Fakturabelåning",
         "cofakturalaanTitle": "Fakturabelåning",
-	"cofakturalaanByline": "Belåna företagets kundfordringar, Nordea hanterar administrationen av kundreskontran",
+    	"cofakturalaanByline": "Belåna företagets kundfordringar, Nordea hanterar administrationen av kundreskontran",
         "cofakturalaanBullet1": "Förbättrar likviditeten",
-	"cofakturalaanBullet2": "Frigör tid",
-	"cofakturalaanBullet3": "Använder kundfodringar som säkerhet",
-	"cofakturalaanBullet4": "Nyttjas efter behov",
+    	"cofakturalaanBullet2": "Frigör tid",
+    	"cofakturalaanBullet3": "Använder kundfodringar som säkerhet",
+    	"cofakturalaanBullet4": "Nyttjas efter behov",
 
         "cobilleasingLocalName": "Billeasing ",
         "cobilleasingTitle": "Billeasing ",
-	"cobilleasingByline": "Hyr fordon på lång sikt",
+	    "cobilleasingByline": "Hyr fordon på lång sikt",
         "cobilleasingBullet1": "Förbättrar företagets likviditet",
         "cobilleasingBullet2": "Positiv momseffekt",
         "cobilleasingBullet3": "Bilen som säkerhet",
@@ -510,11 +511,11 @@
 
         "confFleetLocalName": "NF Fleet ",
         "confFleetTitle": "NF Fleet ",
-	"confFleetByline": "Finansiering av fordon genom hyra, med komplett administration",
+    	"confFleetByline": "Finansiering av fordon genom hyra, med komplett administration",
         "confFleetBullet1": "Bekymmersfritt billägande",
-	"confFleetBullet2": "Fast månadskostnad",
-	"confFleetBullet3": "Nordea administrerar allt från inköp och försäljning till service",
-	"confFleetBullet4": "Ingen restvärderisk",        
+	    "confFleetBullet2": "Fast månadskostnad",
+	    "confFleetBullet3": "Nordea administrerar allt från inköp och försäljning till service",
+    	"confFleetBullet4": "Ingen restvärderisk",        
 
         "coAssetLoanLocalName":"Lånesimulator",
         "coAssetLoankTitle":"Finansieringsbehov framöver",
@@ -641,7 +642,21 @@
         "coPyramidBullet2Dropdown2":"Likviditet på konto",
         "coPyramidBullet3":"Produktgrupper och risk",
         "coPyramidBullet3Dropdown1":"Med risk menas att medlen kan svänga i värde över tid. Avkastningen kan bli positiv som en följd av kursuppgång, eller negatid som en följd av kursnedgång.",
-
+        
+        //coSolutions
+        "coSolutionsLocalArea": "Behov",
+           
+    	"cocmSELocalName": "CM",
+        "cocmSETitle": "Cash Management",
+        "cocmSEByline": "Effektivare betalningsflöden med våra lösningar",
+        "cocmSEBullet1": "Betalningar",
+        "cocmSEBullet1Dropdown1": "Ankommande från kunder",
+        "cocmSEBullet1Dropdown2": "Avgående till leverantörer",
+        "cocmSEBullet1Dropdown3": "Kanaler och volymer",
+        "cocmSEBullet2": "Hur snabbt betalar era kunder och hur görs avprickningen? ",
+        "cocmSEBullet3": "Löpande hantering av likviditeten",
+        "cocmSEBullet4": "Finns det några processer som ni vill förbättra?",
+        
         //co-summary
         "coSummaryLocalArea": "Sammanfattning",
         

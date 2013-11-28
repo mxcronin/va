@@ -23,7 +23,7 @@ Globalize.addCultureInfo("multi-da", {
        "momoneyintro": "Mobilpenge er en ny nem måde at handle på, hvor du betaler via din mobiltelefon",
         //Bullets
         "momoneybullet1": "Du kan bruge Mobilpenge som betaling i alle forretninger, der har aftale med Nets om Mobilpenge",
-        "momoneybullet2": "Når du betaler med Mobilpenge, er der automatisk saldokontrol. Altså kan du ikke handle for større beløb, end du har på kontoen",
+        "momoneybullet2": "Når du betaler med Mobilpenge, er der automatisk saldokontrol.",
         "momoneybullet3": "Alle betalinger hæves på din konto og fremgår altid af dit kontoudtog",
         //Telephone bank
         "tlfbanktitle": "Telefon bank",
@@ -50,9 +50,9 @@ Globalize.addCultureInfo("multi-da", {
         "advicetitle": "I banken",
         "adviceintro": "Som fordels kunde i Nordea er du altid velkommen i vores filialer",
          //Bullets
-        "advicebullet1": "Personlig rådgiver Du får din egen personlige rådgiver, som kender dig og dine planer. Du får et direkte telefonnummer til din rådgiver",
-        "advicebullet2": "Rådgivning uden for åbningstid Når du som fordel plus kunde har brug for et møde, kan du arrangere det uden for vores normale åbningstid, så du bedre kan få din hverdag til at gå op",
-        "advicebullet3": "Rådgivning hos vores specialister Vi har en række specialister inden for bolig, pension, forsikring og investering. De er klar til at rådgive dig, hvis du har særlige økonomiske behov",
+        "advicebullet1": "Egen personlige rådgiver",
+        "advicebullet2": "Rådgivning uden for åbningstid",
+        "advicebullet3": "Rådgivning hos vores specialister",
 
 
     }

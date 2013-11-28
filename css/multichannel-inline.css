@@ -422,7 +422,7 @@ p.intro{
 	margin-left: 200px;
 }
 
-.arrow{
+.text-container .arrow{
 	position: relative;
 	-webkit-transform: translate(-200px, 0px);
 	-webkit-transition: 0.6s;
