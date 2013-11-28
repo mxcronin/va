@@ -2621,7 +2621,10 @@ var Templates = (function() {
 					{text: localize("coAvbetalningBullet3")},
 					{text: localize("coAvbetalningBullet4")}
 				],
-				image: "Avbetalning.jpg"
+				iframe: "false",
+				url: "https://intservices.sed1.root4.net/pccalc/",
+				image: "Avbetalning.jpg",
+			    linkText: localize("coLeasing2IframeLink")
 			},
 			{
 				id: 337,
@@ -2663,6 +2666,9 @@ var Templates = (function() {
 					{text: localize("cobilleasingBullet3")},
 					{text: localize("cobilleasingBullet4")}
 				],
+				iframe: "false",
+				url: "https://intservices.sed1.root4.net/pccalc/",
+			    linkText: localize("coLeasing2IframeLink"),
 				image: "billeasing.jpg"
 			},
 			{
