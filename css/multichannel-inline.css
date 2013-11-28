@@ -209,6 +209,7 @@ h1.p-text{
 	color: #fff;
 	text-transform: none;
 	font-size: 30px;
+	display: none;
 }
 .scaled h1.p-text{
     display: none;
@@ -253,6 +254,9 @@ p.intro{
 /**/
 .multichannel-container.bank{
 	color: #000;
+}
+.multichannel-container.bank .title-container{
+	height: 100px;
 }
 .multichannel-container.bank .p-text{
 	text-align: center;
@@ -363,7 +367,7 @@ p.intro{
 .card-back .foto-container{
 	width: 420px;
 	display: none;
-	padding-right: 20px;
+	padding-right: 50px;
 }
 .card-back .foto-container video{
 	width: 450px; margin-right: 10px;

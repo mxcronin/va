@@ -442,7 +442,9 @@ var Templates = (function() {
 				iframe: true,
 				url: "https://intservices.sed1.root4.net/fpt_invest/FPTApplication.jsp?customerNumber=[customerId]&locale="+Config.abbriviation+"_"+Config.countryCode.toUpperCase()+"&themeId=2#findcustomer",
 				customerFrame: true,
-				linkText: localize("hhFPTseIframeLink")			},
+				linkText: localize("hhFPTseIframeLink")			
+			},
+		
 			{
 				template: "templateLeftColumn",
 				keyName: "CAPITEX SE",
@@ -1669,7 +1671,6 @@ var Templates = (function() {
 				],
 				image: "factoring.jpg"
 			},
-			
 			{
 				id: 26,
 				template: "templateLeftColumn",
@@ -2513,7 +2514,13 @@ var Templates = (function() {
 						localize("cosparendeSEBullet2Dropdown2")]},
 				],
 				image: "sparande.jpg",
+				iframe: true,
+				url: "https://intservices.sed1.root4.net/fpt_invest/FPTApplication.jsp?customerNumber=[customerId]&locale="+Config.abbriviation+"_"+Config.countryCode.toUpperCase()+"&themeId=2#findcustomer",
+				customerFrame: true,
+				linkText: localize("coFPTseIframeLink")		
 			},
+			
+			
 			{
 				id: 34,
 				template: "templateLeftColumn",

@@ -119,8 +119,8 @@ Globalize.addCultureInfo("sv", {
         "hhMobileBankseBullet3":" Enkelt att se saldo och betala räkningar",
         "hhMobileBankseSubTitle2":"Gratis på alla Stores",
         "hhMobileBankseIframeLink":"Demo Mobilbanken",
-
- 	"hhFPTseLocalName":"Sparande 1",
+        
+        "hhFPTseLocalName":"Sparande 1",
         "hhFPTseTitle":"Sparande",
         "hhFPTseByline":"Vi ger dig inga råd innan vi känner dig",
         "hhFPTseSubTitle1":"Vi vill veta:",
@@ -129,6 +129,7 @@ Globalize.addCultureInfo("sv", {
         "hhFPTseBullet3":" Hur ser ditt sparande ut idag?",
         "hhFPTseSubTitle2":"",
         "hhFPTseIframeLink":"Länk till Placeringsplanen",
+       
 
 	"hhCAPITEXseLocalName":"Lån 1",
         "hhCAPITEXseTitle":"Lån",
@@ -394,6 +395,15 @@ Globalize.addCultureInfo("sv", {
         "copb3SEBullet2Dropdown2": "Du väljer placeringspolicy, vi syr ihop den ultimata portföljen.",
         "copb3SEBullet3": "Våra resurser hjälper dig",
         "copb3SEBullet3Dropdown1": "45 portföljanalytiker och strateger i Norden",
+        
+        "cosparendeSELocalName": "Sparande",
+        "cosparendeSETitle": "Öka avkastningen på företagets pengar ",
+        "cosparendeSEByline": "Företagets pengar kan arbeta när du själv ligger och sover",
+        "cosparendeSEBullet1": "Effektiv hantering av företagets likviditet",
+        "cosparendeSEBullet1Dropdown1": "Ge överskottet en möjlighet att växa",
+        "cosparendeSEBullet2": "Strategi för placeringen",
+        "cosparendeSEBullet2Dropdown1": "Placeringsrådgivning baserat på era specifika behov",
+        "cosparendeSEBullet2Dropdown2": "",
 	
     	"copb2SELocalName": "PB behov & lösningar",
         "copb2SETitle": "Private Banking",
@@ -411,15 +421,6 @@ Globalize.addCultureInfo("sv", {
         "copb2SEBullet2Dropdown3": "Affärsjurist",
         "copb2SEBullet2Dropdown4": "Portföljanalys",
         "copb2SEBullet2Dropdown5": "Pensions- och försäkringsfrågor",
-
-        "cosparendeSELocalName": "Sparande",
-        "cosparendeSETitle": "Öka avkastningen på företagets pengar ",
-        "cosparendeSEByline": "Företagets pengar kan arbeta när du själv ligger och sover",
-        "cosparendeSEBullet1": "Effektiv hantering av företagets likviditet",
-        "cosparendeSEBullet1Dropdown1": "Ge överskottet en möjlighet att växa",
-        "cosparendeSEBullet2": "Strategi för placeringen",
-        "cosparendeSEBullet2Dropdown1": "Placeringsrådgivning baserat på era specifika behov",
-        "cosparendeSEBullet2Dropdown2": "",
 
         "coMarkets2LocalName": "Markets valutarisk",
         "coMarkets2Title": "Har ditt företag någon valutarisk?",
