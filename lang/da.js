@@ -23,17 +23,17 @@
 
         "hhAgendaLocalName": "Dagsorden",
         "hhAgendaTitle": "Mødet i dag",
-        "hhAgendaString1": "Intro & forventninger",
-        "hhAgendaString2": "Dine planer, ønsker & drømme",
-        "hhAgendaString3": "Status & økonomisk oversigt",
-        "hhAgendaString4": "Muligheder & løsninger",
+        "hhAgendaString1": "Dine forventninger til mødet",
+        "hhAgendaString2": "Din økonomi",
+        "hhAgendaString3": "Dine planer, ønsker og drømme",
+        "hhAgendaString4": "Muligheder og løsninger",
         "hhAgendaString5": "Opsummering",
 
         //hh-status
         "hhStatusLocalArea": "Status",
 
-        "hhFutureDreamsLocalName": "Dine planer, ønsker & drømme",
-        "hhFutureDreamsTitle": "Dine planer, ønsker & drømme",
+        "hhFutureDreamsLocalName": "Dine planer, ønsker og drømme",
+        "hhFutureDreamsTitle": "Dine planer, ønsker og drømme",
         "hhFutureDreamsString1": "Fremtidsplaner",
         "hhFutureDreamsString2": "Bolig",
         "hhFutureDreamsString3": "Fritid",
@@ -44,12 +44,17 @@
         "hhFutureDreamsYearlineString2": "1 år",
         "hhFutureDreamsYearlineString3": "5 år",
         "hhFutureDreamsYearlineString4": "30 år",
+        
+         "hhSavingsPension1LocalName":"Din økonomi",
+        "hhSavingsPension1Title":"Din økonomi",
+        "hhSavingsPension1String1":"Dine muligheder og finansielle løsninger.",
+        "hhSavingsPension1IframeLink":"Vis din økonomi!",
 
         "hhEconomyOverviewLocalName":"Økonomisk oversigt",
         "hhEconomyOverviewTitle":"Økonomisk<br /> Oversigt",
         "hhEconomyOverviewByline":"Hvordan er din økonomiske balance",
         "hhEconomyOverviewSubTitle1":"Overblik",
-        "hhEconomyOverviewBullet1":"Status gæld & ejendomme",
+        "hhEconomyOverviewBullet1":"Status gæld og ejendomme",
         "hhEconomyOverviewBullet2":"Status månedlig netto indtægter minus totale udgifter",
         "hhEconomyOverviewBullet3":"Hvad bliver din disponibele indtægt",
         "hhEconomyOverviewSubTitle2":"Behov for buffer kapital?",
@@ -79,11 +84,11 @@
         "hhSolutionsLocalArea" : "Muligheder",
 
         "hhFinancialSolutionsLocalName": "Finansielle muligheder",
-        "hhFinancialSolutionsTitle": "Muligheder & Løsninger",
+        "hhFinancialSolutionsTitle": "Muligheder og Løsninger",
         "hhFinancialSolutionsBox1Title": "Daglig brug af banken",
         "hhFinancialSolutionsBox1Bullet1": "Hvordan bruger du banken i dag?",
         "hhFinancialSolutionsBox1Bullet2": "Hvordan vil du gerne bruge banken?",
-        "hhFinancialSolutionsBox2Title": "Opsparing & Pension",
+        "hhFinancialSolutionsBox2Title": "Opsparing og Pension",
         "hhFinancialSolutionsBox2Bullet1": "Hvilke planer og ønsker har du for fremtiden, og hvordan sparer du op til det?",
         "hhFinancialSolutionsBox2Bullet2": "Hvad er vigtig for dig når du sparer op?",
         "hhFinancialSolutionsBox3Title": "Finansiering",
@@ -156,15 +161,10 @@
         "hhNordeaBilString2":"Hva blir din inntekt ved uførhet?",
         "hhNordeaBilIframeLink":"Nordea Bil",
 
-    "hhSavingsPensionLocalName":"Opsparing & pension",
-        "hhSavingsPensionTitle":"Opsparing & pension",
+    "hhSavingsPensionLocalName":"Opsparing og pension",
+        "hhSavingsPensionTitle":"Opsparing og pension",
         "hhSavingsPensionString1":"Dine muligheder og finansielle løsninger.",
         "hhSavingsPensionIframeLink":"Vis din økonomi!",
-        
-        "hhSavingsPensiondkLocalName":"Din økonomi",
-        "hhSavingsPensiondkTitle":"Opsparing & pension",
-        "hhSavingsPensiondkString1":"Dine muligheder og finansielle løsninger.",
-        "hhSavingsPensiondkIframeLink":"Vis din økonomi!",
 
         "hhTrygInsuranceLocalName":"Tryg Forsikringer",
         "hhTrygInsuranceTitle":"Forsikringer",
@@ -433,7 +433,7 @@
         "refinementTitle":"Tilpasning",
         "refinementClearData":"Nulstil indhold",
         "refinementAllSlidesTitle":"Tilgængeligt indhold",
-        "refinementAllSlidesByline":"Drag & Drop for at tilpasse indholdet",
+        "refinementAllSlidesByline":"Drag % Drop for at tilpasse indholdet",
         "refinementLoadSlideshow":"Indlæser præsentation",
 
         //timeline

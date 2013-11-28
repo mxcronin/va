@@ -43,23 +43,7 @@ var Templates = (function() {
 				string4: localize("hhAgendaString4"),
 				string5: localize("hhAgendaString5")
 			},
-			{
-				id: 10,
-				template: "templateIframe",
-				keyName: "Savings & Pension",
-				keyArea: "Staus",
-				tags: "da,household,360,savingsAndPension,premium,gold",
-				backgroundImage: "savings_large.jpg",
-				hideNotes: false,
-				locked: false,
-				localName: localize("hhSavingsPensiondkLocalName"),
-				localArea: localize("hhStatusLocalArea"),
-				title: localize("hhSavingsPensiondkTitle"),
-				paragrafs: [localize("hhSavingsPensiondkString1")],
-				url: "https://intservices.sed1.root4.net/fpt_invest/FPTApplication.jsp?customerNumber=[customerId]&locale="+Config.abbriviation+"_"+Config.countryCode.toUpperCase()+"&themeId=2#findcustomer",
-				customerFrame: true,
-				linkText: localize("hhSavingsPensiondkIframeLink")
-			},
+		
 			//status
 			{
 				template: "templateSmallBox",
@@ -124,6 +108,35 @@ var Templates = (function() {
 				image: "dailye.jpg",
 				url: "http://ccd1is0394:81/KundePres/",
 				linkText: localize("hhEconomyOverviewIframeLink")
+			},
+				{
+				id: 10,
+				template: "templateIframe",
+				keyName: "Savings & Pension",
+				keyArea: "Status",
+				tags: "da,household,360,savingsAndPension,premium,gold",
+				backgroundImage: "savings_large.jpg",
+				hideNotes: false,
+				locked: false,
+				localName: localize("hhSavingsPension1LocalName"),
+				localArea: localize("hhSolutionsLocalArea"),
+				title: localize("hhSavingsPension1Title"),
+				paragrafs: [localize("hhSavingsPension1String1")],
+				url: "https://intservices.sed1.root4.net/fpt_invest/FPTApplication.jsp?customerNumber=[customerId]&locale="+Config.abbriviation+"_"+Config.countryCode.toUpperCase()+"&themeId=2#findcustomer",
+				customerFrame: true,
+				linkText: localize("hhSavingsPension1IframeLink")
+			},
+			{
+				id: 299,
+				template: "templateMultichannel",
+				keyName: "Custom12",
+				keyArea: "Solutions",
+				tags: "da,household,360,dailyBanking,premium,gold",
+				backgroundImage: "multi-bg.png",
+				hideNotes: false,
+				locked: false,
+				localName: localize("multiLocalName"),
+				localArea: localize("hhSolutionsLocalArea")
 			},
 			{
 				template: "templateMediumBox",
@@ -1859,7 +1872,7 @@ var Templates = (function() {
 				template: "templateLeftColumn",
 				keyName: "NLP NO 1",
 				keyArea: "Solutions",
-				tags: "no,sv,corporate,markets,medium,small",
+				tags: "no,corporate,markets,medium,small",
 				backgroundImage: "",
 				hideNotes: false,
 				locked: false,
@@ -2648,10 +2661,35 @@ var Templates = (function() {
 					{text: localize("coLeasing2Bullet3")},
 					{text: localize("coLeasing2Bullet4")}
 				],
-				iframe: "false",
-				url: "https://intservices.sed1.root4.net/pccalc/",
+				iframe: "true",
 				image: "leasing2.jpg",
-			    linkText: localize("coLeasing2IframeLink")
+				url: "https://intservices.sed1.root4.net/pccalc/",
+			    linkText: localize("coLeasing2Link")
+			},
+				{
+				id: 128,
+				template: "templateLeftColumn",
+				keyName: "Car Leasing",
+				keyArea: "Solutions",
+				tags: "sv,corporate,nordeaFinance,medium,small,large",
+				backgroundImage: "",
+				hideNotes: false,
+				locked: false,
+				localName: localize("coLeasing2LocalName"),
+				localArea: localize("coSolutionsLocalArea"),
+				title: localize("coLeasing2Title"),
+				byline: localize("coLeasing2Byline"),
+				subTitle1: localize("coLeasing2SubTitle1"),
+				nestedLists: [	
+					{text: localize("coLeasing2Bullet1")},
+					{text: localize("coLeasing2Bullet2")},
+					{text: localize("coLeasing2Bullet3")},
+					{text: localize("coLeasing2Bullet4")}
+				],
+				image: "leasing2",
+				iframe: true,
+				url: "https://intservices.sed1.root4.net/pccalc/",
+				linkText: localize("coLeasing2IframeLink")
 			},
 			{
 				id: 336,
@@ -2967,18 +3005,7 @@ var Templates = (function() {
 				bullet: localize("customBullet"),
 				image: "custom1.jpg"
 			},
-            {
-				id: 299,
-				template: "templateMultichannel",
-				keyName: "Custom12",
-				keyArea: "Solutions",
-				tags: "da,household,360,dailyBanking,premium,gold",
-				backgroundImage: "multi-bg.png",
-				hideNotes: false,
-				locked: false,
-				localName: localize("multiLocalName"),
-				localArea: localize("hhSolutionsLocalArea")
-			},
+    
 				{
 				id: 300,
 				template: "templateLeftColumn",

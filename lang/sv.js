@@ -480,7 +480,7 @@ Globalize.addCultureInfo("sv", {
         "coLeasing2Bullet2": "Nordea äger objektet, belastar inte företagets balansräkning",
         "coLeasing2Bullet3": "Säkerhet i objektet, ingen ytterligare kostnad för säkerheten",  
         "coLeasing2Bullet4": "",
-        "coLeasing2IframeLink": "link",
+        "coLeasing2Link": "link",
       
         "coAvbetalningLocalName": "Avbetalning",
         "coAvbetalningTitle": "Avbetalning",
