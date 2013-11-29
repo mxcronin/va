@@ -192,7 +192,8 @@ ul.show-bullets{
 	color: #ccc;
 	cursor: pointer;
 	font-size: 60px;
-	margin-right: 20px;
+	margin-right: 15px;
+	margin-top: 10px;
 }
 .card-close-btn{
 	cursor: pointer;

@@ -1262,6 +1262,18 @@ var Templates = (function() {
 				string4: localize("coAgendaString4"),
 				string5: localize("coAgendaString5")
 			},
+				{
+				id: 301,
+				template: "templateMultichannel",
+				keyName: "Customcomulti",
+				keyArea: "Solutions",
+				tags: "da,corporate,small,medium,large",
+				backgroundImage: "comulti-bg.jpg",
+				hideNotes: false,
+				locked: false,
+				localName: localize("multiLocalName"),
+				localArea: localize("coSolutionsLocalArea")
+			},
 			//NEW slides and corrections
 			
 			

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
@@ -630,11 +630,11 @@
 									</ul>
 								</div>
 								<div class="foto-container easyhtml5video pull-right">
-									<video title="640"  preload="none" controls="controls" poster="video/nordea_app.jpg">
+									<video title="640"  preload="none" controls="controls">
 										<source src="video/nordea_app.mp4" type="video/mp4">
-											<source src="video/nordea_app.ogg" type="video/ogg">
-												<img src="img/mobilevideo.png" class="full-img">
-											</video>
+										<source src="video/nordea_app.ogg" type="video/ogg">
+										<img src="img/mobilevideo.png" class="full-img">
+									</video>
 
 											<div class="app-stores clearfix">
 												<img src="img/google-store.png" class="app-store-img">
@@ -765,8 +765,8 @@
 									</div>	
 									<div class="content-container clearfix">
 										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text: netbankintro"></p>
 											<ul class="info">
-												<p class="intro" data-bind="text: netbankintro"></p>
 												<li data-bind="text: netbankbullet1"></li>
 												<li data-bind="text: netbankbullet2"></li>
 												<li data-bind="text: netbankbullet3"></li>
@@ -781,7 +781,7 @@
 						</div>
 						<div class="text-container">
 							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
-							<div class="text">netbank</div>
+							<div class="text" data-bind="text: netbanktitle"></div>
 						</div>
 					</div>
 
@@ -799,8 +799,8 @@
 									</div>										
 									<div class="content-container clearfix">
 										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text: ipadbankintro"></p>
 											<ul class="info">
-												<p class="intro" data-bind="text: ipadbankintro"></p>
 												<li data-bind="text: ipadbankbullet1"></li>
 												<li data-bind="text: ipadbankbullet2"></li>
 												<li data-bind="text: ipadbankbullet3"></li>
@@ -815,7 +815,7 @@
 						</div>
 						<div class="text-container">
 							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
-							<div class="text">ipad</div>
+							<div class="text" data-bind="text: ipadbanktitle"></div>
 						</div>
 					</div>
 					</article>

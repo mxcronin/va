@@ -31,12 +31,12 @@ var Config = (function() {
 	type, 
 	subtype,
 	customerType;
-
+ 
 	var $errorSign;
 	var $nextCustomerType;
 	var $previousCustomerType;
 	var customerTypes;
-
+    
 	var isWebKit = !!window.webkitURL;
 
 	var $language;
@@ -174,7 +174,7 @@ var Config = (function() {
 				[Templates.localize('configCustomerTypeSmall'), "small"],
 				[Templates.localize('configCustomerTypeNew'), "new"]]
 		};
-
+      
 		$('body').css('overflow','hidden');
 
 		$configTable = $('.config table');
@@ -537,6 +537,7 @@ var Config = (function() {
 
 			SlideSelector.init(type, subtype, customerType);
 		});
+		app.animationController.type = type;
 	}
 
 	function exit() {

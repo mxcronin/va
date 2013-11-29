@@ -7,7 +7,11 @@ var Agenda = (function() {
 	var $agendaList, $summaryList, $print, $boxes, $yearline, $agenda;
 
 	var touched = [];
-    window.onbeforeunload = function(){};
+    window.onbeforeunload = function(e){
+                var message = 'Are you sure you want to close the agenda?';
+                return message;
+    };
+
 	//init the agenda
 	function init() {
 		$agendaList = $('.reveal .agendaList');

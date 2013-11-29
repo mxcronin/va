@@ -2,9 +2,12 @@
 		'use strict';
 		namespace.animationController ={
 			curdataid: null,
-
+            type: null,
+            
 			init: function() {
 				swippers();
+				console.log(app.animationController.type);
+				
 				if($('.multichannel-app').hasClass('init') || $('.multichannel-app').length === 0){
 						return
 				}
@@ -79,13 +82,14 @@
 								$('.multichannel-container.active').find('.app-stores').fadeOut();
 						});
 				}
+				
 				Globalize.culture('Danmark');
 				function alocalize(key) {
 						return Globalize.localize(key, 'multi-da');
 					}
 
 				function AppViewModel() {
-
+                        if(app.animationController.type === 'household'){
 						    this.mobile = ko.observable(alocalize("mobile"));
 						    this.home = ko.observable(alocalize("home"));
 						    this.bank = ko.observable(alocalize("bank"));
@@ -133,10 +137,58 @@
 						    this.advicebullet3 = ko.observable(alocalize("advicebullet3"));
 						  	this.adviceintro = ko.observable(alocalize("adviceintro"));
 						    this.advicetitle = ko.observable(alocalize("advicetitle"));
-						}	    
+                        }
+                        if(app.animationController.type === 'corporate'){
+                            this.mobile = ko.observable(alocalize("comobile"));
+						    this.home = ko.observable(alocalize("cohome"));
+						    this.bank = ko.observable(alocalize("cobank"));
+
+						    this.mobilebullet1 = ko.observable(alocalize("comobilebullet1"));
+						    this.mobilebullet2 = ko.observable(alocalize("comobilebullet2"));
+						    this.mobilebullet3 = ko.observable(alocalize("comobilebullet3"));
+						    this.mobiletitle = ko.observable(alocalize("comobiletitle"));
+						    this.mobileintro = ko.observable(alocalize("comobileintro"));
+
+						    this.swippbullet1 = ko.observable(alocalize("coswippbullet1"));
+						    this.swippbullet2 = ko.observable(alocalize("coswippbullet2"));
+						    this.swippbullet3 = ko.observable(alocalize("coswippbullet3"));
+						    this.swipptitle = ko.observable(alocalize("coswipptitle"));
+						    this.swippintro = ko.observable(alocalize("coswippintro"));
+
+						    this.momoneybullet1 = ko.observable(alocalize("comomoneybullet1"));
+						    this.momoneybullet2 = ko.observable(alocalize("comomoneybullet2"));
+						    this.momoneybullet3 = ko.observable(alocalize("comomoneybullet3"));
+						    this.momoneytitle = ko.observable(alocalize("comomoneytitle"));
+						    this.momoneyintro = ko.observable(alocalize("comomoneyintro"));
+
+						    this.tlfbankbullet1 = ko.observable(alocalize("cotlfbankbullet1"));
+						    this.tlfbankbullet2 = ko.observable(alocalize("cotlfbankbullet2"));
+						    this.tlfbankbullet3 = ko.observable(alocalize("cotlfbankbullet3"));
+						    this.tlfbanktitle = ko.observable(alocalize("cotlfbanktitle"));
+						    this.tlfbankintro = ko.observable(alocalize("cotlfbankintro"));
+
+						    this.netbankbullet1 = ko.observable(alocalize("conetbankbullet1"));
+						    this.netbankbullet2 = ko.observable(alocalize("conetbankbullet2"));
+						    this.netbankbullet3 = ko.observable(alocalize("conetbankbullet3"));
+						    this.netbanktitle = ko.observable(alocalize("conetbanktitle"));
+						    this.netbankintro = ko.observable(alocalize("conetbankintro"));
+
+						    this.ipadbankbullet1 = ko.observable(alocalize("coipadbankbullet1"));
+						    this.ipadbankbullet2 = ko.observable(alocalize("coipadbankbullet2"));
+						    this.ipadbankbullet3 = ko.observable(alocalize("coipadbankbullet3"));
+						    this.ipadbanktitle = ko.observable(alocalize("coipadbanktitle"));
+						    this.ipadbankintro = ko.observable(alocalize("coipadbankintro"));
+
+						    
+						    this.advicebullet1 = ko.observable(alocalize("coadvicebullet1"));
+						    this.advicebullet2 = ko.observable(alocalize("coadvicebullet2"));
+						    this.advicebullet3 = ko.observable(alocalize("coadvicebullet3"));
+						  	this.adviceintro = ko.observable(alocalize("coadviceintro"));
+						    this.advicetitle = ko.observable(alocalize("coadvicetitle"));
+                        }
+					}	    
 				ko.applyBindings(new AppViewModel());
 			}
-
 
 		}
 

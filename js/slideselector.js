@@ -338,7 +338,7 @@ var SlideSelector = (function () {
 			Motivator2.init();
 			Timeline.populateSlides();
 			app.animationController.init();
-
+           
 
 			$(document).unbind('keypress', launch);
 
