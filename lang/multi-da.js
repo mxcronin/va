@@ -60,54 +60,84 @@
             "cohome": "Kontoret",
             "cobank": "I banken",
             //Mobile
-            "comobiletitle": "Mobilbank",
-            "comobileintro": "Klar bankforretninger fra din mobiltelefon",
+            "mobiletitle": "Mobilbank",
+            "mobileintro": "Klar bankforretninger fra din mobiltelefon",
             //mobile bullets
-            "comobilebullet1": "Understøttes på alle typer mobiltelefoner",
-            "comobilebullet2": "Overblik over dine konti",
-            "comobilebullet3": "Se transaktioner",
-            //Swipp
-            "coswipptitle": "Swipp",
-            "coswippintro": "En ny og nem måde at overføre penge på",
+            "mobilebullet1": "Understøttes på alle typer mobiltelefoner",
+            "mobilebullet2": "Overblik over dine konti",
+            "mobilebullet3": "Se transaktioner",
+            //Kort
+            "cokorttitle": "Kort",
+            "cokortintro": "mindre administration og bedre overblik",
+            //mobile bullets
+            "cokortbullet1": "FirstCard",
+            "cokortbullet2": "Visa Dankort",
+            "cokortbullet3": "",
+            //Tel bank 1
+            "coteltitle": "Telefon Bank",
+            "cotelintro": "Du kan altid ringe til os på 70 33 44 44",
             //Swipp bullets
-            "coswippbullet1": "Nem måde at sende penge på via din smartphone",
-            "coswippbullet2": "Ingen brug af NemID-nøglekort",
-            "coswippbullet3": "Overfør op til 3.000 kr. om dagen",
+            "cotelbullet1": "Hvem har indbetalt på kontoen",
+            "cotelbullet2": "Kommende betalinger",
+            "cotelbullet3": "Åbent 8-18 alle hverdage",
             //Mobile money
-             "comomoneytitle": "Mobilpenge",
-             "comomoneyintro": "En ny og nem måde at betale på",
+             "comomoneytitle": "",
+             "comomoneyintro": "",
             //Bullets
-            "comomoneybullet1": "Betailing via din mobiltelefon",
-            "comomoneybullet2": "Kan anvendes i mange forretninger",
-            "comomoneybullet3": "Automatisk saldokontrol",
+            "comomoneybullet1": "",
+            "comomoneybullet2": "",
+            "comomoneybullet3": "",
             //Telephone bank
-            "cotlfbanktitle": "Telefon bank",
-            "cotlfbankintro": "Du kan altid ringe til os på 70 33 33 33",
+            "cotlfbanktitle": "Telefon Bank",
+            "cotlfbankintro": "Du kan altid ringe til os på 70 33 44 44",
             //Bullets
-            "cotlfbankbullet1": "Bemanding døgnet rundt",
-            "cotlfbankbullet2": "Spørgsmål og svar",
-            "cotlfbankbullet3": "Og meget mere",
+            "cotlfbankbullet1": "Hvem har indbetalt på kontoen",
+            "cotlfbankbullet2": "Kommende betalinger",
+            "cotlfbankbullet3": "Åbent 8-18 alle hverdage",
              //Net bank
              "conetbanktitle": "Netbank",
-             "conetbankintro": "Klar bankforretningerne hjemmefra",
+             "conetbankintro": "Klar bankforretningerne online",
             //Bullets
-            "conetbankbullet1": "Søg om lån og forhøjelse af kredit",
-            "conetbankbullet2": "Bestil kort",
-            "conetbankbullet3": "Tilmeld dig Gratis hverdag",
+            "conetbankbullet1": "Overblik over konti",
+            "conetbankbullet2": "Oprette betalinger til ind- og udland",
+            "conetbankbullet3": "Kontoudskrifter elektronisk",
              //iPad bank
-             "coipadbanktitle": "iPad",
-             "coipadbankintro": "Klar bankforretningerne fra din iPad",
+             "coipadbanktitle": "e-Markets",
+             "coipadbankintro": "Få overblik over dine investeringer",
             //Bullets
-            "coipadbankbullet1": "Overblik over dine konti",
-            "coipadbankbullet2": "Overblik over lån og kommende betalinger",
-            "coipadbankbullet3": "Se transaktioner",
+            "coipadbankbullet1": "Valutahandel til onlinekurser",
+            "coipadbankbullet2": "Nyheder om markedsudvikling",
+            "coipadbankbullet3": "",
+             //investment online
+             "investmenttitle": "Online investering",
+             "investmentintro": "",
+            //Bullets
+            "investmentbullet1": "Køb og salg af værdipapirer",
+            "investmentbullet2": "Depot oversigt",
+            "investmentbullet3": "Oversigt over investeringer",
+            "investmentbullet4": "Markedsanalyser",
             //Advice
-            "coadvicetitle": "I banken",
-            "coadviceintro": "Som kunde i Nordea er du altid velkommen",
+            "coadvicetitle": "Rådgivning",
+            "coadviceintro": "",
              //Bullets
-            "coadvicebullet1": "Egen personlig rådgiver",
-            "coadvicebullet2": "Rådgivning uden for åbningstid",
-            "coadvicebullet3": "Rådgivning hos vores specialister",
+            "coadvicebullet1": "Rådgivning om finansiering og investering",
+            "coadvicebullet2": "",
+            "coadvicebullet3": "",
+            "coadvicebullet4": "",
+             //Box
+            "boxtitle": "Døgnboks",
+            "boxintro": "Skal du af med dagens omsætning",
+             //Bullets
+            "boxbullet1": "Find nærmeste filial med døgnboks på nordea.dk",
+            "boxbullet2": "",
+            "boxbullet3": "",
+             //Valuta
+            "valutatitle": "Valuta og mønter",
+            "valutaintro": "",
+             //Bullets
+            "valutabullet1": "",
+            "valutabullet2": "",
+            "valutabullet3": "",
     
         }
     });

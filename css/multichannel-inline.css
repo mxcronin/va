@@ -302,6 +302,20 @@ p.intro{
 	z-index: 200;
 
 }
+.corporate .multichannel{
+	height: 110px;
+	margin-top: 20px;
+}
+.corporate .multichannel.scaled{
+	height: 100%;
+	position: absolute;
+	z-index: 200;
+	margin-top: 0px;
+	top: 0px;
+	left: 0px;
+	z-index: 200;
+
+}
 .card-container{
 	width: 300px;
 	height: 120px;
@@ -319,6 +333,9 @@ p.intro{
 	-o-transition: width 0.6s, height 0.6s;
 	-ms-transition: width 0.6s, height 0.6s;
 	transition: width 0.6s, height 0.6s;
+}
+.corporate .card-container{
+	height: 110px;
 }
 .card-front i{
 	font-size: 75px;

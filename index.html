@@ -587,28 +587,49 @@
 				<ul class="choice-list clearfix">
 					<li class="mobile" data-id="mobile">
 						<span class="icon-holder round">
+						    <!-- ko if: app.animationController.type === 'household' -->
 							<i class="fa fa-mobile-phone"></i>
+							<!-- /ko -->
+							<!-- ko if: app.animationController.type === 'corporate' -->
+							<i class="fa fa-briefcase"></i>
+							<!-- /ko -->
 						</span>
 						<p data-bind="text: mobile"></p>
 					</li>
 					<li data-id="home">
 						<span class="icon-holder round">
-							<i class="fa fa-home"></i>
+							<!-- ko if: app.animationController.type === 'household' -->
+							<i class="fa fa-mobile-home"></i>
+							<!-- /ko -->
+							<!-- ko if: app.animationController.type === 'corporate' -->
+							<i class="fa fa-paperclip"></i>
+							<!-- /ko -->
 						</span>
 						<p data-bind="text: home"></p>
 					</li>
+					<!-- ko if: app.animationController.type === 'household' -->
 					<li data-id="bank">	
 						<span class="icon-holder round">
 							<i class="fa fa-building-o"></i>
 						</span>
 						<p data-bind="text: bank"></p>
 					</li>
+					<!-- /ko -->
+						<!-- ko if: app.animationController.type === 'corporate' -->
+					<li data-id="coBank">	
+						<span class="icon-holder round">
+							<i class="fa fa-building-o"></i>
+						</span>
+						<p data-bind="text: bank"></p>
+					</li>
+					<!-- /ko -->
 				</ul>
 			</div>
 		</article>
 
 		<article class="multichannel-container mobile vertical-center">
 			<div class="close-btn"><i class="fa fa-times-circle-o"></i></div>
+		    <!-- MOBILE for both household and corporate -->
 			<div class="multichannel mobilebank clearfix margintop">
 				<div class="card-container darkblue">
 					<div class="inner-card">
@@ -630,7 +651,7 @@
 									</ul>
 								</div>
 								<div class="foto-container easyhtml5video pull-right">
-									<video title="640"  preload="none" controls="controls">
+									<video title="Nordea mobile"  preload="none" controls="controls" poster="video/nordea_app.jpg">
 										<source src="video/nordea_app.mp4" type="video/mp4">
 										<source src="video/nordea_app.ogg" type="video/ogg">
 										<img src="img/mobilevideo.png" class="full-img">
@@ -651,28 +672,30 @@
 							<div class="text" data-bind="text: mobiletitle"></div>
 						</div>
 					</div>
-					<div class="multichannel swipp clearfix">
-						<div class="card-container yellow">
+				   <!-- CORPORATE only -->
+					<!-- ko if: app.animationController.type === 'corporate' -->
+					<div class="multichannel cokort clearfix">
+						<div class="card-container blue">
 							<div class="inner-card">
 								<div class="card-front">
-									<i class="fa fa-share"></i>
+									<i class="fa fa-credit-card"></i>
 								</div>
-								<div class="card-back">								
-									<div class="title-container clearfix">
-										<h1 class="p-text pull-left" data-bind="text: swipptitle"></h1>
+								<div class="card-back">
+								<div class="title-container clearfix">
+										<h1 class="p-text pull-left" data-bind="text: cokorttitle"></h1>
 										<div class="card-close-btn pull-right"><i class="fa fa-times-circle-o"></i></div>
-									</div>
+									</div>									
 									<div class="content-container clearfix">
 										<div class="bullets pull-left">	
-											<p class="intro" data-bind="text: swippintro"></p>
+											<p class="intro" data-bind="text: cokortintro"></p>
 											<ul class="info">
-												<li data-bind="text: swippbullet1"></li>
-												<li data-bind="text: swippbullet2"></li>
-												<li data-bind="text: swippbullet3"></li>
+												<li data-bind="text: cokortbullet1"></li>
+												<li data-bind="text: cokortbullet2"></li>
+												<li data-bind="text: cokortbullet3"></li>
 											</ul>
 										</div>
 										<div class="foto-container pull-right">
-											<img src="img/swipp-img.jpg" class="full-img"> 
+											<img src="img/woman-mobile.png" class="full-img"> 
 										</div>	   	  		
 									</div>
 								</div>
@@ -680,9 +703,44 @@
 						</div>
 						<div class="text-container">
 							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
-							<div class="text" data-bind="text: swipptitle"></div>
+							<div class="text" data-bind="text: cokorttitle"></div>
 						</div>
 					</div>
+					<div class="multichannel cotel clearfix">
+						<div class="card-container yellow">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="card-back">
+								<div class="title-container clearfix">
+										<h1 class="p-text pull-left" data-bind="text: coteltitle"></h1>
+										<div class="card-close-btn pull-right"><i class="fa fa-times-circle-o"></i></div>
+									</div>									
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text: cotelintro"></p>
+											<ul class="info">
+												<li data-bind="text: cotelbullet1"></li>
+												<li data-bind="text: cotelbullet2"></li>
+												<li data-bind="text: cotelbullet3"></li>
+											</ul>
+										</div>
+										<div class="foto-container pull-right">
+											<img src="img/woman-mobile.png" class="full-img"> 
+										</div>	   	  		
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text" data-bind="text: coteltitle"></div>
+						</div>
+					</div>
+					<!-- /ko -->
+					<!-- HOUSEHOLD only -->
+					<!-- ko if: app.animationController.type === 'household' -->
 					<div class="multichannel momoney clearfix">
 						<div class="card-container blue">
 							<div class="inner-card">
@@ -715,8 +773,42 @@
 							<div class="text" data-bind="text: momoneytitle"></div>
 						</div>
 					</div>
+						<div class="multichannel swipp clearfix">
+						<div class="card-container yellow">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-share"></i>
+								</div>
+								<div class="card-back">								
+									<div class="title-container clearfix">
+										<h1 class="p-text pull-left" data-bind="text: swipptitle"></h1>
+										<div class="card-close-btn pull-right"><i class="fa fa-times-circle-o"></i></div>
+									</div>
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text: swippintro"></p>
+											<ul class="info">
+												<li data-bind="text: swippbullet1"></li>
+												<li data-bind="text: swippbullet2"></li>
+												<li data-bind="text: swippbullet3"></li>
+											</ul>
+										</div>
+										<div class="foto-container pull-right">
+											<img src="img/swipp-img.jpg" class="full-img"> 
+										</div>	   	  		
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text" data-bind="text: swipptitle"></div>
+						</div>
+					</div>
+					<!-- /ko -->
 				</article>
-
+               
+                
 				<article class="multichannel-container home">
 					<div class="close-btn"><i class="fa fa-times-circle-o"></i></div>
 					<div class="multichannel tlfbank clearfix margintop">
@@ -784,8 +876,6 @@
 							<div class="text" data-bind="text: netbanktitle"></div>
 						</div>
 					</div>
-
-
 					<div class="multichannel ipad clearfix">
 						<div class="card-container green">
 							<div class="inner-card">
@@ -818,8 +908,43 @@
 							<div class="text" data-bind="text: ipadbanktitle"></div>
 						</div>
 					</div>
-					</article>
-
+				    <!-- ko if: app.animationController.type === 'corporate' -->
+					<div class="multichannel investment clearfix">
+						<div class="card-container darkblue">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-tablet"></i>
+								</div>
+								<div class="card-back">
+									<div class="title-container clearfix">
+										<h1 class="p-text pull-left" data-bind="text: investmenttitle"></h1>
+										<div class="card-close-btn pull-right"><i class="fa fa-times-circle-o"></i></div>
+									</div>										
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text: investmentintro"></p>
+											<ul class="info">
+												<li data-bind="text: investmentbullet1"></li>
+												<li data-bind="text: investmentbullet2"></li>
+												<li data-bind="text: investmentbullet3"></li>
+												<li data-bind="text: investmentbullet4"></li>
+											</ul>										
+										</div>
+										<div class="foto-container pull-right">
+												<img src="img/ipad.jpg" class="full-img"> 
+											</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text" data-bind="text: investmenttitle"></div>
+						</div>
+					</div>
+				    <!-- /ko -->
+				</article>
+                <!-- ko if: app.animationController.type === 'household' -->
 				<article class="multichannel-container bank">
 					<div class="close-btn"><i class="fa fa-times-circle-o"></i></div>
 					<div class="multichannel advice clearfix">
@@ -843,6 +968,109 @@
 						</div>
 					</div>
 				</article>
+				<!-- /ko -->
+				<!-- ko if: app.animationController.type === 'corporate' -->
+				<article class="multichannel-container coBank">
+				    <div class="close-btn"><i class="fa fa-times-circle-o"></i></div>
+				    <div class="multichannel coadvice clearfix margintop">
+						<div class="card-container blue">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-desktop"></i>
+								</div>
+								<div class="card-back">									
+									<div class="title-container clearfix">
+										<h1 class="p-text pull-left" data-bind="text: coadvicetitle"></h1>
+										<div class="card-close-btn pull-right"><i class="fa fa-times-circle-o"></i></div>
+									</div>	
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text: coadviceintro"></p>
+											<ul class="info">
+												<li data-bind="text: coadvicebullet1"></li>
+												<li data-bind="text: coadvicebullet2"></li>
+												<li data-bind="text: coadvicebullet3"></li>
+												<li data-bind="text: coadvicebullet4"></li>
+											</ul>										
+										</div>
+											<div class="foto-container pull-right">
+												<img src="img/netbank-two.jpg" class="full-img"> 
+											</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text" data-bind="text: coadvicetitle"></div>
+						</div>
+					</div>
+					<div class="multichannel bankbox clearfix">
+						<div class="card-container blue">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-desktop"></i>
+								</div>
+								<div class="card-back">									
+									<div class="title-container clearfix">
+										<h1 class="p-text pull-left" data-bind="text: boxtitle"></h1>
+										<div class="card-close-btn pull-right"><i class="fa fa-times-circle-o"></i></div>
+									</div>	
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text: boxintro"></p>
+											<ul class="info">
+												<li data-bind="text: boxbullet1"></li>
+												<li data-bind="text: boxbullet2"></li>
+												<li data-bind="text: boxbullet3"></li>
+											</ul>										
+										</div>
+											<div class="foto-container pull-right">
+												<img src="img/netbank-two.jpg" class="full-img"> 
+											</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text" data-bind="text: boxtitle"></div>
+						</div>
+					</div>
+					<div class="multichannel valuta clearfix">
+						<div class="card-container blue">
+							<div class="inner-card">
+								<div class="card-front">
+									<i class="fa fa-desktop"></i>
+								</div>
+								<div class="card-back">									
+									<div class="title-container clearfix">
+										<h1 class="p-text pull-left" data-bind="text:valutatitle"></h1>
+										<div class="card-close-btn pull-right"><i class="fa fa-times-circle-o"></i></div>
+									</div>	
+									<div class="content-container clearfix">
+										<div class="bullets pull-left">	
+											<p class="intro" data-bind="text:  valutaintro"></p>
+											<ul class="info">
+												<li data-bind="text: valutabullet1"></li>
+												<li data-bind="text: valutabullet2"></li>
+												<li data-bind="text: valutabullet3"></li>
+											</ul>										
+										</div>
+											<div class="foto-container pull-right">
+												<img src="img/netbank-two.jpg" class="full-img"> 
+											</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<div class="arrow"><i class="fa fa-chevron-right"></i></div>
+							<div class="text" data-bind="text:  valutatitle"></div>
+						</div>
+					</div>
+				</article>
+				<!-- /ko -->
 			</div>
 
 				<br class="clear" />

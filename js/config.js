@@ -560,6 +560,7 @@ var Config = (function() {
 		SlideSelector.setType(null);
 		SlideSelector.setSubtype(null);
 		SlideSelector.setCustomerType(null);
+
 	}
 
 	return {

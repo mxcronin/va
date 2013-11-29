@@ -6,7 +6,10 @@
             
 			init: function() {
 				swippers();
-				console.log(app.animationController.type);
+			    
+				if (app.animationController.type === 'corporate'){
+				    $('.multichannel-app').addClass('corporate');
+				}
 				
 				if($('.multichannel-app').hasClass('init') || $('.multichannel-app').length === 0){
 						return
@@ -143,17 +146,23 @@
 						    this.home = ko.observable(alocalize("cohome"));
 						    this.bank = ko.observable(alocalize("cobank"));
 
-						    this.mobilebullet1 = ko.observable(alocalize("comobilebullet1"));
-						    this.mobilebullet2 = ko.observable(alocalize("comobilebullet2"));
-						    this.mobilebullet3 = ko.observable(alocalize("comobilebullet3"));
-						    this.mobiletitle = ko.observable(alocalize("comobiletitle"));
-						    this.mobileintro = ko.observable(alocalize("comobileintro"));
+						    this.mobilebullet1 = ko.observable(alocalize("mobilebullet1"));
+						    this.mobilebullet2 = ko.observable(alocalize("mobilebullet2"));
+						    this.mobilebullet3 = ko.observable(alocalize("mobilebullet3"));
+						    this.mobiletitle = ko.observable(alocalize("mobiletitle"));
+						    this.mobileintro = ko.observable(alocalize("mobileintro"));
+						    
+						    this.cokortbullet1 = ko.observable(alocalize("cokortbullet1"));
+						    this.cokortbullet2 = ko.observable(alocalize("cokortbullet2"));
+						    this.cokortbullet3 = ko.observable(alocalize("cokortbullet3"));
+						    this.cokorttitle = ko.observable(alocalize("cokorttitle"));
+						    this.cokortintro = ko.observable(alocalize("cokortintro"));
 
-						    this.swippbullet1 = ko.observable(alocalize("coswippbullet1"));
-						    this.swippbullet2 = ko.observable(alocalize("coswippbullet2"));
-						    this.swippbullet3 = ko.observable(alocalize("coswippbullet3"));
-						    this.swipptitle = ko.observable(alocalize("coswipptitle"));
-						    this.swippintro = ko.observable(alocalize("coswippintro"));
+						    this.cotelbullet1 = ko.observable(alocalize("cotelbullet1"));
+						    this.cotelbullet2 = ko.observable(alocalize("cotelbullet2"));
+						    this.cotelbullet3 = ko.observable(alocalize("cotelbullet3"));
+						    this.coteltitle = ko.observable(alocalize("coteltitle"));
+						    this.cotelintro = ko.observable(alocalize("cotelintro"));
 
 						    this.momoneybullet1 = ko.observable(alocalize("comomoneybullet1"));
 						    this.momoneybullet2 = ko.observable(alocalize("comomoneybullet2"));
@@ -179,12 +188,32 @@
 						    this.ipadbanktitle = ko.observable(alocalize("coipadbanktitle"));
 						    this.ipadbankintro = ko.observable(alocalize("coipadbankintro"));
 
+						    this.investmentbullet1 = ko.observable(alocalize("investmentbullet1"));
+						    this.investmentbullet2 = ko.observable(alocalize("investmentbullet2"));
+						    this.investmentbullet3 = ko.observable(alocalize("investmentbullet3"));
+						    this.investmentbullet4 = ko.observable(alocalize("investmentbullet4"));
+						    this.investmenttitle = ko.observable(alocalize("investmenttitle"));
+						    this.investmentintro = ko.observable(alocalize("investmentintro"));
 						    
-						    this.advicebullet1 = ko.observable(alocalize("coadvicebullet1"));
-						    this.advicebullet2 = ko.observable(alocalize("coadvicebullet2"));
-						    this.advicebullet3 = ko.observable(alocalize("coadvicebullet3"));
-						  	this.adviceintro = ko.observable(alocalize("coadviceintro"));
-						    this.advicetitle = ko.observable(alocalize("coadvicetitle"));
+						    this.coadvicebullet1 = ko.observable(alocalize("coadvicebullet1"));
+						    this.coadvicebullet2 = ko.observable(alocalize("coadvicebullet2"));
+						    this.coadvicebullet3 = ko.observable(alocalize("coadvicebullet3"));
+						    this.coadvicebullet4 = ko.observable(alocalize("coadvicebullet4"));
+						  	this.coadviceintro = ko.observable(alocalize("coadviceintro"));
+						    this.coadvicetitle = ko.observable(alocalize("coadvicetitle"));
+						    
+						    this.boxbullet1 = ko.observable(alocalize("boxbullet1"));
+						    this.boxbullet2 = ko.observable(alocalize("boxbullet2"));
+						    this.boxbullet3 = ko.observable(alocalize("boxbullet3"));
+						  	this.boxintro = ko.observable(alocalize("boxintro"));
+						    this.boxtitle = ko.observable(alocalize("boxtitle"));
+						    
+						    this.valutabullet1 = ko.observable(alocalize("valutabullet1"));
+						    this.valutabullet2 = ko.observable(alocalize("valutabullet2"));
+						    this.valutabullet3 = ko.observable(alocalize("valutabullet3"));
+						  	this.valutaintro = ko.observable(alocalize("valutaintro"));
+						    this.valutatitle = ko.observable(alocalize("valutatitle"));
+						    
                         }
 					}	    
 				ko.applyBindings(new AppViewModel());
