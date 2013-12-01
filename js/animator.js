@@ -223,33 +223,33 @@
 
 })(window.app = window.app || {}, window.jQuery);
 
-function swippers() {
-if(Modernizr.touch) {
-					
-					$('.multichannel').addSwipeEvents().bind('doubletap', function(evt, touch){
-						$multichannel = $(this);
-						$(this).find('.inner-card').toggleClass('flipped');
-						//$multichannel.toggleClass('scaled');					
-						setTimeout(function(){$multichannel.toggleClass('scaled');}, 800);
-						setTimeout(
-									function(){
-										if($multichannel.hasClass('scaled')){
-											$('.multichannel-container.active').find('.info').fadeIn();
-											$('.multichannel-container.active').find('.foto-container').fadeIn();
-											$('.multichannel-container.active').find('.app-stores').fadeIn();
-										} else {
-											$('.multichannel-container.active').find('.info').fadeOut();
-											$('.multichannel-container.active').find('.foto-container').fadeOut();
-											$('.multichannel-container.active').find('.app-stores').fadeOut();
-										}
-									}, 2000);
-		  				});
-					$('.close-btn').addSwipeEvents().bind('touchstart', 
-						function(evt, touch){
-							$('.multichannel-container.'+app.animationController.curdataid).toggleClass('active');
-					});
-				}
-}
+            function swippers() {
+                if(Modernizr.touch) {
+    					
+    					$('.multichannel').addSwipeEvents().bind('doubletap', function(evt, touch){
+    						$multichannel = $(this);
+    						$(this).find('.inner-card').toggleClass('flipped');
+    						//$multichannel.toggleClass('scaled');					
+    						setTimeout(function(){$multichannel.toggleClass('scaled');}, 800);
+    						setTimeout(
+    									function(){
+    										if($multichannel.hasClass('scaled')){
+    											$('.multichannel-container.active').find('.info').fadeIn();
+    											$('.multichannel-container.active').find('.foto-container').fadeIn();
+    											$('.multichannel-container.active').find('.app-stores').fadeIn();
+    										} else {
+    											$('.multichannel-container.active').find('.info').fadeOut();
+    											$('.multichannel-container.active').find('.foto-container').fadeOut();
+    											$('.multichannel-container.active').find('.app-stores').fadeOut();
+    										}
+    									}, 2000);
+    		  				});
+    					$('.close-btn').addSwipeEvents().bind('touchstart', 
+    						function(evt, touch){
+    							$('.multichannel-container.'+app.animationController.curdataid).toggleClass('active');
+    					});
+    				}
+            }
 // (function($) {
 //      $.fn.doubleTap = function(doubleTapCallback) {
 //          return this.each(function(){
