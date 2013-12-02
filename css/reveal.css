@@ -202,7 +202,7 @@ body {
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img {
 	max-width: 95%;
-	max-height: 95%;
+/*	max-height: 95%;*/
 }
 
 /** Prevents layering issues in certain browser/transition combinations */
