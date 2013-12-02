@@ -6,7 +6,7 @@
             
 			init: function() {
 				swippers();
-			    
+			 
 				if (app.animationController.type === 'corporate'){
 				    $('.multichannel-app').addClass('corporate');
 				}
@@ -20,6 +20,7 @@
 				$('.multichannel').on('click',
 				function() {
 					$multichannel = $(this);
+					 $multichannel.find('.text-container').addClass('visible');
 					if(!Modernizr.csstransitions){			
 						$(this).find('.text').animate({left: '450'}, 800, function() {
 						    	$multichannel.find('.arrow').animate({left: '400'}, 100);

@@ -278,6 +278,7 @@ Globalize.addCultureInfo("sv", {
 
         "coAgendaLocalName": "Agenda",
         "coAgendaTitle": "Agenda",
+        "coAgendaString1": "Utveckling från vårt senaste möte",
         "coAgendaString2": "Företaget idag och planer i framtiden",
         "coAgendaString3": "Utveckling under året",
         "coAgendaString4": "Hur Nordea kan  hjälpa dig",
@@ -313,7 +314,11 @@ Globalize.addCultureInfo("sv", {
         "coEconomyOverviewSubTitle2":"Marknadssituation",
         "coEconomyOverviewString1":"Marknadssituation för branschen",
 	
-	"cokycSELocalName": "Företaget och verksamheten",
+	   
+        //co-solutions
+        "coSolutionsLocalArea": "Behov",
+        
+         "cokycSELocalName": "New customer",
         "cokycSETitle": "Vi vill lära känna dig och ditt företag",
         "cokycSEByline": "",
         "cokycSEBullet1": "Företaget och ägarna",
@@ -330,8 +335,6 @@ Globalize.addCultureInfo("sv", {
         "cokycSEBullet4": "",
         "cokycSEBullet4Dropdown1": "",
 
-        //co-solutions
-        "coSolutionsLocalArea": "Behov",
 
         "coSolutionsLocalName": "Översikt",
         "coSolutionsTitle": "Hur kan vi hjälpa dig?",
@@ -567,8 +570,9 @@ Globalize.addCultureInfo("sv", {
         "coInterestExposureBullet3": "Leasingavtal",
         "coInterestExposureBullet3Dropdown1": "Leasing av bilar",
         "coInterestExposureBullet3Dropdown2": "Leasing av produktionsutrustning eller maskiner",
-        "coInterestExposureBullet4": "Kontrakter med ränteklausuler",
-        "coInterestExposureBullet4Dropdown1": "Avtal där betalningsströmmar regleras efter förändringar i referensräntan",
+        "coInterestExposureBullet4": "Minska din ränterisk",
+        "coInterestExposureBullet4Dropdown1": "Individuella instrument för att säkra räntan",
+        "coInterestExposureBullet4Dropdown2": "För rörliga lån kan ränteswap göras. Det är ett kontrakt mellan dig och banken om att betala (få) en fast ränta mot att få (betala) en rörlig ränta under en bestämd period",
 		
         "coReduceCurrencyRiskLocalName": "Minska valutarisken",
         "coReduceCurrencyRiskTitle": "Hur kan valutarisken minskas?",
@@ -646,6 +650,16 @@ Globalize.addCultureInfo("sv", {
         "coPyramidBullet3":"Produktgrupper och risk",
         "coPyramidBullet3Dropdown1":"Med risk menas att medlen kan svänga i värde över tid. Avkastningen kan bli positiv som en följd av kursuppgång, eller negatid som en följd av kursnedgång.",
         
+        "coSolutionsLocalArea": "Behov",
+        "privateEconomySELocalName": "Privataffären",
+        "privateEconomySETitle": "Hur ser din privatekonomi ut?",
+    	"privateEconomySEByline": "Tillsammans kan vi göra det möjligt för dig att nå dina mål och drömmar",
+        "privateEconomySEBullet1": "Boende",
+    	"privateEconomySEBullet2": "Pension",
+    	"privateEconomySEBullet3": "Trygghet",
+    	"privateEconomySEBullet4": "Fritid",
+    	"privateEconomySEBullet5": "Framtid",
+
         //coSolutions
         "coSolutionsLocalArea": "Behov",
            

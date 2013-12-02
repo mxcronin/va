@@ -59,6 +59,10 @@
 .invisible {
   visibility: hidden;
 }
+.visible{
+    visibility: visible !important;
+}
+
 .vertical-center {
   margin: auto;
   position: absolute;
@@ -402,9 +406,7 @@ p.intro{
 	list-style: none;
 }
 img.full-img{
-	width: 540px;
 	max-width: 100%;
-	max-height: 100%;
 }
 .card-back .content-container{
 	width: 100%;
@@ -465,6 +467,7 @@ img.full-img{
 .text-container{
 	z-index: 0;
 	margin-left: 200px;
+	visibility: hidden;
 }
 
 .text-container .arrow{
