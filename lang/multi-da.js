@@ -120,22 +120,23 @@
             "coadvicetitle": "Rådgivning",
             "coadviceintro": "",
              //Bullets
-            "coadvicebullet1": "Rådgivning om finansiering og investering",
-            "coadvicebullet2": "",
-            "coadvicebullet3": "",
+            "coadvicebullet1": "Finansiering",
+            "coadvicebullet2": "Investering",
+            "coadvicebullet3": "Opsparing",
             "coadvicebullet4": "",
              //Box
             "boxtitle": "Døgnboks",
-            "boxintro": "Skal du af med dagens omsætning",
+            "boxintro": "Sikker og effektiv kontant indlevring",
              //Bullets
-            "boxbullet1": "Find nærmeste filial med døgnboks på nordea.dk",
-            "boxbullet2": "",
+            "boxbullet1": "Mere end xxxx døgnbokse i DK",
+            "boxbullet2": "Nærmeste filial med døgnboks",
             "boxbullet3": "",
+            "link" : "http://nordeaintranet.dkd1.root4.net/intranet/homepage/home6015.nsf/files/12.02.2013_Dognboks_og_mont.pdf/$file/12.02.2013_Dognboks_og_mont.pdf",
              //Valuta
-            "valutatitle": "Valuta og mønter",
+            "valutatitle": "Valuta og byttepenge",
             "valutaintro": "",
              //Bullets
-            "valutabullet1": "",
+            "valutabullet1": "mere end xxx service filialer",
             "valutabullet2": "",
             "valutabullet3": "",
     

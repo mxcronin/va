@@ -695,7 +695,7 @@
 											</ul>
 										</div>
 										<div class="foto-container pull-right">
-											<img src="img/woman-mobile.png" class="full-img"> 
+											<img src="img/corporate-card2.jpg" class="full-img"> 
 										</div>	   	  		
 									</div>
 								</div>
@@ -727,7 +727,7 @@
 											</ul>
 										</div>
 										<div class="foto-container pull-right">
-											<img src="img/woman-mobile.png" class="full-img"> 
+											<img src="img/telefonbank.jpg" class="full-img"> 
 										</div>	   	  		
 									</div>
 								</div>
@@ -880,7 +880,12 @@
 						<div class="card-container green">
 							<div class="inner-card">
 								<div class="card-front">
+								    <!-- ko if: app.animationController.type === 'corporate' -->
 									<i class="fa fa-bar-chart-o"></i>
+								    <!-- /ko -->
+								     <!-- ko if: app.animationController.type === 'household' -->
+									<i class="fa fa-tablet"></i>
+								    <!-- /ko -->
 								</div>
 								<div class="card-back">
 									<div class="title-container clearfix">
@@ -897,7 +902,12 @@
 											</ul>										
 										</div>
 										<div class="foto-container pull-right">
-												<img src="img/ipad.jpg" class="full-img"> 
+										  <!-- ko if: app.animationController.type === 'corporate' -->
+										  <img src="img/markets2.jpg" class="full-img"> 
+										   <!-- /ko -->
+										   <!-- ko if: app.animationController.type === 'household' -->
+											<img src="img/ipad.jpg" class="full-img"> 
+										    <!-- /ko -->
 											</div>	
 									</div>
 								</div>
@@ -931,7 +941,7 @@
 											</ul>										
 										</div>
 										<div class="foto-container pull-right">
-												<img src="img/ipad.jpg" class="full-img"> 
+												<img src="img/investment.jpg" class="full-img"> 
 											</div>	
 									</div>
 								</div>
@@ -994,7 +1004,7 @@
 											</ul>										
 										</div>
 											<div class="foto-container pull-right">
-												<img src="img/netbank-two.jpg" class="full-img"> 
+												<img src="img/corporate-advisor.jpg" class="full-img"> 
 											</div>	
 									</div>
 								</div>
@@ -1021,12 +1031,12 @@
 											<p class="intro" data-bind="text: boxintro"></p>
 											<ul class="info">
 												<li data-bind="text: boxbullet1"></li>
-												<li data-bind="text: boxbullet2"></li>
+												<li><a data-bind="text: boxbullet2, attr: {href: link}" target="new"></a></li>
 												<li data-bind="text: boxbullet3"></li>
 											</ul>										
 										</div>
 											<div class="foto-container pull-right">
-												<img src="img/netbank-two.jpg" class="full-img"> 
+												<img src="img/bank-exterior.jpg" class="full-img"> 
 											</div>	
 									</div>
 								</div>
@@ -1058,7 +1068,7 @@
 											</ul>										
 										</div>
 											<div class="foto-container pull-right">
-												<img src="img/netbank-two.jpg" class="full-img"> 
+												<img src="img/valuta.jpg" class="full-img"> 
 											</div>	
 									</div>
 								</div>

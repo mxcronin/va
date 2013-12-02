@@ -208,6 +208,7 @@
 						    this.boxbullet3 = ko.observable(alocalize("boxbullet3"));
 						  	this.boxintro = ko.observable(alocalize("boxintro"));
 						    this.boxtitle = ko.observable(alocalize("boxtitle"));
+						    this.link =  ko.observable(alocalize("link"));
 						    
 						    this.valutabullet1 = ko.observable(alocalize("valutabullet1"));
 						    this.valutabullet2 = ko.observable(alocalize("valutabullet2"));

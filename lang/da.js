@@ -133,7 +133,7 @@ Globalize.addCultureInfo("da", {
 	"hhSavingsdkLocalName":"Opsparing og investering",
         "hhSavingsdkTitle":"Opsparing og investering",
         "hhSavingsdkByline":"Hvordan får du mest muligt ud af din opsparing?",
-        "hhSavingsdkSubTitle1":"Hvordan skal du spare op",
+        "hhSavingsdkSubTitle1":"Hvordan vil du spare op",
         "hhSavingsdkBullet1":"Pension",
         "hhSavingsdkBullet2":"Opsparing",
         "hhSavingsdkBullet3":"Investering",
