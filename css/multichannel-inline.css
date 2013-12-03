@@ -394,6 +394,7 @@ p.intro{
 	width: 420px;
 	display: none;
 	padding-right: 50px;
+	position: relative;
 }
 .card-back .foto-container video{
 	width: 450px; margin-right: 10px;
@@ -457,15 +458,26 @@ img.full-img{
 	left: 0;
 	color: #fff;
 }
+.video-img{
+    display:none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
 /*IE 9*/
 .lt-ie9 .card-back {
 	display: none;
 }
 .lt-ie9 .multichannel.scaled .card-back{
 	display: block;
+
 }
 .lt-ie9 .multichannel.scaled .card-front{
 	display: none;
+}
+.lt-ie9 .video-img{
+    display: block;
 }
 /**/
 .text-container{

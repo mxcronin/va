@@ -86,7 +86,16 @@
 								$('.multichannel-container.active').find('.app-stores').fadeOut();
 						});
 				}
-				
+				//Video fix for IE
+				var $video =  $('#mobileVideo');
+				var $videoimg = $('.video-img');
+				if($video.length !== 0 && $('body').hasClass('lt-ie9')) {
+				    $videoimg.on('click', function(){
+				        $videoimg.hide();
+				        $video.play();
+				    })
+				}
+				//KNOCKOUT settings
 				Globalize.culture('Danmark');
 				function alocalize(key) {
 						return Globalize.localize(key, 'multi-da');
