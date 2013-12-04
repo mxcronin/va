@@ -133,8 +133,8 @@ Globalize.addCultureInfo("fi", {
         "hhNLTfiSubTitle2":"",
         "hhNLTfiIframeLink":"Asuntorahoitusoppaaseen",
 
-        "hhSavingsPensionLocalName":"Sijoitus-suunnitelma",
-        "hhSavingsPensionTitle":"Sijoitus-suunnitelma",
+        "hhSavingsPensionLocalName":"Sijoitussuunnitelma",
+        "hhSavingsPensionTitle":"Sijoitussuunnitelma",
         "hhSavingsPensionString1":"Sijoitussuunnitelma - Tukea päätöksentekoon",
         "hhSavingsPensionIframeLink":"Sijoitusoppaaseen",
 
