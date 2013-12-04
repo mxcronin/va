@@ -3,6 +3,7 @@
 		namespace.animationController ={
 			curdataid: null,
             type: null,
+            lang: null,
             
 			init: function() {
 				swippers();
@@ -22,7 +23,7 @@
 					$multichannel = $(this);
 					 $multichannel.find('.text-container').addClass('visible');
 					if(!Modernizr.csstransitions){			
-						$(this).find('.text').animate({left: '450'}, 800, function() {
+						$(this).find('.text').animate({left: '450'}, 200, function() {
 						    	$multichannel.find('.arrow').animate({left: '400'}, 100);
 						  });;
 						return
@@ -87,7 +88,7 @@
 						});
 				}
 				//Video fix for IE
-				var $video =  $('#mobileVideo');
+				var $video =  document.getElementById('mobileVideo');
 				var $videoimg = $('.video-img');
 				if($video.length !== 0 && $('body').hasClass('lt-ie9')) {
 				    $videoimg.on('click', function(){
@@ -96,13 +97,28 @@
 				    })
 				}
 				//KNOCKOUT settings
-				Globalize.culture('Danmark');
+				if(app.animationController.lang === 'da'){
+				    Globalize.culture('Danmark');
+				}
+				if(app.animationController.lang === 'sv'){
+				    Globalize.culture('Sverige');
+				}
+                if(app.animationController.lang === 'no'){
+				    Globalize.culture('Sverige');
+				    app.animationController.lang = 'sv';
+				}
+			    if(app.animationController.lang === 'fi'){
+				    Globalize.culture('Sverige');
+				    app.animationController.lang = 'sv';
+				}
 				function alocalize(key) {
-						return Globalize.localize(key, 'multi-da');
+						return Globalize.localize(key, 'multi-' + app.animationController.lang);
 					}
 
 				function AppViewModel() {
                         if(app.animationController.type === 'household'){
+                            this.header = ko.observable(alocalize("header"));
+                            
 						    this.mobile = ko.observable(alocalize("mobile"));
 						    this.home = ko.observable(alocalize("home"));
 						    this.bank = ko.observable(alocalize("bank"));
@@ -152,6 +168,8 @@
 						    this.advicetitle = ko.observable(alocalize("advicetitle"));
                         }
                         if(app.animationController.type === 'corporate'){
+                            this.header = ko.observable(alocalize("header"));
+                             
                             this.mobile = ko.observable(alocalize("comobile"));
 						    this.home = ko.observable(alocalize("cohome"));
 						    this.bank = ko.observable(alocalize("cobank"));
@@ -217,13 +235,14 @@
 						    this.boxbullet3 = ko.observable(alocalize("boxbullet3"));
 						  	this.boxintro = ko.observable(alocalize("boxintro"));
 						    this.boxtitle = ko.observable(alocalize("boxtitle"));
-						    this.link =  ko.observable(alocalize("link"));
+						    this.boxlink =  ko.observable(alocalize("boxlink"));
 						    
 						    this.valutabullet1 = ko.observable(alocalize("valutabullet1"));
 						    this.valutabullet2 = ko.observable(alocalize("valutabullet2"));
 						    this.valutabullet3 = ko.observable(alocalize("valutabullet3"));
 						  	this.valutaintro = ko.observable(alocalize("valutaintro"));
 						    this.valutatitle = ko.observable(alocalize("valutatitle"));
+						    this.valutalink =  ko.observable(alocalize("valutalink"));
 						    
                         }
 					}	    

@@ -1,5 +1,7 @@
     Globalize.addCultureInfo("multi-da", {
         messages: {
+            //Header
+            "header": "Brug af banken",
            //splash
            "mobile": "Udenfor hjemmet",
            "home": "Hjemme",
@@ -55,6 +57,8 @@
             "advicebullet3": "Rådgivning hos vores specialister",
             
             //Corporate
+             //Header
+            "header": "Brug af banken",
             //splash
             "comobile": "Udenfor kontoret",
             "cohome": "Kontoret",
@@ -79,7 +83,7 @@
             //Swipp bullets
             "cotelbullet1": "Hvem har indbetalt på kontoen",
             "cotelbullet2": "Kommende betalinger",
-            "cotelbullet3": "Åbent 8-18 alle hverdage",
+            "cotelbullet3": "Åbent 24/7",
             //Mobile money
              "comomoneytitle": "",
              "comomoneyintro": "",
@@ -93,7 +97,7 @@
             //Bullets
             "cotlfbankbullet1": "Hvem har indbetalt på kontoen",
             "cotlfbankbullet2": "Kommende betalinger",
-            "cotlfbankbullet3": "Åbent 8-18 alle hverdage",
+            "cotlfbankbullet3": "Åbent 24/7",
              //Net bank
              "conetbanktitle": "Netbank",
              "conetbankintro": "Klar bankforretningerne online",
@@ -103,42 +107,42 @@
             "conetbankbullet3": "Kontoudskrifter elektronisk",
              //iPad bank
              "coipadbanktitle": "e-Markets",
-             "coipadbankintro": "Få overblik over dine investeringer",
+             "coipadbankintro": "Adgang til de globale finansmarkeder",
             //Bullets
             "coipadbankbullet1": "Valutahandel til onlinekurser",
             "coipadbankbullet2": "Nyheder om markedsudvikling",
-            "coipadbankbullet3": "",
+            "coipadbankbullet3": "Åben for handel hverdage fra 7.30 til 23.00",
              //investment online
              "investmenttitle": "Online investering",
-             "investmentintro": "",
+             "investmentintro": "Oversigt over investeringer",
             //Bullets
-            "investmentbullet1": "Køb og salg af værdipapirer",
+            "investmentbullet1": "strakshandel indtil kl. 22 på hverdage",
             "investmentbullet2": "Depot oversigt",
-            "investmentbullet3": "Oversigt over investeringer",
-            "investmentbullet4": "Markedsanalyser",
+            "investmentbullet3": "Markedsanalyser",
+            "investmentbullet4": "",
             //Advice
             "coadvicetitle": "Rådgivning",
-            "coadviceintro": "",
+            "coadviceintro": "Aftal møde med din rådgiver",
              //Bullets
             "coadvicebullet1": "Finansiering",
             "coadvicebullet2": "Investering",
-            "coadvicebullet3": "Opsparing",
+            "coadvicebullet3": "Daglig drift",
             "coadvicebullet4": "",
              //Box
             "boxtitle": "Døgnboks",
             "boxintro": "Sikker og effektiv kontant indlevring",
              //Bullets
-            "boxbullet1": "Mere end xxxx døgnbokse i DK",
+            "boxbullet1": "Mere end 180 døgnbokse i DK",
             "boxbullet2": "Nærmeste filial med døgnboks",
             "boxbullet3": "",
-            "link" : "http://nordeaintranet.dkd1.root4.net/intranet/homepage/home6015.nsf/files/12.02.2013_Dognboks_og_mont.pdf/$file/12.02.2013_Dognboks_og_mont.pdf",
+            "boxlink": "http://nordeaintranet.dkd1.root4.net/intranet/homepage/home6015.nsf/files/12.02.2013_Dognboks_og_mont.pdf/$file/12.02.2013_Dognboks_og_mont.pdf",
              //Valuta
             "valutatitle": "Valuta og byttepenge",
-            "valutaintro": "",
+            "valutaintro": "Valuta og byttepenge",
              //Bullets
-            "valutabullet1": "mere end xxx service filialer",
-            "valutabullet2": "",
-            "valutabullet3": "",
-    
+            "valutabullet1": "Hæv valuta i udvalgte hæveautomater",
+            "valutabullet2": "Find nærmeste service filial på nordea.dk",
+            "valutabullet3": "Bestil mønter",
+            "valutalink": "http://www.nordea.dk/sitemod/upload/root/content/nordea_dk/privat/valuta_atm/pengeautomater.pdf",
         }
     });

@@ -32,6 +32,11 @@ Globalize.addCultureInfo("da", {
         //hh-status
         "hhStatusLocalArea": "Status",
 
+         "hhSavingsPension1LocalName":"Din økonomi",
+        "hhSavingsPension1Title":"Din økonomi",
+        "hhSavingsPension1String1":"Dine muligheder og finansielle løsninger.",
+        "hhSavingsPension1IframeLink":"Vis din økonomi!",
+
         "hhFutureDreamsLocalName": "Dine planer, ønsker og drømme",
         "hhFutureDreamsTitle": "Dine planer, ønsker og drømme",
         "hhFutureDreamsString1": "Fremtidsplaner",
@@ -45,10 +50,7 @@ Globalize.addCultureInfo("da", {
         "hhFutureDreamsYearlineString3": "5 år",
         "hhFutureDreamsYearlineString4": "30 år",
         
-         "hhSavingsPension1LocalName":"Din økonomi",
-        "hhSavingsPension1Title":"Din økonomi",
-        "hhSavingsPension1String1":"Dine muligheder og finansielle løsninger.",
-        "hhSavingsPension1IframeLink":"Vis din økonomi!",
+        
 
         "hhEconomyOverviewLocalName":"Økonomisk oversigt",
         "hhEconomyOverviewTitle":"Økonomisk<br /> Oversigt",

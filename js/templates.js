@@ -45,6 +45,24 @@ var Templates = (function() {
 			},
 		
 			//status
+				{
+				id: 10,
+				template: "templateIframe",
+				keyName: "Savings & Pension",
+				keyArea: "Status",
+				tags: "da,household,360,savingsAndPension,premium,gold",
+				backgroundImage: "savings_large.jpg",
+				hideNotes: false,
+				locked: false,
+				localName: localize("hhSavingsPension1LocalName"),
+				localArea: localize("hhStatusLocalArea"),
+				title: localize("hhSavingsPension1Title"),
+				paragrafs: [localize("hhSavingsPension1String1")],
+				url: "https://intservices.sed1.root4.net/fpt_invest/FPTApplication.jsp?customerNumber=[customerId]&locale="+Config.abbriviation+"_"+Config.countryCode.toUpperCase()+"&themeId=2#findcustomer",
+				customerFrame: true,
+				linkText: localize("hhSavingsPension1IframeLink")
+			},
+			
 			{
 				template: "templateSmallBox",
 				keyName: "Future Dreams",
@@ -109,22 +127,18 @@ var Templates = (function() {
 				url: "http://ccd1is0394:81/KundePres/",
 				linkText: localize("hhEconomyOverviewIframeLink")
 			},
-				{
-				id: 10,
-				template: "templateIframe",
-				keyName: "Savings & Pension",
+			
+			{
+				id: 299,
+				template: "templateMultichannel",
+				keyName: "Custom12",
 				keyArea: "Status",
-				tags: "da,household,360,savingsAndPension,premium,gold",
-				backgroundImage: "savings_large.jpg",
+				tags: "sv,household,360,dailyBanking,premium,gold",
+				backgroundImage: "multi-bg.png",
 				hideNotes: false,
 				locked: false,
-				localName: localize("hhSavingsPension1LocalName"),
-				localArea: localize("hhSolutionsLocalArea"),
-				title: localize("hhSavingsPension1Title"),
-				paragrafs: [localize("hhSavingsPension1String1")],
-				url: "https://intservices.sed1.root4.net/fpt_invest/FPTApplication.jsp?customerNumber=[customerId]&locale="+Config.abbriviation+"_"+Config.countryCode.toUpperCase()+"&themeId=2#findcustomer",
-				customerFrame: true,
-				linkText: localize("hhSavingsPension1IframeLink")
+				localName: localize("multiLocalName"),
+				localArea: localize("hhStatusLocalArea")
 			},
 			{
 				id: 299,
@@ -1266,13 +1280,13 @@ var Templates = (function() {
 				id: 301,
 				template: "templateMultichannel",
 				keyName: "Customcomulti",
-				keyArea: "Solutions",
+				keyArea: "Status",
 				tags: "da,corporate,360,small,medium,large",
 				backgroundImage: "comulti-bg.jpg",
 				hideNotes: false,
 				locked: false,
 				localName: localize("multiLocalName"),
-				localArea: localize("coSolutionsLocalArea")
+				localArea: localize("coStatusLocalArea")
 			},
 			//NEW slides and corrections
 			
@@ -2261,7 +2275,12 @@ var Templates = (function() {
 					bullets: [
 						localize("coRiskFIBullet4Dropdown1"),
 						localize("coRiskFIBullet4Dropdown2"),
-						localize("coRiskFIBullet4Dropdown3")]}
+						localize("coRiskFIBullet4Dropdown3")]},
+				    {text: localize("coRiskFIBullet5"),
+					bullets: [
+						localize("coRiskFIBullet5Dropdown1"),
+						localize("coRiskFIBullet5Dropdown2"),
+						localize("coRiskFIBullet5Dropdown3")]}
 				],
 				image: "custom2.jpg"
 			},
@@ -2374,6 +2393,29 @@ var Templates = (function() {
 				],
 				image: "phone.jpg"
 			},
+				{
+				id: 599,
+				template: "templateLeftColumn",
+				keyName: "Sijoittaminen",
+				keyArea: "Solutions",
+				tags: "fi,corporate,savingsAndPension,medium,small",
+				backgroundImage: "",
+				hideNotes: false,
+				locked: false,
+				localName: localize("coInvestmentLocalName"),
+				localArea: localize("coSolutionsLocalArea"),
+				title: localize("coInvestmentTitle"),
+				subTitle: localize("coInvestmentSubTitle"),
+				nestedLists: [	
+					{text: localize("coInvestmentBullet1"),
+					bullets: [localize("coInvestmentBullet1Dropdown1")]},
+					{text: localize("coInvestmentBullet2"),
+					bullets: [localize("coInvestmentBullet2Dropdown1")]},
+					{text: localize("coInvestmentBullet3"),
+					bullets: [localize("coInvestmentBullet3Dropdown1")]}
+				],
+				image: "phone.jpg"
+			},
 			{
 				id: 290,
 				template: "templateLeftColumn",
@@ -2461,7 +2503,7 @@ var Templates = (function() {
 					{text: localize("counitFIBullet3")},
 					{text: localize("counitFIBullet4")}
 				],
-				image: "pb1.jpg",
+				image: "corporate_specialist.jpg",
 			},
 			{
 				id: 292,

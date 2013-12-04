@@ -704,7 +704,7 @@ Globalize.addCultureInfo("sv", {
         "configCustomerTypeMedium": "Medium",
         "configCustomerTypeSilver": "",
         "configCustomerTypeBronze": "",
-        "configCustomerTypeSmall": "",
+        "configCustomerTypeSmall": "Small",
         "configCustomerTypeEntrepreneurs": "",
         "configCustomerTypeNew": "",
         "configCustomerTypeLarge": "Large",
@@ -745,7 +745,8 @@ Globalize.addCultureInfo("sv", {
         "motivator2Rate": "Rente",
         "motivator2Duration": "Løpetid, år",
         "motivator2PerMonth": "Terminbeløp",
-
+         //Multichannel Name
+        "multiLocalName": "Banken var och när du vill",
         //notes
         "notes": "Anteckningar från mötet",
         "actionNotes": "Actions",

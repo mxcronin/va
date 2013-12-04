@@ -142,8 +142,8 @@ article.intro{
 ul.show-bullets{
 	display: block;
 }
-.txt-white{
-	color: #fff;
+.txt-white {
+	color: #fff !important;
 }
 .txt-center{
 	text-align: center;
@@ -265,7 +265,7 @@ p.intro{
 	color: #000;
 }
 .multichannel-container.bank .title-container{
-	height: 100px;
+	height: 50px;
 }
 .multichannel-container.bank .p-text{
 	text-align: center;
@@ -292,13 +292,16 @@ p.intro{
 	height: 120px;
 	margin-top: 30px;
 	z-index: 0;
-	
+	cursor: pointer;
 	font-family: 'Lato', 'Segoe UI';
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
   	-webkit-tap-highlight-color: transparent; /* For some Androids */
   	-webkit-user-select: none; /* Webkit */
 	-moz-user-select: none;    /* Firefox */
 	-ms-user-select: none;     /* IE 10  */
+}
+.multichannel.advice{
+    	height: 100%;
 }
 .scaled{
 	height: 100%;
@@ -308,7 +311,7 @@ p.intro{
 	top: 0px;
 	left: 0px;
 	z-index: 200;
-
+    cursor: default;
 }
 .corporate .multichannel{
 	height: 110px;

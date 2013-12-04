@@ -538,6 +538,7 @@ var Config = (function() {
 			SlideSelector.init(type, subtype, customerType);
 		});
 		app.animationController.type = type;
+		app.animationController.lang = Config.language;
 	}
 
 	function exit() {
