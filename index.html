@@ -399,6 +399,11 @@
     								<a href="{{url}}" class="{{#customerFrame}}customerFrame{{/customerFrame}} uframe cboxElement">{{linkText}}</a>
     							</div>
     						{{/iframe}}
+        						{{#if newpage}}
+        							<div class="overlay">
+        								<a href="{{url}}" target="_blank" class="cboxElement">{{linkText}}</a>
+        							</div>
+        						{{/if}}
     						{{/if}}
     					</div>
     				</div>

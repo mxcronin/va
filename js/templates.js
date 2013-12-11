@@ -479,7 +479,7 @@ var Templates = (function() {
 				],
 				subTitle2: localize("hhCAPITEXseSubTitle2"),
 				image: "house2.jpg",
-				iframe: true,
+				newpage: true,
 				url: "https://intservices.sed1.root4.net/capitex/BoendeKalkyl.WebbGraenssnitt-war/BoKalkGraenssnitt?standalone=1",
 				linkText: localize("hhCAPITEXseIframeLink")
 			},
