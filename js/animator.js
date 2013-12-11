@@ -16,7 +16,6 @@
 				if($('.multichannel-app').length === 0){
 						return;
 				}
-				 console.log('app');
 				$('.multichannel-app').addClass('init');
 			
 				//Video fix for IE
