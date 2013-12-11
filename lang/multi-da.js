@@ -72,7 +72,7 @@
             "mobilebullet3": "Se transaktioner",
             //Kort
             "cokorttitle": "Kort",
-            "cokortintro": "mindre administration og bedre overblik",
+            "cokortintro": "Mindre administration og bedre overblik",
             //mobile bullets
             "cokortbullet1": "FirstCard",
             "cokortbullet2": "Visa Dankort",
@@ -116,7 +116,7 @@
              "investmenttitle": "Online investering",
              "investmentintro": "Oversigt over investeringer",
             //Bullets
-            "investmentbullet1": "strakshandel indtil kl. 22 på hverdage",
+            "investmentbullet1": "Strakshandel indtil kl. 22 på hverdage",
             "investmentbullet2": "Depot oversigt",
             "investmentbullet3": "Markedsanalyser",
             "investmentbullet4": "",
@@ -130,7 +130,7 @@
             "coadvicebullet4": "",
              //Box
             "boxtitle": "Døgnboks",
-            "boxintro": "Sikker og effektiv kontant indlevring",
+            "boxintro": "Sikker og effektiv kontant indlevering",
              //Bullets
             "boxbullet1": "Mere end 180 døgnbokse i DK",
             "boxbullet2": "Nærmeste filial med døgnboks",

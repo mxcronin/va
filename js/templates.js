@@ -1276,18 +1276,6 @@ var Templates = (function() {
 				string4: localize("coAgendaString4"),
 				string5: localize("coAgendaString5")
 			},
-				{
-				id: 301,
-				template: "templateMultichannel",
-				keyName: "Customcomulti",
-				keyArea: "Status",
-				tags: "da,corporate,360,small,medium,large",
-				backgroundImage: "comulti-bg.jpg",
-				hideNotes: false,
-				locked: false,
-				localName: localize("multiLocalName"),
-				localArea: localize("coStatusLocalArea")
-			},
 			//NEW slides and corrections
 			
 			
@@ -1373,6 +1361,7 @@ var Templates = (function() {
 				yearlineString3: localize("coStatus2YearlineString3"),
 				yearlineString4: localize("coStatus2YearlineString4")
 			},
+		
 			{
 				id: 29,
 				template: "templateLeftColumn",
@@ -1421,6 +1410,53 @@ var Templates = (function() {
 				image: "digogfortag.jpg",
 			},
 			{
+				id: 29,
+				template: "templateLeftColumn",
+				keyName: "KYC SE 1",
+				keyArea: "Solutions",
+				tags: "sv,corporate,aboutNordea,medium,small,large",
+				backgroundImage: "",
+				hideNotes: false,
+				locked: false,
+				localName: localize("cokycSE1LocalName"),
+				localArea: localize("coStatusLocalArea"),
+				title: localize("cokycSE1Title"),
+				byline: localize("cokycSE1Byline"),
+				nestedLists: [	
+					{text: localize("cokycSE1Bullet1"),
+					bullets: [
+						localize("cokycSE1Bullet1Dropdown1"),
+						localize("cokycSE1Bullet1Dropdown2"),
+						localize("cokycSE1Bullet1Dropdown3"),
+						localize("cokycSE1Bullet1Dropdown4")]},
+					{text: localize("cokycSE1Bullet2"),
+					bullets: [
+						localize("cokycSE1Bullet2Dropdown1"),
+						localize("cokycSE1Bullet2Dropdown2"),
+						localize("cokycSE1Bullet2Dropdown3"),
+						localize("cokycSE1Bullet2Dropdown4")]},
+					{text: localize("cokycSE1Bullet3"),
+					bullets: [
+						localize("cokycSE1Bullet3Dropdown1"),
+						localize("cokycSE1Bullet3Dropdown2"),
+						localize("cokycSE1Bullet3Dropdown3"),
+						localize("cokycSE1Bullet3Dropdown4")]},
+					{text: localize("cokycSE1Bullet4"),
+					bullets: [
+						localize("cokycSE1Bullet4Dropdown1"),
+						localize("cokycSE1Bullet4Dropdown2"),
+						localize("cokycSE1Bullet4Dropdown3"),
+						localize("cokycSE1Bullet4Dropdown4")]},
+					{text: localize("cokycSE1Bullet5"),
+					bullets: [
+						localize("cokycSE1Bullet5Dropdown1"),
+						localize("cokycSE1Bullet5Dropdown2"),
+						localize("cokycSE1Bullet5Dropdown3"),
+						localize("cokycSE1Bullet5Dropdown4")]},
+				],
+				image: "digogfortag.jpg",
+			},
+			{
 				id: 23,
 				template: "templateLeftColumn",
 				keyName: "Economy Overview",
@@ -1455,11 +1491,23 @@ var Templates = (function() {
 				image: "paper.jpg"
 			},
 			{
+				id: 301,
+				template: "templateMultichannel",
+				keyName: "Customcomulti",
+				keyArea: "Status",
+				tags: "da,corporate,360,small,medium,large",
+				backgroundImage: "comulti-bg.jpg",
+				hideNotes: false,
+				locked: false,
+				localName: localize("multiLocalName"),
+				localArea: localize("coStatusLocalArea")
+			},
+			{
 				id: 24,
 				template: "templateBox",
 				keyName: "Support",
 				keyArea: "Solutions",
-				tags: "no,fi,sv,corporate,360,aboutNordea,medium,small",
+				tags: "no,fi,sv,corporate,360,aboutNordea,medium,small,large",
 				backgroundImage: "",
 				hideNotes: false,
 				locked: false,
@@ -1555,6 +1603,47 @@ var Templates = (function() {
 				{
 				id: 124,
 				template: "templateBox",
+				keyName: "Solutions DK",
+				keyArea: "Solutions",
+				tags: "da,corporate,360,cashManagement,medium,small",
+				backgroundImage: "",
+				hideNotes: false,
+				locked: false,
+				localName: localize("coSolutions1LocalName"),
+				localArea: localize("coSolutions1LocalArea"),
+				title: localize("coSolutions1Title"),
+				boxes: [{
+					title: localize("coSolutions1Box1Title"),
+					lists: [{
+						bullets: [localize("coSolutions1Box1Bullet1"), localize("coSolutions1Box1Bullet2"), localize("coSolutions1Box1Bullet3"), localize("coSolutions1Box1Bullet4"), localize("coSolutions1Box1Bullet5")]
+					}],
+					image: "adv.jpg"
+				},
+				{
+					title: localize("coSolutions1Box2Title"),
+					lists: [{
+						bullets: [localize("coSolutions1Box2Bullet1"), localize("coSolutions1Box2Bullet2"), localize("coSolutions1Box2Bullet3"),localize("coSolutions1Box2Bullet4"), localize("coSolutions1Box2Bullet5"),localize("coSolutions1Box2Bullet6"),localize("coSolutions1Box2Bullet7")]
+					}],
+					image: "netbank.jpg"
+				},
+				{
+					title: localize("coSolutions1Box3Title"),
+					lists: [{
+						bullets: [localize("coSolutions1Box3Bullet1"), localize("coSolutions1Box3Bullet2"), localize("coSolutions1Box3Bullet3"), localize("coSolutions1Box3Bullet4")]
+					}],
+					image: "shopping.jpg"
+				},
+				{
+					title: localize("coSolutions1Box4Title"),
+					lists: [{
+						bullets: [localize("coSolutions1Box4Bullet1"), localize("coSolutions1Box4Bullet2"), localize("coSolutions1Box4Bullet3"), localize("coSolutions1Box4Bullet4"), localize("coSolutions1Box4Bullet5"), localize("coSolutions1Box4Bullet6")]
+					}],
+					image: "buy.jpg"
+				}]
+				},
+				{
+				id: 124,
+				template: "templateBox",
 				keyName: "nlpNO",
 				keyArea: "Solutions",
 				tags: "no,corporate,cashManagement,medium,small",
@@ -1596,50 +1685,9 @@ var Templates = (function() {
 					image: "buy.jpg"
 				}]
 				},
-				{
-				id: 124,
-				template: "templateBox",
-				keyName: "Muligheder",
-				keyArea: "Solutions",
-				tags: "da,corporate,360,aboutNordea,medium,small",
-				backgroundImage: "",
-				hideNotes: false,
-				locked: false,
-				localName: localize("coSolutionsLocalName"),
-				localArea: localize("coSolutionsLocalArea"),
-				title: localize("coSolutionsTitle"),
-				boxes: [{
-					title: localize("coSolutionsBox1Title"),
-					lists: [{
-						bullets: [localize("coSolutionsBox1Bullet1"), localize("coSolutionsBox1Bullet2"), localize("coSolutionsBox1Bullet3"), localize("coSolutionsBox1Bullet4"), localize("coSolutionsBox1Bullet5")]
-					}],
-					image: "adv.jpg"
-				},
-				{
-					title: localize("coSolutionsBox2Title"),
-					lists: [{
-						bullets: [localize("coSolutionsBox2Bullet1"),localize("coSolutionsBox2Bullet2"),localize("coSolutionsBox2Bullet3"),localize("coSolutionsBox2Bullet4"),localize("coSolutionsBox2Bullet5"),localize("coSolutionsBox2Bullet6"),localize("coSolutionsBox2Bullet7")]
-					}],
-					image: "netbank.jpg"
-				},
-				{
-					title: localize("coSolutionsBox3Title"),
-					lists: [{
-						bullets: [localize("coSolutionsBox3Bullet1"),localize("coSolutionsBox3Bullet2"),localize("coSolutionsBox3Bullet3"),localize("coSolutionsBox3Bullet4")]
-					}],
-					image: "shopping.jpg"
-				},
-				{
-					title: localize("coSolutionsBox4Title"),
-					lists: [{
-						bullets: [localize("coSolutionsBox4Bullet1"),localize("coSolutionsBox4Bullet2"),localize("coSolutionsBox4Bullet3"),localize("coSolutionsBox4Bullet4")]
-					},
-					{
-						bullets: [localize("coSolutionsBox4Bullet12"),localize("coSolutionsBox4Bullet5"),localize("coSolutionsBox4Bullet6")]
-					}],
-					image: "buy.jpg"
-				}]
-				},
+
+		
+			
 			{
 				id: 25,
 				template: "templateMotivator",
@@ -1872,7 +1920,7 @@ var Templates = (function() {
 				template: "templateLeftColumn",
 				keyName: "Interest Exposure",
 				keyArea: "Solutions",
-				tags: "no,sv,corporate,markets,medium,small",
+				tags: "no,sv,corporate,markets,medium,small,large",
 				backgroundImage: "",
 				hideNotes: false,
 				locked: false,
@@ -2184,7 +2232,7 @@ var Templates = (function() {
 				template: "templateLeftColumn",
 				keyName: "Reduce Currency Risk",
 				keyArea: "Solutions",
-				tags: "no,sv,corporate,markets,medium,small",
+				tags: "no,sv,corporate,markets,medium,small,large",
 				backgroundImage: "",
 				hideNotes: false,
 				locked: false,
@@ -2212,7 +2260,7 @@ var Templates = (function() {
 				template: "templateLeftColumn",
 				keyName: "Markets",
 				keyArea: "Solutions",
-				tags: "no,sv,corporate,markets,medium,small",
+				tags: "no,sv,corporate,markets,medium,small,large",
 				backgroundImage: "",
 				hideNotes: false,
 				locked: false,
@@ -2675,7 +2723,7 @@ var Templates = (function() {
 				template: "templateLeftColumn",
 				keyName: "Ränterisk",
 				keyArea: "Solutions",
-				tags: "sv,corporate,markets,medium,small,large",
+				tags: "",
 				backgroundImage: "",
 				hideNotes: false,
 				locked: false,
@@ -2745,7 +2793,7 @@ var Templates = (function() {
 				],
 				image: "leasing2.jpg",
 				iframe: true,
-				url: "https://intservices.sed1.root4.net/pccalc/",
+				url: "",
 				linkText: localize("coLeasing2IframeLink")
 			},
 		   	{
@@ -2770,7 +2818,7 @@ var Templates = (function() {
 				],
 				image: "avbetalning.jpg",
 				iframe: true,
-				url: "https://intservices.sed1.root4.net/pccalc/",
+				url: "",
 				linkText: localize("coAvbetalningIframeLink")
 			},
 			{
@@ -2795,7 +2843,7 @@ var Templates = (function() {
 				],
 				image: "fakturalaan.jpg",
 				iframe: true,
-				url: "https://intservices.sed1.root4.net/pccalc/",
+				url: "",
 				linkText: localize("cofakturalaanIframeLink")
 			},
 			{
@@ -2818,7 +2866,7 @@ var Templates = (function() {
 					{text: localize("cobilleasingBullet4")}
 				],
 				iframe: "false",
-				url: "https://intservices.sed1.root4.net/pccalc/",
+				url: "",
 				image: "billeasing.jpg"
 			},
 			{
@@ -2894,7 +2942,41 @@ var Templates = (function() {
 				template: "templateCustom",
 				keyName: "Custom",
 				keyArea: "Solutions",
-				tags: "no,fi,sv,da,corporate,aboutNordea,medium,small",
+				tags: "no,fi,sv,da,corporate,aboutNordea,medium,small,large",
+				backgroundImage: "",
+				hideNotes: false,
+				locked: false,
+				localName: localize("customLocalName"),
+				localArea: localize("coSolutionsLocalArea"),
+				title: localize("customTitle"),
+				toolTip: localize("customToolTip"),
+				header: localize("customHeader"),
+				bullet: localize("customBullet"),
+				image: "custom1.jpg"
+			},
+			{
+				id: 38,
+				template: "templateCustom",
+				keyName: "Custom",
+				keyArea: "Solutions",
+				tags: "sv,corporate,aboutNordea,medium,small,large",
+				backgroundImage: "",
+				hideNotes: false,
+				locked: false,
+				localName: localize("customLocalName"),
+				localArea: localize("coSolutionsLocalArea"),
+				title: localize("customTitle"),
+				toolTip: localize("customToolTip"),
+				header: localize("customHeader"),
+				bullet: localize("customBullet"),
+				image: "custom1.jpg"
+			},
+			{
+				id: 38,
+				template: "templateCustom",
+				keyName: "Custom",
+				keyArea: "Solutions",
+				tags: "sv,corporate,aboutNordea,medium,small,large",
 				backgroundImage: "",
 				hideNotes: false,
 				locked: false,

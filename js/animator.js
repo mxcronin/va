@@ -4,6 +4,7 @@
 			curdataid: null,
             type: null,
             lang: null,
+            bound: false,
             
 			init: function() {
 				swippers();
@@ -12,81 +13,12 @@
 				    $('.multichannel-app').addClass('corporate');
 				}
 				
-				if($('.multichannel-app').hasClass('init') || $('.multichannel-app').length === 0){
-						return
+				if($('.multichannel-app').length === 0){
+						return;
 				}
+				 console.log('app');
 				$('.multichannel-app').addClass('init');
-				var $multichannel;
-
-				$('.multichannel').on('click',
-				function() {
-					$multichannel = $(this);
-					 $multichannel.find('.text-container').addClass('visible');
-					if(!Modernizr.csstransitions){			
-						$(this).find('.text').animate({left: '450'}, 200, function() {
-						    	$multichannel.find('.arrow').animate({left: '400'}, 100);
-						  });;
-						return
-					}
-					$(this).find('.arrow').addClass('slide-out');
-					$(this).find('.text').addClass('slide-out');
-				});
-				
-
-				$('.multichannel').on('dblclick',
-					function() {
-						$multichannel = $(this);
-						$(this).find('.inner-card').addClass('flipped');
-					
-						if(Modernizr.csstransitions){
-							setTimeout(function(){$multichannel.addClass('scaled');}, 800);
-						} else {
-							$multichannel.addClass('scaled');
-						}				
-						setTimeout(
-									function(){
-										if($multichannel.hasClass('scaled')){
-											$('.multichannel-container.active').find('.info').fadeIn();
-											$('.multichannel-container.active').find('.foto-container').fadeIn();
-											$('.multichannel-container.active').find('.app-stores').fadeIn();
-										} 
-									}, 800);
-				});
 			
-				$('.choice-list li').on('click', 
-					function(e){
-						var dataid = $(e.currentTarget).attr('data-id');
-						app.animationController.curdataid = dataid;
-						if(!Modernizr.csstransitions){				
-							$('.multichannel-container.'+ dataid).animate({left: '0%'}, 800);
-						}
-						$('.multichannel-container.'+ dataid).toggleClass('active');
-				});
-				if(!Modernizr.touch) {
-						$('.close-btn').on('click', 
-							function(e){
-								if(!Modernizr.csstransitions){	
-									$('.multichannel-container.'+app.animationController.curdataid).animate({left: '100%'}, 800);
-								}
-								$('.multichannel-container.'+app.animationController.curdataid).toggleClass('active');
-						});
-
-						$('.card-close-btn').on('click', 
-							function(e){
-								$multichannel = $('.multichannel.scaled');
-
-								$multichannel.find('.inner-card').removeClass('flipped');
-								if(!Modernizr.csstransitions){	
-									$multichannel.removeClass('scaled');
-								}
-								if(Modernizr.csstransitions){
-									setTimeout(function(){$multichannel.removeClass('scaled');}, 800);
-								}
-								$('.multichannel-container.active').find('.info').fadeOut();
-								$('.multichannel-container.active').find('.foto-container').fadeOut();
-								$('.multichannel-container.active').find('.app-stores').fadeOut();
-						});
-				}
 				//Video fix for IE
 				var $video =  document.getElementById('mobileVideo');
 				var $videoimg = $('.video-img');
@@ -245,12 +177,91 @@
 						    this.valutalink =  ko.observable(alocalize("valutalink"));
 						    
                         }
-					}	    
-				ko.applyBindings(new AppViewModel());
-			}
+					}
+				
+					var boundElement = $('.multichannel-app')[0];
+					ko.cleanNode(boundElement);
+				
+					ko.applyBindings(new AppViewModel(), boundElement); 
+					this.bound = true;
+				   
+				    this.eventBindings();
+			
+		},
+		eventBindings: function() { 
+		    	var $multichannel;
+		    	$('.multichannel').on('click',
+				function() {
+					$multichannel = $(this);
+					 $multichannel.find('.text-container').addClass('visible');
+					if(!Modernizr.csstransitions){			
+						$(this).find('.text').animate({left: '450'}, 200, function() {
+						    	$multichannel.find('.arrow').animate({left: '400'}, 100);
+						  });
+						return
+					}
+					$(this).find('.arrow').addClass('slide-out');
+					$(this).find('.text').addClass('slide-out');
+				});
+				
 
+				$('.multichannel').on('dblclick',
+					function() {
+						$multichannel = $(this);
+						$(this).find('.inner-card').addClass('flipped');
+					
+						if(Modernizr.csstransitions){
+							setTimeout(function(){$multichannel.addClass('scaled');}, 800);
+						} else {
+							$multichannel.addClass('scaled');
+						}				
+						setTimeout(
+									function(){
+										if($multichannel.hasClass('scaled')){
+											$('.multichannel-container.active').find('.info').fadeIn();
+											$('.multichannel-container.active').find('.foto-container').fadeIn();
+											$('.multichannel-container.active').find('.app-stores').fadeIn();
+										} 
+									}, 800);
+				});
+			   
+				$('.choice-list li').on('click', 
+					function(e){
+						var dataid = $(e.currentTarget).attr('data-id');
+						app.animationController.curdataid = dataid;
+						if(!Modernizr.csstransitions){				
+							$('.multichannel-container.'+ dataid).animate({left: '0%'}, 800);
+						}
+						$('.multichannel-container.'+ dataid).toggleClass('active');
+				});
+				if(!Modernizr.touch) {
+						$('.close-btn').on('click', 
+							function(e){
+								if(!Modernizr.csstransitions){	
+									$('.multichannel-container.'+app.animationController.curdataid).animate({left: '100%'}, 800);
+								}
+								$('.multichannel-container.'+app.animationController.curdataid).toggleClass('active');
+						});
+
+						$('.card-close-btn').on('click', 
+							function(e){
+								$multichannel = $('.multichannel.scaled');
+
+								$multichannel.find('.inner-card').removeClass('flipped');
+								if(!Modernizr.csstransitions){	
+									$multichannel.removeClass('scaled');
+								}
+								if(Modernizr.csstransitions){
+									setTimeout(function(){$multichannel.removeClass('scaled');}, 800);
+								}
+								$('.multichannel-container.active').find('.info').fadeOut();
+								$('.multichannel-container.active').find('.foto-container').fadeOut();
+								$('.multichannel-container.active').find('.app-stores').fadeOut();
+						});
+				}
 		}
-
+		
+		}
 })(window.app = window.app || {}, window.jQuery);
 
             function swippers() {
