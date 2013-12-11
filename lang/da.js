@@ -246,11 +246,6 @@ Globalize.addCultureInfo("da", {
         "coWelcomeLocalArea": "Indledning",
         "coWelcomeTitle": "VELKOMMEN",
 
-        "coWelcomedkLocalName": "Forside",
-        "coWelcomedkLocalArea": "Indledning",
-        "coWelcomedkTitle": "VELKOMMEN",
-
-
         "coAgendaLocalName": "Dagsorden",
         "coAgendaTitle": "Dagsorden",
         "coAgendaString2": "Status, drømme og forventninger",
