@@ -1461,7 +1461,7 @@ var Templates = (function() {
 				template: "templateLeftColumn",
 				keyName: "Economy Overview",
 				keyArea: "Status",
-				tags: "no,fi,da,corporate,360,introduction,medium,small",
+				tags: "no,da,corporate,360,introduction,medium,small",
 				backgroundImage: "",
 				hideNotes: false,
 				locked: false,
@@ -1488,6 +1488,42 @@ var Templates = (function() {
 				],
 				subTitle2: localize("coEconomyOverviewSubTitle2"),
 				string1: localize("coEconomyOverviewString1"),
+				image: "paper.jpg"
+			},
+			{
+				id: 222,
+				template: "templateLeftColumn",
+				keyName: "Economy Overview",
+				keyArea: "Status",
+				tags: "fi,corporate,360,introduction,medium,small",
+				backgroundImage: "",
+				hideNotes: false,
+				locked: false,
+				localName: localize("coEconomyOverviewLocalName"),
+				localArea: localize("costatusdkLocalArea"),
+				title: localize("coEconomyOverviewTitle"),
+				byline: localize("coEconomyOverviewByline"),
+				subTitle1: localize("coEconomyOverviewSubTitle1"),
+				nestedLists: [
+					{text: localize("coEconomyOverviewBullet1"),
+					bullets: [localize("coEconomyOverviewBullet1SubBullet1"),
+							localize("coEconomyOverviewBullet1SubBullet2"),
+							localize("coEconomyOverviewBullet1SubBullet3"),	
+							localize("coEconomyOverviewBullet1SubBullet4"),
+							localize("coEconomyOverviewBullet1SubBullet5")]},
+					{text: localize("coEconomyOverviewBullet2"),
+					bullets: [localize("coEconomyOverviewBullet2SubBullet1"),
+							localize("coEconomyOverviewBullet2SubBullet2"),
+							localize("coEconomyOverviewBullet2SubBullet3")]},
+					{text: localize("coEconomyOverviewBullet3"),
+					bullets: [localize("coEconomyOverviewBullet3SubBullet1"),
+							localize("coEconomyOverviewBullet3SubBullet2"),
+							localize("coEconomyOverviewBullet3SubBullet3")]},
+					{text: localize("coEconomyOverviewBullet4"),
+					bullets: [
+						localize("coEconomyOverviewBullet4Dropdown1")]}
+				],
+					
 				image: "paper.jpg"
 			},
 			{

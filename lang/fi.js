@@ -257,12 +257,12 @@ Globalize.addCultureInfo("fi", {
         "coEconomyOverviewBullet1SubBullet1":"Liikevaihto",
         "coEconomyOverviewBullet1SubBullet2":"Käyttökate",
         "coEconomyOverviewBullet1SubBullet3":"Tulos",
-	"coEconomyOverviewBullet1SubBullet4":"Oma pääoma",
+	    "coEconomyOverviewBullet1SubBullet4":"Oma pääoma",
         "coEconomyOverviewBullet2":"Ennusteet",
         "coEconomyOverviewBullet2SubBullet1":"Mihin ennusteet perustuvat?",
         "coEconomyOverviewBullet2SubBullet2":"Ennusteisiin liittyvät riskit",
-        "coEconomyOverviewSubTitle2":"Yrityksen perustietojen päivitys",
-	"coEconomyOverviewString1":"Hyvä palvelu perustuu asiakkaan tuntemiseen. Tunteminen dokumentoidaan asiakastietojen ylläpidolla",
+        "coEconomyOverviewBullet4":"Yrityksen perustietojen päivitys",
+	    "coEconomyOverviewBullet4Dropdown1":"Hyvä palvelu perustuu asiakkaan tuntemiseen. Tunteminen dokumentoidaan asiakastietojen ylläpidolla",
 
         //co-solutions
         "coSolutionsLocalArea": "Ratkaisut",
