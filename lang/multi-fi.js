@@ -1,5 +1,7 @@
-    Globalize.addCultureInfo("multi-da", {
+    Globalize.addCultureInfo("multi-fi", {
         messages: {
+            //Header
+            "header": "Monta helppoa tapaa asioida",
            //splash
            "mobile": "Monipuoliset pankkitunnukset",
            "home": "Monikäyttöinen kortti",

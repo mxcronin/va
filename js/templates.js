@@ -145,7 +145,7 @@ var Templates = (function() {
 				template: "templateMultichannel",
 				keyName: "Custom12",
 				keyArea: "Solutions",
-				tags: "da,household,360,dailyBanking,premium,gold",
+				tags: "fi,da,household,360,dailyBanking,premium,gold",
 				backgroundImage: "multi-bg.png",
 				hideNotes: false,
 				locked: false,
@@ -1518,11 +1518,16 @@ var Templates = (function() {
 					title: localize("coSolutionsBox1Title"),
 					lists: [{
 						header: localize("coSolutionsBox1header1"),
-						bullets: [localize("coSolutionsBox1Bullet1"), localize("coSolutionsBox1Bullet2"), localize("coSolutionsBox1Bullet3")]
+						bullets: [localize("coSolutionsBox1Bullet1"), 
+						localize("coSolutionsBox1Bullet2"),
+						localize("coSolutionsBox1Bullet3"),
+						localize("coSolutionsBox1Bullet4"),
+						localize("coSolutionsBox1Bullet5")]
 					},
 					{
 						header: localize("coSolutionsBox1header2"),
-						bullets: [localize("coSolutionsBox1Bullet4"), localize("coSolutionsBox1Bullet5")]
+						bullets: [localize("coSolutionsBox1Bullet6"), 
+						localize("coSolutionsBox1Bullet7")]
 					}],
 					image: "dailybusiness.jpg"
 				},
@@ -1530,25 +1535,39 @@ var Templates = (function() {
 					title: localize("coSolutionsBox2Title"),
 					lists: [{
 						header: localize("coSolutionsBox2header1"),
-						bullets: [localize("coSolutionsBox2Bullet1"), localize("coSolutionsBox2Bullet2")]
+						bullets: [localize("coSolutionsBox2Bullet1"), 
+						localize("coSolutionsBox2Bullet2"),
+						localize("coSolutionsBox2Bullet3"),
+						localize("coSolutionsBox2Bullet4"),
+						localize("coSolutionsBox2Bullet5")]
 					},
 					{
 						header: localize("coSolutionsBox2header2"),
-						bullets: [localize("coSolutionsBox2Bullet3"),localize("coSolutionsBox2Bullet4"), localize("coSolutionsBox2Bullet5"),localize("coSolutionsBox2Bullet6")]
+						bullets: [localize("coSolutionsBox2Bullet6")]
 					}],
 					image: "tryck.jpg"
 				},
 				{
 					title: localize("coSolutionsBox3Title"),
 					lists: [{
-						bullets: [localize("coSolutionsBox3Bullet1"), localize("coSolutionsBox3Bullet2")]
+						bullets: [localize("coSolutionsBox3Bullet1"),
+						localize("coSolutionsBox3Bullet2"),
+						localize("coSolutionsBox3Bullet3"),
+						localize("coSolutionsBox3Bullet4"),
+						localize("coSolutionsBox3Bullet5"),
+						localize("coSolutionsBox3Bullet6"),]
 					}],
 					image: "buy.jpg"
 				},
 				{
 					title: localize("coSolutionsBox4Title"),
 					lists: [{
-						bullets: [localize("coSolutionsBox4Bullet1"), localize("coSolutionsBox4Bullet2"), localize("coSolutionsBox4Bullet3")]
+						bullets: [localize("coSolutionsBox4Bullet1"),
+						localize("coSolutionsBox4Bullet2"), 
+						localize("coSolutionsBox4Bullet3"),
+						localize("coSolutionsBox4Bullet4"),
+						localize("coSolutionsBox4Bullet5"),
+						localize("coSolutionsBox4Bullet6")]
 					},
 					{
 						bullets: [localize("coSolutionsBox4Bullet4"), localize("coSolutionsBox4Bullet5"), localize("coSolutionsBox4Bullet6")]

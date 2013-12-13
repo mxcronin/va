@@ -625,7 +625,7 @@
     						<p data-bind="text: bank"></p>
     					</li>
     					<!-- /ko -->
-    						<!-- ko if: app.animationController.type === 'corporate' -->
+    					<!-- ko if: app.animationController.type === 'corporate' -->
     					<li data-id="coBank">	
     						<span class="icon-holder round">
     							<i class="fa fa-building-o"></i>
@@ -661,12 +661,14 @@
     									</ul>
     								</div>
     								<div class="foto-container easyhtml5video pull-right">
+    								    <!-- ko if: app.animationController.lang === 'da' -->
     									<img src="img/nordea_app.jpg" class="video-img">
     									<video width="640" height="320" title="Nordea mobile" controls="controls" poster="video/nordea_app.jpg" id="mobileVideo">
     										<source src="video/nordea_app.mp4" type="video/mp4">
     										<source src="video/nordea_app.ogg" type="video/ogg">
     										<img src="img/mobilevideo.png" class="full-img">
     									</video>
+    									<!-- /ko -->
     											<div class="app-stores clearfix">
     												<img src="img/google-store.png" class="app-store-img">
     												<img src="img/iOS-store.png" class="app-store-img">
@@ -783,7 +785,8 @@
     							<div class="text" data-bind="text: momoneytitle"></div>
     						</div>
     					</div>
-    						<div class="multichannel swipp clearfix">
+    					<!-- /ko -->
+    					<div class="multichannel swipp clearfix">
     						<div class="card-container yellow">
     							<div class="inner-card">
     								<div class="card-front">
@@ -815,7 +818,7 @@
     							<div class="text" data-bind="text: swipptitle"></div>
     						</div>
     					</div>
-    					<!-- /ko -->
+    				
     				</article>
     				<article class="multichannel-container home">
     					<div class="close-btn"><i class="fa fa-times-circle-o"></i></div>
@@ -851,6 +854,7 @@
     							<div class="text" data-bind="text: netbanktitle"></div>
     						</div>
     					</div>
+    					<!-- ko if: app.animationController.lang !== 'da' -->
     					<div class="multichannel ipad clearfix">
     						<div class="card-container green">
     							<div class="inner-card">
@@ -893,6 +897,7 @@
     							<div class="text" data-bind="text: ipadbanktitle"></div>
     						</div>
     					</div>
+    					<!-- /ko -->
     				    <!-- ko if: app.animationController.type === 'corporate' -->
     					<div class="multichannel investment clearfix">
     						<div class="card-container darkblue">

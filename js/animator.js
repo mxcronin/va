@@ -38,9 +38,9 @@
 				    Globalize.culture('Sverige');
 				    app.animationController.lang = 'sv';
 				}
+				console.log(app.animationController.lang)
 			    if(app.animationController.lang === 'fi'){
-				    Globalize.culture('Sverige');
-				    app.animationController.lang = 'sv';
+				    Globalize.culture('Suomi');
 				}
 				function alocalize(key) {
 						return Globalize.localize(key, 'multi-' + app.animationController.lang);
@@ -110,6 +110,12 @@
 						    this.mobilebullet3 = ko.observable(alocalize("mobilebullet3"));
 						    this.mobiletitle = ko.observable(alocalize("mobiletitle"));
 						    this.mobileintro = ko.observable(alocalize("mobileintro"));
+						    
+						    this.swippbullet1 = ko.observable(alocalize("swippbullet1"));
+						    this.swippbullet2 = ko.observable(alocalize("swippbullet2"));
+						    this.swippbullet3 = ko.observable(alocalize("swippbullet3"));
+						    this.swipptitle = ko.observable(alocalize("swipptitle"));
+						    this.swippintro = ko.observable(alocalize("swippintro"));
 						    
 						    this.cokortbullet1 = ko.observable(alocalize("cokortbullet1"));
 						    this.cokortbullet2 = ko.observable(alocalize("cokortbullet2"));
