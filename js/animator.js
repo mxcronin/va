@@ -19,14 +19,14 @@
 				$('.multichannel-app').addClass('init');
 			
 				//Video fix for IE
-				var $video =  document.getElementById('mobileVideo');
-				var $videoimg = $('.video-img');
-				if($video.length !== 0 && $('body').hasClass('lt-ie9')) {
-				    $videoimg.on('click', function(){
-				        $videoimg.hide();
-				        $video.play();
-				    })
-				}
+				// var $video =  document.getElementById('mobileVideo');
+				// var $videoimg = $('.video-img');
+				// if($video.length !== 0 && $('body').hasClass('lt-ie9')) {
+				//     $videoimg.on('click', function(){
+				//         $videoimg.hide();
+				//         $video.play();
+				//     })
+				// }
 				//KNOCKOUT settings
 				if(app.animationController.lang === 'da'){
 				    Globalize.culture('Danmark');
@@ -38,7 +38,7 @@
 				    Globalize.culture('Sverige');
 				    app.animationController.lang = 'sv';
 				}
-				console.log(app.animationController.lang)
+		
 			    if(app.animationController.lang === 'fi'){
 				    Globalize.culture('Suomi');
 				}

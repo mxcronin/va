@@ -399,8 +399,9 @@ p.intro{
 	padding-right: 50px;
 	position: relative;
 }
-.card-back .foto-container video{
-	width: 450px; margin-right: 10px;
+.card-back .foto-container.video{
+	width: 560px; 
+	padding-right: 0;
 }
 .card-back .intro{
 	font-size: 2rem;

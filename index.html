@@ -660,14 +660,15 @@
     										<li data-bind="text: mobilebullet3"></li>
     									</ul>
     								</div>
-    								<div class="foto-container easyhtml5video pull-right">
-    								    <!-- ko if: app.animationController.lang === 'da' -->
-    									<img src="img/nordea_app.jpg" class="video-img">
-    									<video width="640" height="320" title="Nordea mobile" controls="controls" poster="video/nordea_app.jpg" id="mobileVideo">
-    										<source src="video/nordea_app.mp4" type="video/mp4">
-    										<source src="video/nordea_app.ogg" type="video/ogg">
-    										<img src="img/mobilevideo.png" class="full-img">
-    									</video>
+    								<div class="foto-container video  pull-right">
+    								    <!-- ko if: app.animationController.lang === 'da' || app.animationController.lang === 'no' -->
+    							            <iframe width="560" height="315" src="//www.youtube.com/embed/KpM4f2AEcwo" frameborder="0" allowfullscreen></iframe>
+    									<!-- /ko -->
+    									 <!-- ko if: app.animationController.lang === 'sv' -->
+    							            <iframe width="560" height="315" src="//www.youtube.com/embed/ZZjI1-aYCYQ" frameborder="0" allowfullscreen></iframe>
+    									<!-- /ko -->
+    									 <!-- ko if: app.animationController.lang === 'fi' -->
+    							           <iframe width="560" height="315" src="//www.youtube.com/embed/Fy7ZWimAk6s" frameborder="0" allowfullscreen></iframe>
     									<!-- /ko -->
     											<div class="app-stores clearfix">
     												<img src="img/google-store.png" class="app-store-img">
